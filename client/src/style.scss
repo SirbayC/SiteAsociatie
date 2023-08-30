@@ -1,0 +1,90 @@
+$logoBlack: #221e1e;
+$MintGreen: #dbf9f4;
+$Azure: #e6fdff;
+$Platinum: #d9d7dd;
+$AfricanViolet: #b07bac;
+$HookersGreen: #333a36;
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    color: $HookersGreen;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    // background-color: $Azure;
+
+    .container {
+        width: 1024px;
+
+        .link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .navbar {
+            // background-color: red;
+            .container {
+                width: auto;
+                padding: 20px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                // background-color: $Platinum;
+
+                .logo {
+                    img {
+                        width: 100px;
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+                    .link{
+                        font-weight: 400;
+                        font-size: 18px;
+                    }
+
+                    .active{
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .colorband{
+                height: 5px;
+                background: rgb(0,166,150);
+                background: linear-gradient(90deg, rgba(0,166,150,1) 0%, rgba(45,78,151,1) 20%, rgba(95,66,150,1) 40%, rgba(154,55,148,1) 60%, rgba(188,45,104,1) 80%, rgba(241,89,42,1) 100%);
+            }
+        }
+
+        footer {
+            margin-top: 100px;
+            padding: 20px;
+            background-color: $logoBlack;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+
+            img {
+                height: 80px;
+            }
+
+            span {
+                color: white;
+            }
+        }
+
+        .acasa {
+            
+        }
+    }
+}
