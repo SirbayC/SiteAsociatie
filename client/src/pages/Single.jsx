@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 // import Menu from '../components/Menu'
 // import Edit from "../img/edit.png"
@@ -10,42 +10,63 @@ import axios from 'axios'
 import DOMPurify from "dompurify";
 
 
+
+import { render } from "react-dom";
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
+import { photos } from "./photos";
+
 const Single = () => {
-    const [post, setPost] = useState({})
+  const [post, setPost] = useState({})
 
-    const location = useLocation()
-    // const navigate = useNavigate()
+  const location = useLocation()
+  // const navigate = useNavigate()
 
-    const postId = location.pathname.split("/")[2]
+  const postId = location.pathname.split("/")[2]
 
-    // const { currentUser } = useContext(AuthContext)
+  // const { currentUser } = useContext(AuthContext)
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await axios.get(`/posts/${postId}`)
-                setPost(res.data)
-            } catch (err) {
-                console.log(err)
-            }
-        }
-        fetchData()
-    }, [postId])
 
-    // const handleDelete = async () => {
-    //     try {
-    //         await axios.delete(`/posts/${postId}`)
-    //         navigate("/")
-    //     } catch (err) {
-    //         console.log(err)
-    //     }
-    // }
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-    return (
-        <div className='single'>
-            <div className="content">
-                {/* {post.img ? <img src={`../uploads/${post.img}`} alt="" /> : <img src={DefaultNoPostPic} alt="" />} */}
-                {/* <div className="user">
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(`/posts/${postId}`)
+        setPost(res.data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    fetchData()
+  }, [postId])
+
+  // const handleDelete = async () => {
+  //     try {
+  //         await axios.delete(`/posts/${postId}`)
+  //         navigate("/")
+  //     } catch (err) {
+  //         console.log(err)
+  //     }
+  // }
+
+
+  return (
+    <div className='single'>
+      <div className="content">
+        {/* {post.img ? <img src={`../uploads/${post.img}`} alt="" /> : <img src={DefaultNoPostPic} alt="" />} */}
+        {/* <div className="user">
                     {post.userImg && <img src={post.userImg} alt="" />}
                     <div className="info">
                         <span>{post.username}</span>
@@ -58,15 +79,32 @@ const Single = () => {
                         </div>
                     }
                 </div> */}
-                <h1>{post.title}</h1>
-                <p dangerouslySetInnerHTML={{
-                        __html: DOMPurify.sanitize(post.desc),
-                    }}
-                ></p>
-            </div>
-            {/* <Menu cat={post.cat} /> */}
+        <h1>{post.title}</h1>
+        <p dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(post.desc),
+        }}
+        ></p>
+        <div className='photos'>
+          <Gallery photos={photos} onClick={openLightbox} />
+          <ModalGateway>
+            {viewerIsOpen ? (
+              <Modal onClose={closeLightbox}>
+                <Carousel
+                  currentIndex={currentImage}
+                  views={photos.map(x => ({
+                    ...x,
+                    srcset: x.srcSet,
+                    caption: x.title
+                  }))}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway>
         </div>
-    )
+      </div>
+      {/* <Menu cat={post.cat} /> */}
+    </div>
+  )
 }
 
 export default Single

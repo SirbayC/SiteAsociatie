@@ -1,4 +1,6 @@
 $logoBlack: #221e1e;
+$lightPurple: #a881af;
+$darkPurple:#80669d;
 
 html,
 body {
@@ -240,7 +242,7 @@ body {
 
             .post {
                 display: flex;
-                gap: 10px;
+                gap: 50px;
 
                 &:nth-child(2n+1) {
                     flex-direction: row-reverse;
@@ -285,12 +287,9 @@ body {
                         display: -webkit-box;
                         -webkit-box-orient: vertical;
                         -webkit-line-clamp: 5;
-                        /* start showing ellipsis when 3rd line is reached */
                         white-space: pre-wrap;
-                        /* let the text wrap preserving spaces */
-                        background-color: azure;
                         max-height: 200px;
-                        width: 500px;
+                        width: 90%;
                         font-size: 18px;
                     }
 
@@ -301,13 +300,13 @@ body {
                         border: none;
                         cursor: pointer;
                         background-color: white;
-                        border: 1px solid teal;
-                        color: teal;
+                        border: 1px solid $darkPurple;
+                        color: $darkPurple;
 
                         &:hover {
                             border: 1px solid white;
-                            background-color: $logoBlack;
-                            color: black
+                            background-color: $darkPurple;
+                            color: white;
                         }
                     }
                 }
