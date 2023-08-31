@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 // import Menu from '../components/Menu'
 // import Edit from "../img/edit.png"
 // import Delete from "../img/delete.png"
@@ -10,8 +10,6 @@ import axios from 'axios'
 import DOMPurify from "dompurify";
 
 
-
-import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";

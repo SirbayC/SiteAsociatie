@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.scss"
 
 import {
-    createBrowserRouter,
+    createHashRouter,
     Outlet,
     RouterProvider,
 } from "react-router-dom";
@@ -14,6 +14,7 @@ import Single from "./pages/Single"
 import Galerie from "./pages/Galerie"
 import ImplicaTe from "./pages/Implica_te"
 import Autorizari from "./pages/Autorizari"
+import Contact from "./pages/Contact"
 
 // admin side
 import Login from "./pages/Login"
@@ -32,7 +33,7 @@ const Layout = () => {
     )
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <Layout />,
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
             {
                 path: "/write",
                 element: <Write />
+            },
+            {
+                path: "/contact",
+                element: <Contact />
             },
         ]
     },

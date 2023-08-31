@@ -89,13 +89,20 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-size: 12px;
+            font-size: 16px;
+            font-weight: 100;
 
             img {
                 height: 80px;
             }
 
             span {
+                letter-spacing: 1.5px;
+                color: white;
+            }
+
+            .link{
+                letter-spacing: 2px;
                 color: white;
             }
         }
@@ -215,6 +222,10 @@ body {
 
                             li {
                                 text-align: justify;
+                            }
+
+                            li:not(:last-child) {
+                                margin-bottom: 20px;
                             }
                         }
                     }

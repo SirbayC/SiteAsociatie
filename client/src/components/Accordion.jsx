@@ -8,12 +8,12 @@ function Accordion(props) {
 
     const [open, setOpen] = useState(false)
     let toggleOpen = e => {
-        setOpen(!open)
+        setOpen(prev => !prev)
     }
 
     const [hover, setHover] = useState(false)
     let toggleHover = e => {
-        setHover(!hover)
+        setHover(prev => !prev)
     }
 
     const styles = {
