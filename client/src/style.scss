@@ -27,6 +27,7 @@ body {
         }
 
         .navbar {
+
             // background-color: red;
             .container {
                 width: auto;
@@ -47,21 +48,21 @@ body {
                     align-items: center;
                     gap: 30px;
 
-                    .link{
+                    .link {
                         font-weight: 400;
                         font-size: 18px;
                     }
 
-                    .active{
+                    .active {
                         font-weight: 700;
                     }
                 }
             }
 
-            .colorband{
+            .colorband {
                 height: 5px;
-                background: rgb(0,166,150);
-                background: linear-gradient(90deg, rgba(0,166,150,1) 0%, rgba(45,78,151,1) 20%, rgba(95,66,150,1) 40%, rgba(154,55,148,1) 60%, rgba(188,45,104,1) 80%, rgba(241,89,42,1) 100%);
+                background: rgb(0, 166, 150);
+                background: linear-gradient(90deg, rgba(0, 166, 150, 1) 0%, rgba(45, 78, 151, 1) 20%, rgba(95, 66, 150, 1) 40%, rgba(154, 55, 148, 1) 60%, rgba(188, 45, 104, 1) 80%, rgba(241, 89, 42, 1) 100%);
             }
         }
 
@@ -84,7 +85,105 @@ body {
         }
 
         .acasa {
-            
+            .generalPresentation {
+                margin-top: 50px;
+                margin-bottom: 20px;
+
+                .paragraphs {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 30px;
+
+                    .parCol {
+                        flex: 1;
+
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: space-between;
+
+                        p {
+                            font-weight: 400;
+                            text-align: justify;
+                        }
+                    }
+
+                    .line {
+                        background-color: $logoBlack;
+                        width: 1px;
+                        margin-bottom: 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .accordPresentation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                background-color: #1c2938;
+
+                .accordion {
+                    margin: 30px;
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .accordion__item {
+                        width: 700px;
+                        max-height: 25px;
+                        padding: 17px 10px;
+                        border-bottom: 1px solid #c9c9c9;
+                        color: white;
+                        overflow: hidden;
+                        cursor: pointer;
+
+                        .accordion__header {
+                            font-size: 20px;
+                            display: flex;
+                            align-items: center;
+                            // background-color: red;
+                            justify-content: space-between;
+
+                            h4 {
+                                transition: 0.2s ease-in-out;
+                                font-size: 16px;
+                                font-weight: 400;
+                                margin-bottom: 10px;
+                                margin-top: 0px;
+                            }
+
+                            i {
+                                transition: 0.2s ease-in-out;
+                                transform-origin: center;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .accordion__header:hover h4 {
+                            color: #10d6f5 !important;
+                        }
+        
+                        .accordion__header:hover i {
+                            color: #10d6f5;
+                        }
+
+                        .accordion__content {
+                            cursor:initial;
+                            margin: 5px;
+
+                            p{
+                                text-align: justify;
+                            }
+
+                            li{
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
