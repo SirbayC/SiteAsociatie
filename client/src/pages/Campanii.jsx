@@ -7,6 +7,11 @@ const Campanii = () => {
 
   const [posts, setPosts] = useState([])
 
+  const getText = (html) => {
+    const doc = new DOMParser().parseFromString(html, "text/html")
+    return doc.body.textContent
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -33,7 +38,7 @@ const Campanii = () => {
                 <h2>{post.title}</h2>
               </Link>
               <div className='description'>
-                {post.desc}
+                {getText(post.desc)}
               </div>
               <Link className='link' to={`/campanii/${post.id}`}>
                 <button>Citeste mai mult</button>
