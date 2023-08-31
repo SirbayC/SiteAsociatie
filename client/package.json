@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://SirbayC.github.io/SiteAsociatie",
+  "homepage": "https://sirbayc.github.io/SiteAsociatie/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
