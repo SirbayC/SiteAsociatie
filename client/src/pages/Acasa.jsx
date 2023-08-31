@@ -1,6 +1,7 @@
 import React from 'react'
 import Accordion from '../components/Accordion'
 import { useSpring, animated } from "react-spring";
+import Fetita from "../resources/fetita.png"
 
 const Acasa = () => {
 
@@ -15,25 +16,28 @@ const Acasa = () => {
   return (
     <div className="acasa">
       <div className='generalPresentation'>
-        <h1>Permiteti-ne sa ne prezentam:</h1>
+        <h2>Acestia suntem noi:</h2>
         <div className="paragraphs">
           <div className="parCol">
-            <p>Asociatia Prietenii D.A.R.I.E.I. suntem noi, o asociatie mica cu suflet urias, asa cum este cel al Dariei, fetita noastra care s-a nascut cu acest fel de-a fi numit Sindrom Down.</p>
-            <p>De ce "PRIETENII D.A.R.I.E.I"? Pentru ca vedem prietenia ca pe o optiune de bucurie a sufletului, care leaga oameni si povestile lor, pentru ca numim “prieteni” valori precum: Diversitate, Acceptare, Rabdare, Integrare, Empatie si Iubire.</p>
-            <p>Pana sa ne confruntam fata in fata cu problematica Sindromului Down, nu am realizat cat de multi copii sunt in jurul nostru si se nasc in continuare cu acest diagnostic (nu-i spunem boala, il consideram asadar un anumit fel de-a fi, caruia stiinta medicala nu i-a descoperit cauzele, inca). </p>
-            <p>Incercand sa dam sens provocarii de a fi parintii unui copil cu Sindrom Down, am infiintat in anul 2015 Asociatia Prietenii D.A.R.I.E.I. cu gandul de a oferi sprijin mai departe si altor copii si familiilor lor, care traiesc povesti similare noua.</p>
-            <p>Dorim sa inlesnim accesul unor copii cu nevoi speciale, copii diagnosticati cu Sindrom Down, la servicii medico-socio-info-educationale, care sa le maximizeze sansele integrarii, demne si cat mai independente in aceasta societate, din care si ei fac parte.</p>
+            <p>{'\t'}Asociatia Prietenii D.A.R.I.E.I. suntem noi, o asociatie mica cu suflet urias, asa cum este cel al Dariei, fetita noastra care s-a nascut cu acest fel de-a fi numit Sindrom Down.</p>
+            <p>{'\t'}De ce "PRIETENII D.A.R.I.E.I"? Pentru ca vedem prietenia ca pe o optiune de bucurie a sufletului, care leaga oameni si povestile lor, pentru ca numim “prieteni” valori precum: Diversitate, Acceptare, Rabdare, Integrare, Empatie si Iubire.</p>
+            <p>{'\t'}Pana sa ne confruntam fata in fata cu problematica Sindromului Down, nu am realizat cat de multi copii sunt in jurul nostru si se nasc in continuare cu acest diagnostic (nu-i spunem boala, il consideram asadar un anumit fel de-a fi, caruia stiinta medicala nu i-a descoperit cauzele, inca). </p>
+            <p>{'\t'}Incercand sa dam sens provocarii de a fi parintii unui copil cu Sindrom Down, am infiintat in anul 2015 Asociatia Prietenii D.A.R.I.E.I. cu gandul de a oferi sprijin mai departe si altor copii si familiilor lor, care traiesc povesti similare noua.</p>
+            <p>{'\t'}Dorim sa inlesnim accesul unor copii cu nevoi speciale, copii diagnosticati cu Sindrom Down, la servicii medico-socio-info-educationale, care sa le maximizeze sansele integrarii, demne si cat mai independente in aceasta societate, din care si ei fac parte.</p>
           </div>
           <div className='line'></div>
           <div className="parCol"><p>Cand Daria noastra a implinit 10 ani, in anul 2016, ca un fel de incununare a acestui deceniu de viata, intr-o pornire de solidaritate si incredere, am simtit nevoia de a impartasi in scris povestea noastra.</p>
-            <p>Asa a luat nastere brosura "Da,pot!" - asa am numit-o, dupa spusele Dariei (mai mica fiind, urcata sus pe tobogan, ca sa-si faca curaj in a cobori, imita muscatul dintr-un morcov, mesteca in gol, inghitea aer si-si spunea singura ”Da, pot!”, dupa care isi da drumul pe tobogan… si topoganul era din ce in ce mai inalt si mai ondulat…). Aceste materiale tiparite au ajuns la medici de familie si specialisti aflati in interactiune directa cu parinti de copii cu Sindrom Down si sper din suflet sa fi fost si sa fie in continuare macar o picatura de speranta in marea lor de intrebari si nelinisti. </p>
-            <p>Asociatia Prietenii D.A.R.I.E.I. s-a dovedit parte din comunitate inca de la infiintarea sa, a fost si continua sa fie alaturi de copii cu nevoi speciale, copii cu Sindrom Down, dar si de parintii acestora.</p>
+            <p>{'\t'}Asa a luat nastere brosura "Da,pot!" - asa am numit-o, dupa spusele Dariei (mai mica fiind, urcata sus pe tobogan, ca sa-si faca curaj in a cobori, imita muscatul dintr-un morcov, mesteca in gol, inghitea aer si-si spunea singura ”Da, pot!”, dupa care isi da drumul pe tobogan… si topoganul era din ce in ce mai inalt si mai ondulat…). Aceste materiale tiparite au ajuns la medici de familie si specialisti aflati in interactiune directa cu parinti de copii cu Sindrom Down si sper din suflet sa fi fost si sa fie in continuare macar o picatura de speranta in marea lor de intrebari si nelinisti. </p>
+            <p>{'\t'}Asociatia Prietenii D.A.R.I.E.I. s-a dovedit parte din comunitate inca de la infiintarea sa, a fost si continua sa fie alaturi de copii cu nevoi speciale, copii cu Sindrom Down, dar si de parintii acestora.</p>
+            <div>
+              <img src={Fetita} alt="" />
+            </div>
           </div>
         </div>
       </div>
 
       <div className='accordPresentation'>
-        <animated.h2 style={titleAnimation}>Ariile generale de implicare ale Asociatiei Prietenii D.A.R.I.E.I.</animated.h2>
+        <animated.h2 style={titleAnimation}>Arii generale de implicare ale Asociatiei Prietenii D.A.R.I.E.I.</animated.h2>
         <div className="accordion">
           <Accordion
             title="Terapia limbajului. Servicii logopedice de specialitate."
@@ -43,7 +47,8 @@ const Acasa = () => {
                 <p>2020 - 2024 - Asociatia mareste numarul copiilor cu Sindrom Down care beneficiaza de sedinte terapeutice de logopedie si terapie ocupationala prestate prin Cabinetul Individual de Psihologie Burlacu Nicoleta, Sector 1, Bucuresti, conform contract existent intre parti. Sedintele se desfasoara saptamanal, cu prezenta fizica sau online. Beneficiari 3 copii speciali.</p>
               </div>
             }
-            height = "250px"
+            height="250px"
+            color="#00a696"
           />
           <Accordion
             title="Tabere de integrare, ateliere, excursii."
@@ -65,34 +70,32 @@ const Acasa = () => {
                 </ul>
               </div>
             }
-            height = "600px"
+            height="640px"
+            color="#147e96"
           />
           <Accordion
             title="Materiale didactice educative. Tiparituri, Jocuri."
             content={
               <div>
                 <p>Am oferit copiilor cu Sindrom Down si parintilor acestora o multime de jocuri si materiale didactice educative care sa le fie de un real ajutor, de-a lungul anilor.</p>
-                <p>21.03.2017 - Ziua Internationala a Sindromului Down- Asociatia Prietenii D.A.R.I.E.I. achizitioneaza kituri Montesori (”Descopar Literele” - kit de invatare rapida a scrisului si cititului la o varsta frageda, ”Descopar cifrele” - kit pentru invatarea numeratiei si pentru introducerea in aritmetica) in sprijinul unor copii cu Sindrom Down din cadrul Centrului de zi Down al Complexului de Servicii Sociale ”Sfanta Ecaterina”, apartinand Directiei Generale de Asistenta Sociala si Protectia Copilului Sector 1, Bucuresti.</p>
-                <p>25.01.2018 - CAIETUL PENTRU DICTIE SI COMUNICARE - MINIGHID LOGOPEDIC - Autor Valeria Balaban, INDREPTAR PENTRU CORECTAREA DIFICULTATILOR DE SCRIS-CITIT LA COPII - Autori Mihai BOLDAN si Steluta BOLDAN</p>
-                <p>11.07.2018 - SA VORBIM CU … PLACERE - carte autor coordonator prof dr Ecaterina VRASMAS, presedinta Asociatia RENINCO Romania, SA INVATAM CU … PLACERE - carte autor coordonator prof dr Ecaterina VRASMAS</p>
-                <p>25.09.2019 - CAIETUL PENTRU DICTIE SI COMUNICARE - MINIGHID LOGOPEDIC - Autor Valeria Balaban, INDREPTAR PENTRU CORECTAREA DIFICULTATILOR DE SCRIS-CITIT LA COPII - Autori Mihai BOLDAN si Steluta BOLDAN, GHIDUL PRONUNTARII CORECTE LA COPII – Autor Mihai BOLDAN, SA INVATAM CU …PLACERE (Fise de excercitii logopedice in comunicarea orala si scrisa) - realizator Asociatia RENINCO Romania, SA VORBIM CU …PLACERE ((Fise de excercitii logopedice in comunicarea orala si scrisa) - realizator Asociatia RENINCO Romania</p>
-                <p>01.10.2019 - Asociatia Prietenii D.A.R.I.E.I. daruieste pentru copiii Scolii Gimnaziale Speciale nr 2, Bucuresti produse de la SC OMFAL EDUCATIONAL SRL constand in jocuri si materiale educative, printre care:  Calendarul naturii, Piramida alimentatiei sanatoase, Provocare gandire critica, Balanta din lemn cu talere</p>
-                <p>4.03.2020 -  “Matematica”  - Manual clasa a IV a pentru scoli speciale - ajutatoare, Editura Didactica si Pedagogica, Bucuresti 1994, * “Limba Romana” – Marioara Popescu  - Manual clasa a IV a pentru scoli speciale , pentru elevi cu deficiente mintale moderate, Editura Didactica si Pedagogica</p>
+                <ul>
+                  <li>21.03.2017 - Ziua Internationala a Sindromului Down- Asociatia Prietenii D.A.R.I.E.I. achizitioneaza kituri Montesori (”Descopar Literele” - kit de invatare rapida a scrisului si cititului la o varsta frageda, ”Descopar cifrele” - kit pentru invatarea numeratiei si pentru introducerea in aritmetica) in sprijinul unor copii cu Sindrom Down din cadrul Centrului de zi Down al Complexului de Servicii Sociale ”Sfanta Ecaterina”, apartinand Directiei Generale de Asistenta Sociala si Protectia Copilului Sector 1, Bucuresti.</li>
+                  <li>25.01.2018 - CAIETUL PENTRU DICTIE SI COMUNICARE - MINIGHID LOGOPEDIC - Autor Valeria Balaban, INDREPTAR PENTRU CORECTAREA DIFICULTATILOR DE SCRIS-CITIT LA COPII - Autori Mihai BOLDAN si Steluta BOLDAN</li>
+                  <li>11.07.2018 - SA VORBIM CU … PLACERE - carte autor coordonator prof dr Ecaterina VRASMAS, presedinta Asociatia RENINCO Romania, SA INVATAM CU … PLACERE - carte autor coordonator prof dr Ecaterina VRASMAS</li>
+                  <li>25.09.2019 - CAIETUL PENTRU DICTIE SI COMUNICARE - MINIGHID LOGOPEDIC - Autor Valeria Balaban, INDREPTAR PENTRU CORECTAREA DIFICULTATILOR DE SCRIS-CITIT LA COPII - Autori Mihai BOLDAN si Steluta BOLDAN, GHIDUL PRONUNTARII CORECTE LA COPII – Autor Mihai BOLDAN, SA INVATAM CU …PLACERE (Fise de excercitii logopedice in comunicarea orala si scrisa) - realizator Asociatia RENINCO Romania, SA VORBIM CU …PLACERE ((Fise de excercitii logopedice in comunicarea orala si scrisa) - realizator Asociatia RENINCO Romania</li>
+                  <li>01.10.2019 - Asociatia Prietenii D.A.R.I.E.I. daruieste pentru copiii Scolii Gimnaziale Speciale nr 2, Bucuresti produse de la SC OMFAL EDUCATIONAL SRL constand in jocuri si materiale educative, printre care:  Calendarul naturii, Piramida alimentatiei sanatoase, Provocare gandire critica, Balanta din lemn cu talere</li>
+                  <li>4.03.2020 -  “Matematica”  - Manual clasa a IV a pentru scoli speciale - ajutatoare, Editura Didactica si Pedagogica, Bucuresti 1994, * “Limba Romana” – Marioara Popescu  - Manual clasa a IV a pentru scoli speciale , pentru elevi cu deficiente mintale moderate, Editura Didactica si Pedagogica</li>
+                </ul>
               </div>
             }
-            height = "750px"
+            height="750px"
+            color="#2d4e97"
           />
           <Accordion
             title="Sarbatorile prin ochii copiilor nostri."
             content={
               <div>
-                <p></p>
-                <ul>
-                  <li></li>
-                </ul>
-
                 <p>Cu ocazia diverselor sarbatori de peste ani, Asociatia Asociatia Prietenii D.A.R.I.E.I. a pus bucurie in fiecare dar oferit copiilor speciali:</p>
-
                 <ul>
                   <li>6.06.2017 - 20 copii cu cerinte educationale speciale din cadrul Scolii Speciale nr 8, Bucuresti, primesc pachete cu daruri ” Mos Nicolae” constand in: 20 cani ceai cu  poze reni, 20 buc. fructe (banane si mandarine), 20 pungi dulciuri haribo, 20 pungi cadou;</li>
                   <li>14.12.2017 - ‘’Seara de aur a faptelor bune”, Sala Ronda – Parcul Tei, Bucuresti -  Asociatia Prietenii D.A.R.I.E.I. ofera celor 100 de copii cu nevoi speciale prezenti la eveniment cate o carte tridimensionala cu denumirea ”Mos Craciun si Ingerasii” sau ”Activitati vesele de Craciun cu abtipilduri si felicitari” – produse magazin Jumbo</li>
@@ -107,116 +110,96 @@ const Acasa = () => {
                   <li>03.06.2022 “FINAL DE-A SAPTEA!’’ Asociatia daruieste celor 11 copii cu nevoi speciale care invata in clasa a VII a A, la Scoala Gimnaziala Speciala nr 2, Bucuresti,  CARTI DE FABULE DESCALCITE- Copiii le vor primi in ziua de 8 iunie, cu ocazia sfarsitului de an scolar, clasa a VII a A. Un exemplar ramane la clasa. Total carti predate: 12 bucati</li>
                   <li>09.12.2022 - MOS NICOLAE IN SCOALA’’ - Asociatia achizitioneaza pentru cei 12 copii cu nevoi speciale care invata in clasa a VIII a A, la Scoala Gimnaziala Speciala nr 2, Bucuresti, daruri pe care copiii clasei le vor primi in data de 06 decembrie 2022. Darurile constau in dulciuri si mici obiecte cu specific de iarna, alaturi de rechizite precum caiete si stilouri</li>
                   <li>08.12.2022 – pentru ca ‘’Prietenii D.A.R.I.E.I.’’ iubesc colindele, corul SUNETE VESELE – apartinand Cantus MUNDI, va colinda, prin cei 20 copii ai corului, la orele pranzului, Scoala Gimnaziala Speciala nr. 2, la sediul sau din strada Popa Petre, Bucuresti, ocazie cu care Asociatia intampina colindatorii cu daruri de iarna.</li>
-                
+
                 </ul>
-                
+
               </div>
             }
-            height = "600px"
+            height="1700px"
+            color="#5f4296"
           />
           <Accordion
             title="Dezvoltare prin miscare si inot."
             content={
               <div>
-                 <li>01.05.2018 – Asociatia Prietenii D.A.R.I.E.I. acopera costurile legate de sedintele de inot pentru copii diagnosticati cu Sindrom Down, sedinte de inot care se desfasoara in incinta CLUB FLOREASCA, din B-dul Mircea Eliade, Sector 1, Bucuresti. Beneficiari 2 copii speciali.</li>
-                 <li>10.10.2018 - Asociatia Prietenii D.A.R.I.E.I. suporta costurile legate de participarea unor copii cu Sindrom Down la activitatea sportiva numita ”body fly”, un serviciu de agrement sportiv ce se desfasoara in perioada 23 octombrie – 17 noiembrie 2018, in incinta bazei sportive ”Dinu Pescariu” , cu frecventa de 2 ori pe saptamana, conform contract incheiat intre parti. Beneficiari 3 copii speciali.</li>
-                 <li>04.11.2018 Asociatia Prietenii D.A.R.I.E.I. este coorganizator al unui eveniment de tip sportiv, ce consta in escaladarea unui perete vertical interior, locatie  BLOKX Climbing Gym – Soseaua Fabrica de Glucoza nr. 15, Bucuresti, alaturi de alte asociatii organizatoare si participante: - Asociatia 321UP Bucuresti, - Asociatia Spontania Bucuresti –  specialisti terapeuti pe terapie comportamentala, - dna Maricica Ladaru - ventriloc si terapeut logoped. Beneficiari - 6 copii cu sindrom Down, 4 frati si 6 parinti insotitori.</li>
-                 <li>20.01.2019 – a doua editie de escaladare perete vertical interior – Beneficiari: 15 copii cu Sindrom Down, frati si parinti, insotitori, locatie: BLOKX Climbing Gym – Soseaua Fabrica de Glucoza nr. 15, Bucuresti, alaturi de alte asociatii organizatoare si participante: - Asociatia 321UP Bucuresti. BLOKX Climbing Gym pune la dispozitie sala si antrenor de catarat. Asociatia PRIETENII D.A.R.I.E.I. sustine o parte din contravaloarea intrarii copiilor cu Sindrom Down la acest eveniment, respectiv o parte din cheltuielile de protocol.</li>
-                 <li>01.07.2019 - Asociatia Prietenii D.A.R.I.E.I. acopera noile costuri legate de sedintele de inot pentru copii diagnosticati cu Sindrom Down, practicate de la 1 iulie 2019 in incinta locatiei CLUB FLOREASCA, din B-dul Mircea Eliade, Sector 1, Bucuresti. </li>
-                 <li>12.2019 - Asociatia achizitioneaza de la SC ROUMASPORT SRL (DECATHLON) si va preda, cu titlu gratuit, reprezentantilor Scolii Gimnaziale Speciale nr 2, o scara flexibila de antrenament sportiv, care va intra in dotarea salii de sport a scolii.</li>
-                 <li>1.07.2021 – HIDROKINETOTERAPIE - sedinte de inot cu instructor specializat, se desfasoara la CLUBUL SPORTIV DINAMO, in perioada iulie-august 2021, cu o frecventa de doua ori pe saptamana/copil. Beneficiari 3 copii cu Sindrom Down.</li>
-                 <li>2.06.2022 - HIDROKINETOTERAPIE  - sedinte de inot cu instructor specializat, se desfasoara la CLUBUL SPORTIV DINAMO, in perioada iulie-septembrie 2022, cu o frecventa de doua ori pe saptamana/copil. Beneficiari 3 copii cu Sindrom Down.</li>
-                
+                <li>01.05.2018 – Asociatia Prietenii D.A.R.I.E.I. acopera costurile legate de sedintele de inot pentru copii diagnosticati cu Sindrom Down, sedinte de inot care se desfasoara in incinta CLUB FLOREASCA, din B-dul Mircea Eliade, Sector 1, Bucuresti. Beneficiari 2 copii speciali.</li>
+                <li>10.10.2018 - Asociatia Prietenii D.A.R.I.E.I. suporta costurile legate de participarea unor copii cu Sindrom Down la activitatea sportiva numita ”body fly”, un serviciu de agrement sportiv ce se desfasoara in perioada 23 octombrie – 17 noiembrie 2018, in incinta bazei sportive ”Dinu Pescariu” , cu frecventa de 2 ori pe saptamana, conform contract incheiat intre parti. Beneficiari 3 copii speciali.</li>
+                <li>04.11.2018 Asociatia Prietenii D.A.R.I.E.I. este coorganizator al unui eveniment de tip sportiv, ce consta in escaladarea unui perete vertical interior, locatie  BLOKX Climbing Gym – Soseaua Fabrica de Glucoza nr. 15, Bucuresti, alaturi de alte asociatii organizatoare si participante: - Asociatia 321UP Bucuresti, - Asociatia Spontania Bucuresti –  specialisti terapeuti pe terapie comportamentala, - dna Maricica Ladaru - ventriloc si terapeut logoped. Beneficiari - 6 copii cu sindrom Down, 4 frati si 6 parinti insotitori.</li>
+                <li>20.01.2019 – a doua editie de escaladare perete vertical interior – Beneficiari: 15 copii cu Sindrom Down, frati si parinti, insotitori, locatie: BLOKX Climbing Gym – Soseaua Fabrica de Glucoza nr. 15, Bucuresti, alaturi de alte asociatii organizatoare si participante: - Asociatia 321UP Bucuresti. BLOKX Climbing Gym pune la dispozitie sala si antrenor de catarat. Asociatia PRIETENII D.A.R.I.E.I. sustine o parte din contravaloarea intrarii copiilor cu Sindrom Down la acest eveniment, respectiv o parte din cheltuielile de protocol.</li>
+                <li>01.07.2019 - Asociatia Prietenii D.A.R.I.E.I. acopera noile costuri legate de sedintele de inot pentru copii diagnosticati cu Sindrom Down, practicate de la 1 iulie 2019 in incinta locatiei CLUB FLOREASCA, din B-dul Mircea Eliade, Sector 1, Bucuresti. </li>
+                <li>12.2019 - Asociatia achizitioneaza de la SC ROUMASPORT SRL (DECATHLON) si va preda, cu titlu gratuit, reprezentantilor Scolii Gimnaziale Speciale nr 2, o scara flexibila de antrenament sportiv, care va intra in dotarea salii de sport a scolii.</li>
+                <li>1.07.2021 – HIDROKINETOTERAPIE - sedinte de inot cu instructor specializat, se desfasoara la CLUBUL SPORTIV DINAMO, in perioada iulie-august 2021, cu o frecventa de doua ori pe saptamana/copil. Beneficiari 3 copii cu Sindrom Down.</li>
+                <li>2.06.2022 - HIDROKINETOTERAPIE  - sedinte de inot cu instructor specializat, se desfasoara la CLUBUL SPORTIV DINAMO, in perioada iulie-septembrie 2022, cu o frecventa de doua ori pe saptamana/copil. Beneficiari 3 copii cu Sindrom Down.</li>
+
               </div>
             }
-            height = "600px"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            height="1000px"
+            color="#9a3794"
           />
           <Accordion
             title="Conferinte. Cursuri."
             content={
               <div>
-                <li>26-27.10.2018 - Asociatia Prietenii D.A.R.I.E.I. este prezenta la conferinta ”ACCES SI PARTICIPARE LA EDUCATIE PENTRU PERSOANELE CU DIZABILITATI” – ce se desfasoara la hotel International, Bucuresti (conferinta organizata de CNDR (Consiliul National sl Dizabilitatii din Romania) si ASOCIATIA RENINCO Romania (Retea Nationala de Informare si Cooperare pentru integrarea in comunitate a copiilor si tinerilor cu cerinte Educationale Speciale). Asociatia Prietenii D.A.R.I.E.I. devine membru RENINCO, incepand cu anul 2018, suportand contravaloarea cotizatiei anuale de membru.</li>
-                <li>09.07.2019 - Asociatia Prietenii D.A.R.I.E.I. achizitioneaza accesul permanent la cursuri online de parenting sustinute de doamna Urania Cremene, unul dintre cei mai apreciati experti in parenting din Romania, cu multe acreditari in domeniu, nationale si internationale. Cursurile on line sunt achizitionate de Asociatie in folosul imbunatatirii relatiei dintre parinti si copii cu Sindrom Down, respectiv cresterii calitatii interactiunii sociale dintre un copil cu Sindrom Down si un alt copil cu/fara Sindrom Down. Aceste cursuri sunt urmatoarele: ”Conficte intre copii” si ”All About Parenting” (AAP), ambele furnizate de catre SC EDU Parenting SRL.</li>
-                <li> - Asociatia propune parintilor cu copii speciali, ori de cate ori are ocazia, cursuri de dezvoltare personala, cursuri de buna relationare intre copii si parinti, cursuri de gestionare corecta a emotiilor copiilor samd, cursuri in majoritatea lor gratuite, care se desfasoara online, in deosebi, de catre persoane acreditate in domeniu. </li>
-                
-
-
-
-         />
+                <ul>
+                  <li>26-27.10.2018 - Asociatia Prietenii D.A.R.I.E.I. este prezenta la conferinta ”ACCES SI PARTICIPARE LA EDUCATIE PENTRU PERSOANELE CU DIZABILITATI” – ce se desfasoara la hotel International, Bucuresti (conferinta organizata de CNDR (Consiliul National sl Dizabilitatii din Romania) si ASOCIATIA RENINCO Romania (Retea Nationala de Informare si Cooperare pentru integrarea in comunitate a copiilor si tinerilor cu cerinte Educationale Speciale). Asociatia Prietenii D.A.R.I.E.I. devine membru RENINCO, incepand cu anul 2018, suportand contravaloarea cotizatiei anuale de membru.</li>
+                  <li>09.07.2019 - Asociatia Prietenii D.A.R.I.E.I. achizitioneaza accesul permanent la cursuri online de parenting sustinute de doamna Urania Cremene, unul dintre cei mai apreciati experti in parenting din Romania, cu multe acreditari in domeniu, nationale si internationale. Cursurile on line sunt achizitionate de Asociatie in folosul imbunatatirii relatiei dintre parinti si copii cu Sindrom Down, respectiv cresterii calitatii interactiunii sociale dintre un copil cu Sindrom Down si un alt copil cu/fara Sindrom Down. Aceste cursuri sunt urmatoarele: ”Conficte intre copii” si ”All About Parenting” (AAP), ambele furnizate de catre SC EDU Parenting SRL.</li>
+                  <li> - Asociatia propune parintilor cu copii speciali, ori de cate ori are ocazia, cursuri de dezvoltare personala, cursuri de buna relationare intre copii si parinti, cursuri de gestionare corecta a emotiilor copiilor samd, cursuri in majoritatea lor gratuite, care se desfasoara online, in deosebi, de catre persoane acreditate in domeniu. </li>
+                </ul>
+              </div>}
+            height="500px"
+            color="#bc2d68"
+          />
           <Accordion
             title="Socializare prin muzica, dans si film."
             content={
               <div>
-              <p>Asociatia Prietenii D.A.R.I.E.I. ofera unor copii cu nevoi speciale cadrul propice de socializare, fie prin participarea la evenimente socio-culturale, aflate in zona lor de interes, fie prin implicarea lor in cursuri de dans, fie prin ‘’iesiri’ la film, care se dovedesc a fi extrem de iubite de ei.</p>
-                <li>04.12. 2019 - GASCA ZURLI, Sala Palatului din Bucuresti, orele 19:00, pentru patru copii cu Sindrom Down si insotitorii acestora, biletele achizitionate online, site www.bilete.ro, de la SC DEPARTAMENTUL LOGISTIC EVENT SRL</li>
-                <li>noiembrie 2019 - contractare cursuri de dans in folosul copiilor cu SindromDown, prin Asociatia “Copiii au talent’’</li>
-                <li>28.11.2019 - orga electronica YAHAMA PSR-F51, cu stativ, casti si adaptor orga, in fbeneficiul copiilor cu nevoi speciale din Scoala Speciala Gimnaziala nr. 2, Bucuresti, pentru orele de MELOTERAPIE. Furnizor:SC MEDIA CRUSHER SRL (Sound Creation) </li>
-                <li>21.03.2022 -“ZIUA INTERNATIONALA A COPIILOR CU SINDROM DOWN - La film’’-Pentru marcarea acestei zile speciale pentru copiii cu sindrom down, Asociatia decide sa sustina costurile legate de vizionarea unui film la mall a unui grup de copii cu sindrom down, cu accent pe interactiunea sociala, cresterea conectivitatii, imbunatatirea starii de spirit. </li>
-                <li>1 iunie 2022, ora 18:00 – spectacol GASCA ZURLI, Arenele Romane, Bucuresti, Biletele sunt luate de pe platforma iabilet.ro. Beneficiari 10 copii speciali si insotitorii lor.</li>
-                <li>17.09.2022, ora 18:00 – spectacol ANDRA GOGAN, Arenele Romane, Bucuresti  Biletele sunt luate de pe platforma iabilet.ro. Beneficiari 7 copii speciali si insotitorii lor.</l0i>
-                <li>04.12.2022, ora 15:30 - spectacol IULIANA BEREGOI, Sala Palatului, Bucuresti, Biletele sunt luate de pe platforma iabilet.ro. Beneficiari 8 copii speciali si insotitorii lor.</li>
-                <li>02.12.2022 - “O ZI PETRECUTA IMPREUNA”. Militand pentru integrarea in comunitate a copiilor cu  Sindrom Down, Prietenii D.A.R.I.E.I. invita copii sa-si petreaca timp impreuna la locul de joaca “HYPE ARENA” Romexpo, respectiv la Cineplexx Baneasa, la filmul Motanul Incaltat.</li>
-                <li></li>
-
-
-
+                <p>Asociatia Prietenii D.A.R.I.E.I. ofera unor copii cu nevoi speciale cadrul propice de socializare, fie prin participarea la evenimente socio-culturale, aflate in zona lor de interes, fie prin implicarea lor in cursuri de dans, fie prin ‘’iesiri’ la film, care se dovedesc a fi extrem de iubite de ei.</p>
+                <ul>
+                  <li>04.12. 2019 - GASCA ZURLI, Sala Palatului din Bucuresti, orele 19:00, pentru patru copii cu Sindrom Down si insotitorii acestora, biletele achizitionate online, site www.bilete.ro, de la SC DEPARTAMENTUL LOGISTIC EVENT SRL</li>
+                  <li>noiembrie 2019 - contractare cursuri de dans in folosul copiilor cu SindromDown, prin Asociatia “Copiii au talent’’</li>
+                  <li>28.11.2019 - orga electronica YAHAMA PSR-F51, cu stativ, casti si adaptor orga, in fbeneficiul copiilor cu nevoi speciale din Scoala Speciala Gimnaziala nr. 2, Bucuresti, pentru orele de MELOTERAPIE. Furnizor:SC MEDIA CRUSHER SRL (Sound Creation) </li>
+                  <li>21.03.2022 -“ZIUA INTERNATIONALA A COPIILOR CU SINDROM DOWN - La film’’-Pentru marcarea acestei zile speciale pentru copiii cu sindrom down, Asociatia decide sa sustina costurile legate de vizionarea unui film la mall a unui grup de copii cu sindrom down, cu accent pe interactiunea sociala, cresterea conectivitatii, imbunatatirea starii de spirit. </li>
+                  <li>1 iunie 2022, ora 18:00 – spectacol GASCA ZURLI, Arenele Romane, Bucuresti, Biletele sunt luate de pe platforma iabilet.ro. Beneficiari 10 copii speciali si insotitorii lor.</li>
+                  <li>17.09.2022, ora 18:00 – spectacol ANDRA GOGAN, Arenele Romane, Bucuresti  Biletele sunt luate de pe platforma iabilet.ro. Beneficiari 7 copii speciali si insotitorii lor.</li>
+                  <li>04.12.2022, ora 15:30 - spectacol IULIANA BEREGOI, Sala Palatului, Bucuresti, Biletele sunt luate de pe platforma iabilet.ro. Beneficiari 8 copii speciali si insotitorii lor.</li>
+                  <li>02.12.2022 - “O ZI PETRECUTA IMPREUNA”. Militand pentru integrarea in comunitate a copiilor cu  Sindrom Down, Prietenii D.A.R.I.E.I. invita copii sa-si petreaca timp impreuna la locul de joaca “HYPE ARENA” Romexpo, respectiv la Cineplexx Baneasa, la filmul Motanul Incaltat.</li>
+                </ul>
+              </div>}
+            height="800px"
+            color="#f1592a"
+          />
           <Accordion
             title="IT–ul, indragit si de copiii speciali"
-"
             content={
               <div>
-                <p>Asociatia Prietenii D.A.R.I.E.I. suporta costurile de achizitie pentru urmatoarele materiale de tehnica vizuala, cu scop de suport educational, dar si socio-integrator, pentru copii cu nevoi speciale, copii cu sindrom down, din clasa a VI a A, Scoala Gimnaziala Speciala nr. 2, Bucuresti:
+                <p>Asociatia Prietenii D.A.R.I.E.I. suporta costurile de achizitie pentru urmatoarele materiale de tehnica vizuala, cu scop de suport educational, dar si socio-integrator, pentru copii cu nevoi speciale, copii cu sindrom down, din clasa a VI a A, Scoala Gimnaziala Speciala nr. 2, Bucuresti:</p>
                 <p>15.12.2020</p>
+                <ul>
                   <li>DISPLAY INTERACTIV SMART BOARD MX265-V2 EDUCATIONAL 65”, 16:10</li>
                   <li>Furnizor: 24 EVONESS SRL, asigura ore de consultanta in utilizarea acestui echipament IT</li>
                   <li>Aceasta tabla smart interactiva este folosita cu succes de catre profesorii clasei si s-a dovedit extrem de utila si indragita de copii.</li>
+                </ul>
                 <p>11.03.2021 </p>
+                <ul>
                   <li>TABLA MAGNETICA ALBA VISUAL 120*220 cm (cu accesorii markere, burete, magneti, spray curatare),</li>
                   <li>Furnizor: ABSOLUT OFFICE ONLINE SRL</li>
-                <p>20.12.2021</p>
-                   <li>3 TABLETE LENOVO TAB M10 TB-X606X 10.3 32GB 2GB RAM W-FI si husele aferente pentru copii cu nevoi speciale, din  Scoala Gimnaziala Speciala nr 2, Bucuresti. Achizitia este facuta de la magazinul ‘’Altex’’.</li>
-                  
-<Accordion
-            title="Prin urmare, ‘’Prietenii D.A.R.I.E.I.’’ isi traiesc visul: sa o ajute pe DARIA si pe cei asemeni ei, nascuti cu acest fel de a fi numit Sindrom Down.
-."
-            content={
-              <div>
-                 <p>Acesti copii declanseaza in noi procese permanente de cultivare interioara a rabdarii si a empatiei, ne reactiveaza resorturile de echilibru si forta interioara. </p>
-                 <p>Acesti copii, prin iubirea pe care ne-o intorc, chiar sunt speciali, asa cum este trifoiul cu patru foi in lanul de trifoi…aparte. Nu este intotdeauna usor, mai pierdem uneori busola rabdarii si cand uitam sa zambim, copiii nostri speciali ne predau din nou si din nou lectia iubirii, prin imbratisarile lor, caci, te asiguram: cu greu gasesti pe lumea asta copii dornici sa-ti arate permanent iubirea, asa cum o fac copiii cu Sindrom Down! Pur si simplu, iti cuprind obrajii in maini si te saruta pana uiti de toate …</p>
-                 <p>De aici ne luam energia de a continua!</p>
-                
-
-
-
-
-
-
-
-
-
-
-
-
-                  
-                  
-                <ul>
-                  <li></li>
-                <li></li>
-                <li></li>
-                   <p></p>
-
-              
                 </ul>
-              </div>
-            }
-            height = "600px"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                <p>20.12.2021</p>
+                <ul>
+                  <li>3 TABLETE LENOVO TAB M10 TB-X606X 10.3 32GB 2GB RAM W-FI si husele aferente pentru copii cu nevoi speciale, din  Scoala Gimnaziala Speciala nr 2, Bucuresti. Achizitia este facuta de la magazinul ‘’Altex’’.</li>
+                </ul>
+              </div>}
+            height="600px"
+            color="#f1b02a"
           />
-
         </div>
       </div>
 
+      <div className="signoff">
+        <h5>Prin urmare, "Prietenii D.A.R.I.E.I." isi traiesc visul: sa o ajute pe DARIA si pe cei asemeni ei, nascuti cu acest fel de a fi numit Sindrom Down..</h5>
+        <p>Acesti copii declanseaza in noi procese permanente de cultivare interioara a rabdarii si a empatiei, ne reactiveaza resorturile de echilibru si forta interioara.</p>
+        <p>De aici ne luam energia de a continua!</p>
+      </div>
     </div>
   )
 }

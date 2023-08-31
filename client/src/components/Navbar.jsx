@@ -14,7 +14,7 @@ const Navbar = () => {
                         Acasa
                     </NavLink>
                     <NavLink to="/campanii" className={({ isActive }) => isActive? "link active": 'link'}>
-                        Campanii
+                        Scrisori catre prieteni
                     </NavLink>
                     <NavLink to="/galerie" className={({ isActive }) => isActive? "link active": 'link'}>
                         Galerie
