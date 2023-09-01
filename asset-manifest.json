@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SiteAsociatie/static/css/main.5480b9ed.css",
-    "main.js": "/SiteAsociatie/static/js/main.f7c72531.js",
-    "static/media/logo_white.png": "/SiteAsociatie/static/media/logo_white.5c1c91d3bf8d6e547f2c.png",
-    "static/media/logo_transparent.png": "/SiteAsociatie/static/media/logo_transparent.4a7ba85e531d8c5fa79c.png",
-    "static/media/fetita.png": "/SiteAsociatie/static/media/fetita.f826257e899accc526f4.png",
-    "static/media/defaultNoImgPost.jpg": "/SiteAsociatie/static/media/defaultNoImgPost.a58279dcfc5b71489fc0.jpg",
-    "index.html": "/SiteAsociatie/index.html",
-    "main.5480b9ed.css.map": "/SiteAsociatie/static/css/main.5480b9ed.css.map",
-    "main.f7c72531.js.map": "/SiteAsociatie/static/js/main.f7c72531.js.map"
+    "main.css": "/static/css/main.5480b9ed.css",
+    "main.js": "/static/js/main.1a139a5d.js",
+    "static/media/logo_white.png": "/static/media/logo_white.5c1c91d3bf8d6e547f2c.png",
+    "static/media/logo_transparent.png": "/static/media/logo_transparent.4a7ba85e531d8c5fa79c.png",
+    "static/media/fetita.png": "/static/media/fetita.f826257e899accc526f4.png",
+    "static/media/defaultNoImgPost.jpg": "/static/media/defaultNoImgPost.a58279dcfc5b71489fc0.jpg",
+    "index.html": "/index.html",
+    "main.5480b9ed.css.map": "/static/css/main.5480b9ed.css.map",
+    "main.1a139a5d.js.map": "/static/js/main.1a139a5d.js.map"
   },
   "entrypoints": [
     "static/css/main.5480b9ed.css",
-    "static/js/main.f7c72531.js"
+    "static/js/main.1a139a5d.js"
   ]
 }
