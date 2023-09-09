@@ -3,7 +3,6 @@ import "./style.scss"
 
 import {
     createBrowserRouter,
-    createHashRouter,
     Outlet,
     RouterProvider,
 } from "react-router-dom";
