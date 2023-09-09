@@ -100,7 +100,6 @@ const Single = () => {
           </ModalGateway>
         </div>
       </div>
-      {/* <Menu cat={post.cat} /> */}
     </div>
   )
 }

@@ -5,7 +5,8 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <div className="navbar">
-            <div className="container">
+            <div className='centeredCont'>
+                <div className="container">
                 <div className="logo">
                     <img src={Logo} alt="logo" />
                 </div>
@@ -27,7 +28,9 @@ const Navbar = () => {
                     </NavLink>
                 </div>
             </div>
-            <div className='colorband'></div>
+           <div className='colorband'></div>
+            </div>
+            
         </div>
     )
 }
