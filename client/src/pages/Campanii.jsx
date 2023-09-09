@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import DefaultNoPostPic from "../resources/defaultNoImgPost.jpg"
 import { Link } from 'react-router-dom'
 import axios from "axios";
+import { apiUrl } from '../App';
 
 const Campanii = () => {
 
@@ -15,7 +16,7 @@ const Campanii = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/posts`)
+        const res = await axios.get(apiUrl + `/posts`)
         setPosts(res.data)
       } catch (err) {
         console.log(err)

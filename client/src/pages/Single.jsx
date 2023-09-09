@@ -13,6 +13,7 @@ import DOMPurify from "dompurify";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
+import { apiUrl } from '../App';
 
 const Single = () => {
   const [post, setPost] = useState({})
@@ -41,7 +42,7 @@ const Single = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/posts/${postId}`)
+        const res = await axios.get(apiUrl + `/posts/${postId}`)
         console.log(res)
         setPost(res.data)
       } catch (err) {

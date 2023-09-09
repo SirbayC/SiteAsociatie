@@ -49,6 +49,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy" : "https://siteasoc-5a3760f692b7.herokuapp.com/api/"
+  }
 }
