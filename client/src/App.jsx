@@ -2,6 +2,7 @@ import React from 'react'
 import "./style.scss"
 
 import {
+    createBrowserRouter,
     createHashRouter,
     Outlet,
     RouterProvider,
@@ -33,7 +34,7 @@ const Layout = () => {
     )
 }
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout />,
