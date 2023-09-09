@@ -1,24 +1,28 @@
-import {db} from "../db.js"
+import { db } from "../db.js"
 import jwt from "jsonwebtoken"
 
 export const getPosts = async (req, res) => {
-    const q = "SELECT * FROM posts"
-    
-    const posts = await db`
-        SELECT * FROM posts
-    `
-    return res.status(200).json(posts)
+    try {
+        const posts = await db `SELECT * FROM posts`
+        return res.status(200).json(posts)
+    }
+    catch (err) {
+        return res.status(500).json("Server error - db comm")
+    }
 }
 
-// export const getPost = (req, res) => {
-//     const q = "SELECT * FROM posts WHERE `id` = ?"
+export const getPost = async (req, res) => {
+    try {
+        const posts = await db `SELECT * FROM posts WHERE id = ${req.params.id}`
+        if (!posts[0]) 
+            return res.status(404).json("No post with that id")
+        return res.status(200).json(posts[0])
+    }
+    catch (err) {
+        return res.status(500).json("Server error - db comm")
+    }
 
-//     db.query(q, [req.params.id], (err, data)=>{
-//         if(err) return res.status(500).json(err)
-//         if(!data[0]) return res.status(404).json("No post with that id")
-//         return res.status(200).json(data[0])
-//     })
-// }
+}
 
 // export const addPost = (req, res) => {
 //     const token = req.cookies.access_token
@@ -40,7 +44,7 @@ export const getPosts = async (req, res) => {
 //         db.query(q, [values], (err,data) => {
 //             if(err){
 //                 return res.status(500).json(err)
-//             } 
+//             }
 //             return res.status(200).json("Post has been created")
 //         })
 //     })

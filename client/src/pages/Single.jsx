@@ -42,6 +42,7 @@ const Single = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(`/posts/${postId}`)
+        console.log(res)
         setPost(res.data)
       } catch (err) {
         console.log(err)
