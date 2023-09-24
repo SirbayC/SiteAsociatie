@@ -88,5 +88,4 @@ const App = () => {
     )
 }
 
-export const apiUrl = "https://siteasoc-5a3760f692b7.herokuapp.com/api"
 export default App
