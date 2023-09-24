@@ -1,0 +1,3 @@
+[submodule "SiteAsociatieAPI"]
+	path = SiteAsociatieAPI
+	url = https://github.com/SirbayC/SiteAsociatieAPI
