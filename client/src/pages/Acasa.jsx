@@ -17,7 +17,7 @@ const Acasa = () => {
     <div className="acasa">
       <div className="centeredAcasa">
         <div className='generalPresentation'>
-          <h2>Aacestia suntem noi:</h2>
+          <h2>Acestia suntem noi:</h2>
           <div className="paragraphs">
             <div className="parCol">
               <p>{'\t'}Asociatia Prietenii D.A.R.I.E.I. suntem noi, o asociatie mica cu suflet urias, asa cum este cel al Dariei, fetita noastra care s-a nascut cu acest fel de-a fi numit Sindrom Down.</p>
