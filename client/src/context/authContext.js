@@ -6,26 +6,32 @@ export const AuthContext = createContext();
 export const AuthContexProvider = ({ children }) => {
   // const navigate = useNavigate()
 
-  const [currentUser, setCurrentUser] = useState(
-    JSON.parse(localStorage.getItem("user")) || null
+  const [user, setUser] = useState(
+    JSON.parse(sessionStorage.getItem("user")) || "regularUser"
+  );
+
+  const [accessToken, setAccessToken] = useState(
+    JSON.parse(sessionStorage.getItem("accessToken")) || null
   );
 
   const login = async (inputs) => {
-    const res = await axios.post(process.env.REACT_APP_API_URL + "/auth/login", inputs);
-    setCurrentUser(res.data);
+    const res = await axios.post(process.env.REACT_APP_API_URL + "auth/login", inputs);
+    setUser(res.data.user);
+    setAccessToken(res.data.accessToken);
   };
 
-  const logout = async (inputs) => {
-    await axios.post(process.env.REACT_APP_API_URL + "/auth/logout");
-    setCurrentUser(null);
+  const logout = async () => {
+    setUser(null);
+    setAccessToken(null);
   };
 
   useEffect(() => {
-    localStorage.setItem("user", JSON.stringify(currentUser));
-  }, [currentUser]);
+    sessionStorage.setItem("user", JSON.stringify(user));
+    sessionStorage.setItem("accessToken", JSON.stringify(accessToken));
+  }, [user, accessToken]);
 
   return (
-    <AuthContext.Provider value={{ currentUser, login, logout }}>
+    <AuthContext.Provider value={{ user, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
