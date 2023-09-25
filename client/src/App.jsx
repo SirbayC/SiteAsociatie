@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./style.scss"
 
 import {
@@ -22,6 +22,8 @@ import Write from "./pages/Write"
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import axios from 'axios';
+
 
 const Layout = () => {
     return (
@@ -79,6 +81,21 @@ const router = createHashRouter([
 ]);
 
 const App = () => {
+    console.log(`Starting frontend and connecting to backend via ${process.env.REACT_APP_API_URL}`)
+    const[connected, setConnected] = useState("")
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+              const res = await axios.get(process.env.REACT_APP_API_URL)
+              setConnected(res.data)
+            } catch (err) {
+              console.log(err)
+            }
+          }
+          fetchData()
+    }, [])
+    console.log(`Backend said: ${connected}`)
+
     return (
         <div className='app'>
             <div className='container'>

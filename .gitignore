@@ -2,7 +2,9 @@ node_modules
 *.lock
 *.docx
 *.env
+envs
 external
 build
 SecureLocal
 certificates
+cert
