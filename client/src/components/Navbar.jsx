@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Logo from "../resources/logo_transparent.png"
+import User from "../resources/user.png"
 import { NavLink } from 'react-router-dom'
+import { AuthContext } from '../context/authContext';
 
 const Navbar = () => {
+    const { user,accessToken, login, logout  } = useContext(AuthContext)
+
+    // console.log(user)
+    // console.log(accessToken)
+    // console.log(login)
+    console.log(process.env.REACT_APP_ADMIN_USERNAME)
+    // console.log(logout)
+
+    const handleLogout = () => {
+        logout()
+    }
+
     return (
         <div className="navbar">
             <div className='centeredCont'>
@@ -26,6 +40,12 @@ const Navbar = () => {
                     <NavLink to="/autorizari" className={({ isActive }) => isActive? "link active": 'link'}>
                         Autorizari
                     </NavLink>
+                    {user===process.env.REACT_APP_ADMIN_USERNAME && 
+                        <div>
+                            <img src={User} alt="" className='userImg' />
+                            <button onClick={handleLogout}>Logout</button>
+                        </div>
+                    }
                 </div>
             </div>
            <div className='colorband'></div>

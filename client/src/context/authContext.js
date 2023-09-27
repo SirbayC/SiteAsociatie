@@ -7,7 +7,7 @@ export const AuthContexProvider = ({ children }) => {
   // const navigate = useNavigate()
 
   const [user, setUser] = useState(
-    JSON.parse(sessionStorage.getItem("user")) || "regularUser"
+    JSON.parse(sessionStorage.getItem("user")) || process.env.REACT_APP_REGULAR_USERNAME
   );
 
   const [accessToken, setAccessToken] = useState(
@@ -21,7 +21,7 @@ export const AuthContexProvider = ({ children }) => {
   };
 
   const logout = async () => {
-    setUser(null);
+    setUser(process.env.REACT_APP_REGULAR_USERNAME);
     setAccessToken(null);
   };
 
@@ -31,7 +31,7 @@ export const AuthContexProvider = ({ children }) => {
   }, [user, accessToken]);
 
   return (
-    <AuthContext.Provider value={{ user, login, logout }}>
+    <AuthContext.Provider value={{ user,accessToken, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
