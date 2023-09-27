@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ac19fc16.css",
-    "main.js": "/static/js/main.fbff5c7d.js",
+    "main.js": "/static/js/main.8ce49c68.js",
     "static/media/logo_white.png": "/static/media/logo_white.5c1c91d3bf8d6e547f2c.png",
     "static/media/logo_transparent.png": "/static/media/logo_transparent.4a7ba85e531d8c5fa79c.png",
     "static/media/fetita.png": "/static/media/fetita.f826257e899accc526f4.png",
@@ -9,10 +9,10 @@
     "static/media/defaultNoImgPost.jpg": "/static/media/defaultNoImgPost.a58279dcfc5b71489fc0.jpg",
     "index.html": "/index.html",
     "main.ac19fc16.css.map": "/static/css/main.ac19fc16.css.map",
-    "main.fbff5c7d.js.map": "/static/js/main.fbff5c7d.js.map"
+    "main.8ce49c68.js.map": "/static/js/main.8ce49c68.js.map"
   },
   "entrypoints": [
     "static/css/main.ac19fc16.css",
-    "static/js/main.fbff5c7d.js"
+    "static/js/main.8ce49c68.js"
   ]
 }
