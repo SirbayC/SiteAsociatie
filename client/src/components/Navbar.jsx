@@ -5,11 +5,12 @@ import { NavLink } from 'react-router-dom'
 import { AuthContext } from '../context/authContext';
 
 const Navbar = () => {
-    const { user,accessToken, login, logout  } = useContext(AuthContext)
+    const { user, logout  } = useContext(AuthContext)
 
     const handleLogout = () => {
         logout()
     }
+
 
     return (
         <div className="navbar">

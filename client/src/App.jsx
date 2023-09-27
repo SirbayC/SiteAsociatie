@@ -96,6 +96,10 @@ const App = () => {
     }, [])
     console.log(`Backend said: ${connected}`)
 
+    useEffect(() => {
+        document.title = 'Asociatia Prietenii D.A.R.I.E.I.';
+    }, []);
+
     return (
         <div className='app'>
             <div className='container'>
