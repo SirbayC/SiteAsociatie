@@ -7,12 +7,6 @@ import { AuthContext } from '../context/authContext';
 const Navbar = () => {
     const { user,accessToken, login, logout  } = useContext(AuthContext)
 
-    // console.log(user)
-    // console.log(accessToken)
-    // console.log(login)
-    console.log(process.env.REACT_APP_ADMIN_USERNAME)
-    // console.log(logout)
-
     const handleLogout = () => {
         logout()
     }
