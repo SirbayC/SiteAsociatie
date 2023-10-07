@@ -41,7 +41,7 @@ const Single = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(process.env.REACT_APP_API_URL + `/posts/${postId}`)
+        const res = await axios.get(process.env.REACT_APP_API_URL + `posts/${postId}`)
         console.log(res)
         setPost(res.data)
       } catch (err) {

@@ -15,7 +15,7 @@ const Campanii = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(process.env.REACT_APP_API_URL + `/posts`)
+        const res = await axios.get(process.env.REACT_APP_API_URL + `posts`)
         setPosts(res.data)
       } catch (err) {
         console.log(err)
@@ -23,6 +23,8 @@ const Campanii = () => {
     }
     fetchData()
   }, [])
+
+  console.log(posts)
 
   return (
     <div className='campanii'>
