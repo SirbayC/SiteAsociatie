@@ -16,7 +16,7 @@ const Campanii = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(process.env.REACT_APP_API_URL + `posts`)
-        setPosts(res.data)
+        setPosts(res.data.sort((a, b) => a.id - b.id))
       } catch (err) {
         console.log(err)
       }
@@ -24,18 +24,12 @@ const Campanii = () => {
     fetchData()
   }, [])
 
-  console.log(posts)
-
   return (
     <div className='campanii'>
       <div className="posts">
-        {posts.map(post => (
-          <div className="post" key={post.id}>
-            <div className="img">
-              {/*todo: define how pics are handled*/}
-              {post.img ? <img src={`../uploads/${post.img}`} alt="" /> : <img src={DefaultNoPostPic} alt="imagine postare" />}
-            </div>
-            <div className="content">
+        {posts.map((post, index) => (
+          <React.Fragment key={post.id}>
+            <div className="post">
               <Link className='link' to={`/campanii/${post.id}`}>
                 <h2>{post.title}</h2>
               </Link>
@@ -46,7 +40,12 @@ const Campanii = () => {
                 <button>Citeste mai mult</button>
               </Link>
             </div>
-          </div>
+            {index !== posts.length - 1 && (
+              <div className='separator'>
+                <div className='line'></div>
+              </div>
+            )}
+          </React.Fragment>
         ))}
       </div>
     </div>

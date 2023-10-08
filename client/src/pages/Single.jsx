@@ -60,6 +60,7 @@ const Single = () => {
   //     }
   // }
 
+  console.log(post)
 
   return (
     <div className='single'>
