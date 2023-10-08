@@ -30,13 +30,13 @@ const Campanii = () => {
         {posts.map((post, index) => (
           <React.Fragment key={post.id}>
             <div className="post">
-              <Link className='link' to={`/campanii/${post.id}`}>
+              <Link className='titlelink link' to={`/campanii/${post.id}`}>
                 <h2>{post.title}</h2>
               </Link>
               <div className='description'>
                 {getText(post.desc)}
               </div>
-              <Link className='link' to={`/campanii/${post.id}`}>
+              <Link className='titlelink link' to={`/campanii/${post.id}`}>
                 <button>Citeste mai mult</button>
               </Link>
             </div>

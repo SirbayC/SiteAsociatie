@@ -79,9 +79,68 @@ body {
                             font-weight: 700;
                         }
 
-                        .userImg {
-                            width: 30px;
+                        .userContainer {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 60px;
+                            width: 60px;
+                            position: relative;
+                            cursor: pointer;
+                            align-items: center;
+                            justify-content: center;
+
+                            .userImg {
+
+                                width: 30px;
+                            }
+
+                            .submenu {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                position: absolute;
+                                top: 50px;
+                                background-color: #fff;
+                                border: 1px solid $lightPurple;
+                                gap: 10px;
+                                border-radius: 5px;
+                                padding: 20px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: -10px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    border-width: 0 12px 10px 12px;
+                                    border-style: solid;
+                                    border-color: transparent transparent $lightPurple transparent;
+                                }
+
+                                button {
+
+                                    width: max-content;
+                                    padding: 10px 15px;
+                                    border: none;
+                                    cursor: pointer;
+                                    background-color: white;
+                                    border: 1px solid $darkPurple;
+                                    border-radius: 5px;
+                                    color: $darkPurple;
+
+                                    &:hover {
+                                        border: 1px solid white;
+                                        background-color: $darkPurple;
+                                        color: white;
+                                    }
+                                }
+                            }
                         }
+
+
                     }
                 }
 
@@ -268,7 +327,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 50px;
-                
+
                 .post {
                     background-color: $veryLightPurple;
                     display: flex;
@@ -298,6 +357,10 @@ body {
                     //     }
                     // }
 
+                    .titlelink {
+                        width: fit-content;
+                    }
+
                     h1 {
                         font-size: 48px;
                     }
@@ -319,17 +382,19 @@ body {
                     button {
 
                         width: max-content;
-                        padding: 10px 20px;
+                        padding: 10px 15px;
                         border: none;
                         cursor: pointer;
                         background-color: white;
                         border: 1px solid $darkPurple;
+                        border-radius: 5px;
                         color: $darkPurple;
+                        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
                         &:hover {
-                            border: 1px solid white;
                             background-color: $darkPurple;
                             color: white;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
                         }
                     }
                 }
@@ -338,8 +403,8 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                   
-                    .line{
+
+                    .line {
                         width: 50%;
                         height: 1px;
                         background-color: #c9c9c9;
