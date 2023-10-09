@@ -1,0 +1,18 @@
+@import './colors';
+
+footer {
+    margin-top: 100px;
+    padding: 10px 20px;
+    background-color: $logoBlack;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 1px;
+
+    img {
+        height: 60px;
+    }
+}

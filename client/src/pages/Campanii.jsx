@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react'
 import DefaultNoPostPic from "../resources/defaultNoImgPost.jpg"
 import { Link } from 'react-router-dom'
 import axios from "axios";
+import LoadingSpinner from "../components/Spinner";
+import "../styling/campanii.scss"
 
 const Campanii = () => {
 
   const [posts, setPosts] = useState([])
+  const [isLoading, setIsLoading] = useState(true);
 
   const getText = (html) => {
     const doc = new DOMParser().parseFromString(html, "text/html")
@@ -17,6 +20,9 @@ const Campanii = () => {
       try {
         const res = await axios.get(process.env.REACT_APP_API_URL + `posts`)
         setPosts(res.data.sort((a, b) => a.id - b.id))
+        setTimeout(() => {
+          setIsLoading(false)
+        }, 500)
       } catch (err) {
         console.log(err)
       }
@@ -24,7 +30,11 @@ const Campanii = () => {
     fetchData()
   }, [])
 
-  return (
+  if (isLoading) {
+    return (
+      <LoadingSpinner />
+    )
+  } else return (
     <div className='campanii'>
       <div className="posts">
         {posts.map((post, index) => (

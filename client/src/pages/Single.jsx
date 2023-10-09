@@ -8,7 +8,8 @@ import axios from 'axios'
 // import { AuthContext } from '../context/authContext'
 // import DefaultNoPostPic from "../img/defaultNoImgPost.jpg"
 import DOMPurify from "dompurify";
-
+import "../styling/single.scss"
+import LoadingSpinner from "../components/Spinner";
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -24,6 +25,7 @@ const Single = () => {
 
   // const { currentUser } = useContext(AuthContext)
 
+  const [isLoading, setIsLoading] = useState(true);
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -42,8 +44,10 @@ const Single = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(process.env.REACT_APP_API_URL + `posts/${postId}`)
-        console.log(res)
         setPost(res.data)
+        setTimeout(() => {
+          setIsLoading(false)
+        }, 500)
       } catch (err) {
         console.log(err)
       }
@@ -62,7 +66,11 @@ const Single = () => {
 
   console.log(post)
 
-  return (
+  if (isLoading) {
+    return (
+      <LoadingSpinner />
+    )
+  } else return (
     <div className='single'>
       <div className="content">
         {/* {post.img ? <img src={`../uploads/${post.img}`} alt="" /> : <img src={DefaultNoPostPic} alt="" />} */}
@@ -82,9 +90,8 @@ const Single = () => {
         <h1>{post.title}</h1>
         <p dangerouslySetInnerHTML={{
           __html: DOMPurify.sanitize(post.desc),
-        }}
-        ></p>
-        <div className='photos'>
+        }}></p>
+        {/* <div className='photos'>
           <Gallery photos={photos} onClick={openLightbox} />
           <ModalGateway>
             {viewerIsOpen ? (
@@ -100,7 +107,7 @@ const Single = () => {
               </Modal>
             ) : null}
           </ModalGateway>
-        </div>
+        </div> */}
       </div>
     </div>
   )

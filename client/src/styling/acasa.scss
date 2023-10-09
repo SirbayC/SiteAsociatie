@@ -1,0 +1,147 @@
+@import './colors';
+
+.acasa {
+    display: flex;
+    justify-content: center;
+
+    .centeredAcasa {
+        width: 1024px;
+        margin-right: 90px;
+        margin-left: 90px;
+
+        .generalPresentation {
+            margin-top: 50px;
+            margin-bottom: 20px;
+
+            .paragraphs {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+
+                .parCol {
+                    flex: 1;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    p {
+                        font-weight: 400;
+                        text-align: justify;
+                    }
+
+                    img {
+                        width: 100px;
+                    }
+
+                    ;
+                }
+
+                .line {
+                    background-color: $logoBlack;
+                    width: 1px;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .accordPresentation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            margin-top: 20px;
+            // background-color: #1c2938;
+
+            .accordion {
+                margin: 30px;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .accordion__item {
+                    width: 700px;
+                    max-height: 25px;
+                    padding: 17px 10px;
+                    border-bottom: 1px solid #c9c9c9;
+                    // color: white;
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    .accordion__header {
+                        height: 30px;
+                        font-size: 20px;
+                        display: flex;
+                        // background-color: red;
+                        margin-bottom: 10px;
+                        justify-content: space-between;
+
+                        h4 {
+                            transition: 0.2s ease-in-out;
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom: 0px;
+                            margin-top: 0px;
+                        }
+
+                        i {
+                            transition: 0.2s ease-in-out;
+                            transform-origin: center;
+                            margin-bottom: 10px;
+                        }
+
+                        .dotTitle {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 10px;
+                            align-items: center;
+
+                            .circleDot {
+                                content: "";
+                                width: 10px;
+                                height: 10px;
+                                background-color: rebeccapurple;
+                                border-radius: 50%;
+                            }
+                        }
+
+
+                    }
+
+
+                    .accordion__content {
+                        cursor: initial;
+                        cursor: initial;
+                        margin: 5px;
+
+                        p {
+                            text-align: justify;
+                        }
+
+                        li {
+                            text-align: justify;
+                        }
+
+                        li:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .signoff {
+            font-style: italic;
+            font-size: 18px;
+            margin-top: 50px;
+            padding-right: 60px;
+            padding-left: 60px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}

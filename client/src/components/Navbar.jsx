@@ -4,6 +4,7 @@ import User from "../resources/user.png"
 import { NavLink } from 'react-router-dom'
 import { AuthContext } from '../context/authContext';
 import Submenu from '../components/UserSubmenu';
+import "../styling/navbar.scss"
 
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext)
