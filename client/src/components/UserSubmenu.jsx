@@ -2,7 +2,7 @@ import React from 'react';
 import { AuthContext } from '../context/authContext';
 import { useContext } from 'react';
 import { useSpring, animated } from 'react-spring';
-
+import {Link} from "react-router-dom"
 
 
 const Submenu = () => {
@@ -26,7 +26,8 @@ const Submenu = () => {
     return (
         <animated.div className="submenu" style={{...customStyles, ...titleAnimation }}>
             <button onClick={handleLogout}>Logout</button>
-            <button onClick={handleLogout}>Adauga scrisoare</button>
+            <Link to="/write"><button>Adauga scrisoare</button></Link>
+            
         </animated.div>
     );
 };
