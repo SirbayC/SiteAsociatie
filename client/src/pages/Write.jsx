@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import axios from 'axios'
 import { useLocation, useNavigate } from 'react-router-dom';
 import moment from 'moment';
 import '../styling/write.scss'
+import { AuthContext } from '../context/authContext';
 
 const Write = () => {
+  const { accessToken } = useContext(AuthContext)
   // const state = useLocation().state
 
   const [value, setValue] = useState("")
@@ -28,14 +30,12 @@ const Write = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      // const postData = {
-      //   title,
-      //   desc: value,
-      //   cat,
-      //   img: newUrl,
-      //   date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss")
-      // }
-      // await axios.post("/posts/", postData)
+      const postData = {
+        token:accessToken,
+        title: title,
+        content: value
+      }
+      await axios.post(process.env.REACT_APP_API_URL + "posts/", postData)
       navigate("/")
     } catch (err) {
       console.log(err)

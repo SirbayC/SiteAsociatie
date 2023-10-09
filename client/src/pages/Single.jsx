@@ -64,8 +64,6 @@ const Single = () => {
   //     }
   // }
 
-  console.log(post)
-
   if (isLoading) {
     return (
       <LoadingSpinner />
