@@ -9,10 +9,12 @@ import { AuthContext } from '../context/authContext';
 
 const Write = () => {
   const { accessToken } = useContext(AuthContext)
-  // const state = useLocation().state
+  const state = useLocation().state
 
-  const [value, setValue] = useState("")
-  const [title, setTitle] = useState("")
+  console.log(state)
+
+  const [value, setValue] = useState(state?.desc || "")
+  const [title, setTitle] = useState(state?.title || "")
 
   const navigate = useNavigate()
 
@@ -30,19 +32,31 @@ const Write = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const postData = {
-        token:accessToken,
-        title: title,
-        content: value
+      if (state) {
+        const postData = {
+          token: accessToken,
+          title: title,
+          content: value,
+          dateUpdated: moment(Date.now()).format("YYYY/MM/DD hh:mm:ss"),
+          author: process.env.REACT_APP_ADMIN_USERNAME,
+        }
+        await axios.put(process.env.REACT_APP_API_URL + `posts/${state.id}`, postData)
+      } else {
+        const postData = {
+          token: accessToken,
+          title: title,
+          content: value,
+          dateCreated: moment(Date.now()).format("YYYY/MM/DD hh:mm:ss"),
+          dateUpdated: moment(Date.now()).format("YYYY/MM/DD hh:mm:ss"),
+          author: process.env.REACT_APP_ADMIN_USERNAME,
+        }
+        await axios.post(process.env.REACT_APP_API_URL + "posts/", postData)
       }
-      await axios.post(process.env.REACT_APP_API_URL + "posts/", postData)
-      navigate("/")
+      navigate("/campanii")
     } catch (err) {
       console.log(err)
     }
   }
-
-
 
   return (
     <div className="writefull">

@@ -19,7 +19,9 @@ const Campanii = () => {
     const fetchData = async () => {
       try {
         const res = await axios.get(process.env.REACT_APP_API_URL + `posts`)
-        setPosts(res.data.sort((a, b) => a.id - b.id))
+        setPosts(res.data.sort((a, b) => {
+          return new Date(b.dateUpdated) - new Date(a.dateUpdated);
+        }))
         setTimeout(() => {
           setIsLoading(false)
         }, 500)

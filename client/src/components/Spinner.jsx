@@ -4,7 +4,7 @@ import "../styling/spinner.scss";
 export default function LoadingSpinner() {
   return (
     <div className="spinner-container">
-      <span class="loader"></span>
+      <span className="loader"></span>
     </div>
   );
 }
