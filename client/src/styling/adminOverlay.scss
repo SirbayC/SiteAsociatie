@@ -1,0 +1,16 @@
+.admin-overlay {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #3498db; /* Change the background color as needed */
+    color: #fff; /* Change the text color as needed */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .admin-text {
+    font-weight: bold;
+  }
+  

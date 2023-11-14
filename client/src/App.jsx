@@ -17,17 +17,24 @@ import Autorizari from "./pages/Autorizari"
 import Contact from "./pages/Contact"
 
 // admin side
+import AdminOverlay from './pages/AdminOverlay';
 import Login from "./pages/Login"
 import Write from "./pages/Write"
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import axios from 'axios';
+import { useContext } from 'react';
+import { AuthContext } from './context/authContext';
 
 
 const Layout = () => {
+    const { user } = useContext(AuthContext)
     return (
         <>
+            {process.env.REACT_APP_ADMIN_USERNAME === user &&
+                <AdminOverlay />
+            }
             <Navbar />
             <Outlet />
             <Footer />

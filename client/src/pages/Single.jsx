@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
-import { useLocation, useNavigate,Link } from 'react-router-dom'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 import axios from 'axios'
 // import moment from 'moment'
 import DOMPurify from "dompurify";
@@ -56,12 +56,18 @@ const Single = () => {
   }, [postId])
 
   const handleDelete = async () => {
+    // Show a confirmation dialog
+    const isConfirmed = window.confirm("Are you sure you want to delete this post?");
+
+    // If the user confirms, proceed with deletion
+    if (isConfirmed) {
       try {
-          await axios.delete(process.env.REACT_APP_API_URL + `posts/${postId}`, { data: { token: accessToken } })
-          navigate("/campanii")
+        await axios.delete(process.env.REACT_APP_API_URL + `posts/${postId}`, { data: { token: accessToken } })
+        navigate("/campanii")
       } catch (err) {
-          console.log(err)
+        console.log(err)
       }
+    }
   }
 
   if (isLoading) {
@@ -85,7 +91,7 @@ const Single = () => {
           {process.env.REACT_APP_ADMIN_USERNAME === user &&
             <div className="edit">
               <Link to={`/write`} state={post} className='linkimg'><img src={Edit} alt="" /></Link>
-              <img onClick={handleDelete} src={Delete} alt="" className='linkimg'/>
+              <img onClick={handleDelete} src={Delete} alt="" className='linkimg' />
             </div>}
         </div>
 
@@ -93,7 +99,7 @@ const Single = () => {
           __html: DOMPurify.sanitize(post.desc),
         }}></p></div>
 
-    
+
         { // TODO : add gallery
         /* <div className='photos'>
           <Gallery photos={photos} onClick={openLightbox} />

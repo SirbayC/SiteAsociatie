@@ -67,7 +67,9 @@ const Write = () => {
         <div className="editorContainer">
           <ReactQuill className="editor" theme="snow" value={value} onChange={setValue} />
         </div>
-        <button onClick={handleSubmit}>Publica</button>
+        <button onClick={handleSubmit}>
+          {state ? 'Salveaza modificari' : 'Publica'}
+        </button>
       </div>
     </div>
   )
