@@ -1,27 +1,17 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import Logo from "../resources/logo_transparent.png"
 import User from "../resources/user.png"
 import { NavLink } from 'react-router-dom'
-import { AuthContext } from '../context/authContext';
 import Submenu from '../components/UserSubmenu';
 import "../styling/navbar.scss"
 
 const Navbar = () => {
-    const { user, logout } = useContext(AuthContext)
-
-    const handleLogout = () => {
-        logout()
-    }
-
-    const [showSubmenu, setShowSubmenu] = useState(false);
-
-    // Function to toggle the submenu
-    const toggleSubmenu = () => {
-        setShowSubmenu(!showSubmenu);
-    };
+    // const [showSubmenu, setShowSubmenu] = useState(false);
+    // const toggleSubmenu = () => {
+    //     setShowSubmenu(!showSubmenu);
+    // };
 
     return (
-
         <div className="navbar">
             <div className='centeredCont'>
                 <div className="container">
@@ -30,7 +20,7 @@ const Navbar = () => {
                     </div>
                     <div className="links">
                         <NavLink to="/" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Acasa
+                            Acasaaa
                         </NavLink>
                         <NavLink to="/campanii" className={({ isActive }) => isActive ? "link active" : 'link'}>
                             Scrisori catre prieteni
@@ -44,25 +34,22 @@ const Navbar = () => {
                         <NavLink to="/autorizari" className={({ isActive }) => isActive ? "link active" : 'link'}>
                             Autorizari
                         </NavLink>
-                        {user === process.env.REACT_APP_ADMIN_USERNAME && (
-                            <div className="userContainer" onMouseEnter={toggleSubmenu}  onMouseLeave={toggleSubmenu}>
-                                <img
-                                    src={User}
-                                    alt=""
-                                    className='userImg'
-                                    // Show submenu on mouse enter
-                                    // Hide submenu on mouse leave
-                                />
-                                {showSubmenu && <Submenu/>}
-                            </div>
-                        )}
+                        {/* <div className="userContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
+                            <img
+                                src={User}
+                                alt=""
+                                className='userImg'
+                            // Show submenu on mouse enter
+                            // Hide submenu on mouse leave
+                            />
+                            {showSubmenu && <Submenu />}
+                        </div> */}
                     </div>
                 </div>
                 <div className='colorband'></div>
             </div>
-
         </div>
-    )
+    );
 }
 
 export default Navbar

@@ -10,7 +10,7 @@ const Footer = () => {
       <img src={Logo} alt="logo" />
       <span>© 2023</span>
     </footer>
-  )
+  );
 }
 
 export default Footer

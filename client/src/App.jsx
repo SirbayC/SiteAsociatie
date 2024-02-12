@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import "./style.scss"
 
 import {
@@ -15,26 +15,13 @@ import Galerie from "./pages/Galerie"
 import ImplicaTe from "./pages/Implica_te"
 import Autorizari from "./pages/Autorizari"
 import Contact from "./pages/Contact"
-
-// admin side
-import AdminOverlay from './pages/AdminOverlay';
-import Login from "./pages/Login"
-import Write from "./pages/Write"
-
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import axios from 'axios';
-import { useContext } from 'react';
-import { AuthContext } from './context/authContext';
 
 
 const Layout = () => {
-    const { user } = useContext(AuthContext)
     return (
         <>
-            {process.env.REACT_APP_ADMIN_USERNAME === user &&
-                <AdminOverlay />
-            }
             <Navbar />
             <Outlet />
             <Footer />
@@ -72,37 +59,14 @@ const router = createHashRouter([
                 element: <Autorizari />
             },
             {
-                path: "/write",
-                element: <Write />
-            },
-            {
                 path: "/contact",
                 element: <Contact />
             },
         ]
-    },
-    {
-        path: "/admin",
-        element: <Login />,
     }
 ]);
 
 const App = () => {
-    console.log(`Starting frontend and connecting to backend via ${process.env.REACT_APP_API_URL}`)
-    const[connected, setConnected] = useState("")
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-              const res = await axios.get(process.env.REACT_APP_API_URL)
-              setConnected(res.data)
-            } catch (err) {
-              console.log(err)
-            }
-          }
-          fetchData()
-    }, [])
-    console.log(`Backend said: ${connected}`)
-
     useEffect(() => {
         document.title = 'Asociatia Prietenii D.A.R.I.E.I.';
     }, []);

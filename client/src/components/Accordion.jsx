@@ -6,27 +6,27 @@ function Accordion(props) {
 
     const durCalc = props.height.substring(0, props.height.length - 2);
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
     let toggleOpen = e => {
         setOpen(prev => !prev)
-    }
+    };
 
-    const [hover, setHover] = useState(false)
+    const [hover, setHover] = useState(false);
     let toggleHover = e => {
         setHover(prev => !prev)
-    }
+    };
 
     const styles = {
         accordionTitle: {
             color: (open || hover) ? props.color : "#000"
         }
-    }
+    };
 
     const openAnimation = useSpring({
         from: { opacity: "0", maxHeight: "25px" },
         to: { opacity: "1", maxHeight: open ? props.height : "25px" },
         config: { duration: durCalc / 2.5 }
-    })
+    });
 
     const iconAnimation = useSpring({
         from: {

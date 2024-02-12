@@ -204,7 +204,7 @@ const Acasa = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Acasa
