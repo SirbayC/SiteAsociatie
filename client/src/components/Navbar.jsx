@@ -20,19 +20,19 @@ const Navbar = () => {
                     </div>
                     <div className="links">
                         <NavLink to="/" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Acasaaa
+                            Cunoaste-ne
                         </NavLink>
                         <NavLink to="/campanii" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Scrisori catre prieteni
+                            DA, pot!
                         </NavLink>
                         <NavLink to="/galerie" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Galerie
+                            Scrisori catre Prieteni
                         </NavLink>
                         <NavLink to="/implica_te" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Implica-te
+                            Lumea mea in imagini
                         </NavLink>
                         <NavLink to="/autorizari" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Autorizari
+                            Implica-te
                         </NavLink>
                         {/* <div className="userContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
                             <img
