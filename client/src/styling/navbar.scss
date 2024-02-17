@@ -22,10 +22,6 @@
                 }
             }
 
-            .menu-icon {
-                display: none;
-            }
-
             .links {
                 display: flex;
                 align-items: center;
@@ -60,21 +56,21 @@
                     font-weight: 700;
                 }
 
-                .userContainer {
+                .submenuContainer {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    height: 60px;
-                    width: 60px;
                     position: relative;
                     cursor: pointer;
                     align-items: center;
                     justify-content: center;
                     z-index: 1;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
 
-                    .userImg {
-
-                        width: 30px;
+                    .navText {
+                        font-weight: 400;
+                        font-size: 18px;
                     }
 
                     .submenu {
@@ -83,9 +79,8 @@
                         justify-content: center;
                         align-items: center;
                         position: absolute;
-                        top: 50px;
                         background-color: #fff;
-                        border: 1px solid $lightPurple;
+                        // border: 0.1px solid $lightPurple;
                         gap: 10px;
                         border-radius: 5px;
                         padding: 20px;
@@ -133,7 +128,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
     .navbar {
         .centeredCont {
 
@@ -152,111 +147,59 @@
 
                 .menu-toggle {
                     cursor: pointer;
-                }
-
-                .hambox{
-                    position: relative;
-                    width: 10px;
-                    height: 10px;
-                    cursor: pointer;
-                    border-radius: 50%;
-                    transition: 0.3s ease;
-                    padding: 20px;
-                    background: rgba(102, 51, 153, 0.098);
-                }
-
-                .hambox:hover {
-                    .lineTop, .lineBottom {
-                        background: white;
-                    }
-                    background: rgba(102, 51, 153, 0.858);
-                }
-
-                .hamboxOpen {
-                    
-                    background: rgba(102, 51, 153, 0.098);
-                }
-
-
-
-                .lineTop,
-                .lineBottom {
-                    margin: 0 auto;
-                    position: absolute;
-                    display: block;
-                    width: 24px;
-                    height: 2px;
-                    border-radius: 10px;
-                    background: rebeccapurple;
-                    left: 0;
-                    right: 0;
-                    transform: rotate(0deg);
-                    transition: all 0.4s;
-                }
-
-                .lineTop {
-                    top: 20px;
-                }
-
-                .lineBottom {
-                    bottom: 20px;
-                }
-
-                .lineTop.spin {
-                    top:24px;
-                    transform: rotate(135deg);
-                }
-
-                .lineBottom.spin {
-                    bottom: 24px;
-                    transform: rotate(225deg);
-                }
-
-                .menu-icon {
-                    display: block;
-                    label {
-                        display: flex;
-                        flex-direction: column;
-                        width: 40px; /* Adjust the width as per your preference */
-                        height: 40px; /* Adjust the height as per your preference */
+                    .hambox{
+                        position: relative;
+                        width: 10px;
+                        height: 10px;
                         cursor: pointer;
+                        border-radius: 50%;
+                        transition: 0.3s ease;
+                        padding: 20px;
+                        background: rgba(102, 51, 153, 0.098);
                     }
-                
-                    label span {
-                        background: #000;
-                        border-radius: 20px;
-                        height: 4px; /* Adjust the height as per your preference */
-                        margin: 4px; /* Adjust the margin as per your preference */
+    
+                    .hambox:hover {
+                        .lineTop, .lineBottom {
+                            background: white;
+                        }
+                        background: rgba(102, 51, 153, 0.858);
                     }
-                
-                    span:nth-of-type(1) {
-                        width: 50%;
-
+    
+                    .hamboxOpen {
+                        
+                        background: rgba(102, 51, 153, 0.098);
                     }
-                    span:nth-of-type(2) {
-                        width: 100%;
+                    .lineTop,
+                    .lineBottom {
+                        margin: 0 auto;
+                        position: absolute;
+                        display: block;
+                        width: 24px;
+                        height: 2px;
+                        border-radius: 10px;
+                        background: rebeccapurple;
+                        left: 0;
+                        right: 0;
+                        transform: rotate(0deg);
+                        transition: all 0.4s;
                     }
-                    span:nth-of-type(3) {
-                        width: 75%;
-
+    
+                    .lineTop {
+                        top: 20px;
                     }
-                    input[type="checkbox"] {
-                        display: none;
+    
+                    .lineBottom {
+                        bottom: 20px;
                     }
-                    input[type="checkbox"]:checked~span:nth-of-type(1) {
-                        transform-origin: bottom;
-                        width: 80%;
-                        transform: translate(1px,13px )rotate(-45deg) ;
+    
+                    .lineTop.spin {
+                        top:24px;
+                        transform: rotate(135deg);
                     }
-                
-                    input[type="checkbox"]:checked~span:nth-of-type(2) {
-                        opacity: 0; /* Hide the middle bar when checked */
-                    }
-                
-                    input[type="checkbox"]:checked~span:nth-of-type(3) {
-                        transform-origin: bottom;
-                        width: 80%;
-                        transform: translate(-1px,-10px) rotate(45deg) ;
+    
+                    .lineBottom.spin {
+                        bottom: 24px;
+                        transform: rotate(225deg);
                     }
                 }
 

@@ -5,9 +5,9 @@ import {Link} from "react-router-dom"
 const Submenu = () => {
     const titleAnimation = useSpring({
         from: {
-            transform: "translateY(0px) translateX(-50%)"
+            transform: "translateY(110px) translateX(-50%)"
         },
-        to: [{ transform: "translateY(10px) translateX(-50%)" }],
+        to: [{ transform: "translateY(90px) translateX(-50%)" }],
         config: { mass: 3, tension: 500, friction: 25 }
     });
 
@@ -17,7 +17,8 @@ const Submenu = () => {
 
     return (
         <animated.div className="submenu" style={{...customStyles, ...titleAnimation }}>
-            <Link to="/home"><button>Adauga scrisoare</button></Link>
+            <Link to="/home"><button>Redirectioneaza 3.5%</button></Link>
+            <Link to="/home"><button>Sponsorizeaza 20%</button></Link>
         </animated.div>
     );
 };
