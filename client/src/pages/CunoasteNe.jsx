@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Accordion from '../components/Accordion'
 import { useSpring, animated } from "react-spring";
 import Fetita from "../resources/fetita.png"
@@ -13,6 +13,71 @@ const CunoasteNe = () => {
     to: [{ transform: "translateY(15px)" }],
     config: { mass: 3, tension: 500, friction: 25 }
   });
+
+  const ref = useRef(null);
+  const [contentHeight, setContentHeight] = useState(0);
+  useEffect(() => {
+    if (ref.current) {
+      setContentHeight(ref.current.clientHeight + 50);
+    }
+  }, [ref]);
+
+  const ref2 = useRef(null);
+  const [contentHeight2, setContentHeight2] = useState(0);
+  useEffect(() => {
+    if (ref2.current) {
+      setContentHeight2(ref2.current.clientHeight + 50);
+    }
+  }, [ref2]);
+
+  const ref3 = useRef(null);
+  const [contentHeight3, setContentHeight3] = useState(0);
+  useEffect(() => {
+    if (ref3.current) {
+      setContentHeight3(ref3.current.clientHeight + 50);
+    }
+  }, [ref3]);
+
+  const ref4 = useRef(null);
+  const [contentHeight4, setContentHeight4] = useState(0);
+  useEffect(() => {
+    if (ref4.current) {
+      setContentHeight4(ref4.current.clientHeight + 50);
+    }
+  }, [ref4]);
+
+  const ref5 = useRef(null);
+  const [contentHeight5, setContentHeight5] = useState(0);
+  useEffect(() => {
+    if (ref5.current) {
+      setContentHeight5(ref5.current.clientHeight + 50);
+    }
+  }, [ref5]);
+
+  const ref6 = useRef(null);
+  const [contentHeight6, setContentHeight6] = useState(0);
+  useEffect(() => {
+    if (ref6.current) {
+      setContentHeight6(ref6.current.clientHeight + 50);
+    }
+  }, [ref6]);
+
+  const ref7 = useRef(null);
+  const [contentHeight7, setContentHeight7] = useState(0);
+  useEffect(() => {
+    if (ref7.current) {
+      setContentHeight7(ref7.current.clientHeight + 50);
+    }
+  }, [ref7]);
+
+  const ref8 = useRef(null);
+  const [contentHeight8, setContentHeight8] = useState(0);
+  useEffect(() => {
+    if (ref8.current) {
+      setContentHeight8(ref8.current.clientHeight + 50);
+    }
+  }, [ref8]);
+
 
   return (
     <div className="acasa">
@@ -37,25 +102,24 @@ const CunoasteNe = () => {
             </div>
           </div>
         </div>
-
         <div className='accordPresentation'>
           <animated.h2 style={titleAnimation}>Arii de interes ale Asociatiei Prietenii D.A.R.I.E.I. <span>in perioada 2015 - 2023</span> </animated.h2>
           <div className="accordion">
             <Accordion
               title="Terapia limbajului. Servicii logopedice de specialitate."
               content={
-                <div>
+                <div ref={ref}>
                   <p>2017, 2018, 2019 - sedintele terapeutice de logopedie, cu frecventa saptamanala, decontate de Asociatia Prietenii D.A.R.I.E.I. au fost sustinute de catre specialist logoped, in spatiul apartinand Asociatiei de Interventie Terapeutica in Criza, Bucuresti, Sector 2. Beneficiar 1 copil special.</p>
                   <p>2020 - 2023 - Asociatia mareste numarul copiilor cu Sindrom Down care beneficiaza de sedinte terapeutice de logopedie si terapie ocupationala prestate prin Cabinetul Individual de Psihologie Burlacu Nicoleta, Sector 1, Bucuresti, conform contract existent intre parti. Sedintele se desfasoara saptamanal, cu prezenta fizica sau online. Beneficiari 3 copii speciali.</p>
                 </div>
               }
-              height="250px"
+              height={`${contentHeight}px`}
               color="#00a696"
             />
             <Accordion
               title="Tabere de integrare, ateliere, excursii."
               content={
-                <div>
+                <div ref={ref2}>
                   <h5>Taberele de integrare</h5>
                   <p>Organizate de catre Asociatia CONIL, acestea au avut ca obiective: expunerea copilului cu nevoi speciale la diversitate, cresterea stimei de sine, adaptarea copilului in natura, dezvoltarea independentei si a autonomiei, crearea de amintiri de neuitat, copiii experimentand viata la tara.</p>
                   <ul>
@@ -72,13 +136,13 @@ const CunoasteNe = () => {
                   </ul>
                 </div>
               }
-              height="640px"
+              height={`${contentHeight2}px`}
               color="#147e96"
             />
             <Accordion
               title="Materiale didactice educative. Tiparituri, Jocuri."
               content={
-                <div>
+                <div ref={ref3}>
                   <p>Am oferit copiilor cu Sindrom Down si parintilor acestora o multime de jocuri si materiale didactice educative care sa le fie de un real ajutor, de-a lungul anilor.</p>
                   <ul>
                     <li>21.03.2017 - Ziua Internationala a Sindromului Down- Asociatia Prietenii D.A.R.I.E.I. achizitioneaza kituri Montesori ("Descopar Literele" - kit de invatare rapida a scrisului si cititului la o varsta frageda, "Descopar cifrele" - kit pentru invatarea numeratiei si pentru introducerea in aritmetica) in sprijinul unor copii cu Sindrom Down din cadrul Centrului de zi Down al Complexului de Servicii Sociale "Sfanta Ecaterina", apartinand Directiei Generale de Asistenta Sociala si Protectia Copilului Sector 1, Bucuresti.</li>
@@ -90,13 +154,13 @@ const CunoasteNe = () => {
                   </ul>
                 </div>
               }
-              height="750px"
+              height={`${contentHeight3}px`}
               color="#2d4e97"
             />
             <Accordion
               title="Sarbatorile prin ochii copiilor nostri."
               content={
-                <div>
+                <div ref={ref4}>
                   <p>Cu ocazia diverselor sarbatori de peste ani, Asociatia Asociatia Prietenii D.A.R.I.E.I. a pus bucurie in fiecare dar oferit copiilor speciali:</p>
                   <ul>
                     <li>6.06.2017 - 20 copii cu cerinte educationale speciale din cadrul Scolii Speciale nr 8, Bucuresti, primesc pachete cu daruri " Mos Nicolae" constand in: 20 cani ceai cu  poze reni, 20 buc. fructe (banane si mandarine), 20 pungi dulciuri haribo, 20 pungi cadou;</li>
@@ -117,13 +181,13 @@ const CunoasteNe = () => {
 
                 </div>
               }
-              height="1700px"
+              height={`${contentHeight4}px`}
               color="#5f4296"
             />
             <Accordion
               title="Dezvoltare prin miscare si inot."
               content={
-                <div>
+                <div ref={ref5}>
                   <li>01.05.2018 - Asociatia Prietenii D.A.R.I.E.I. acopera costurile legate de sedintele de inot pentru copii diagnosticati cu Sindrom Down, sedinte de inot care se desfasoara in incinta CLUB FLOREASCA, din B-dul Mircea Eliade, Sector 1, Bucuresti. Beneficiari 2 copii speciali.</li>
                   <li>10.10.2018 - Asociatia Prietenii D.A.R.I.E.I. suporta costurile legate de participarea unor copii cu Sindrom Down la activitatea sportiva numita "body fly", un serviciu de agrement sportiv ce se desfasoara in perioada 23 octombrie - 17 noiembrie 2018, in incinta bazei sportive "Dinu Pescariu" , cu frecventa de 2 ori pe saptamana, conform contract incheiat intre parti. Beneficiari 3 copii speciali.</li>
                   <li>04.11.2018 Asociatia Prietenii D.A.R.I.E.I. este coorganizator al unui eveniment de tip sportiv, ce consta in escaladarea unui perete vertical interior, locatie  BLOKX Climbing Gym - Soseaua Fabrica de Glucoza nr. 15, Bucuresti, alaturi de alte asociatii organizatoare si participante: - Asociatia 321UP Bucuresti, - Asociatia Spontania Bucuresti -  specialisti terapeuti pe terapie comportamentala, - dna Maricica Ladaru - ventriloc si terapeut logoped. Beneficiari - 6 copii cu sindrom Down, 4 frati si 6 parinti insotitori.</li>
@@ -135,26 +199,26 @@ const CunoasteNe = () => {
 
                 </div>
               }
-              height="1000px"
+              height={`${contentHeight5}px`}
               color="#9a3794"
             />
             <Accordion
               title="Conferinte. Cursuri."
               content={
-                <div>
+                <div ref={ref6}>
                   <ul>
                     <li>26-27.10.2018 - Asociatia Prietenii D.A.R.I.E.I. este prezenta la conferinta "ACCES SI PARTICIPARE LA EDUCATIE PENTRU PERSOANELE CU DIZABILITATI" - ce se desfasoara la hotel International, Bucuresti (conferinta organizata de CNDR (Consiliul National sl Dizabilitatii din Romania) si ASOCIATIA RENINCO Romania (Retea Nationala de Informare si Cooperare pentru integrarea in comunitate a copiilor si tinerilor cu cerinte Educationale Speciale). Asociatia Prietenii D.A.R.I.E.I. devine membru RENINCO, incepand cu anul 2018, suportand contravaloarea cotizatiei anuale de membru.</li>
                     <li>09.07.2019 - Asociatia Prietenii D.A.R.I.E.I. achizitioneaza accesul permanent la cursuri online de parenting sustinute de doamna Urania Cremene, unul dintre cei mai apreciati experti in parenting din Romania, cu multe acreditari in domeniu, nationale si internationale. Cursurile on line sunt achizitionate de Asociatie in folosul imbunatatirii relatiei dintre parinti si copii cu Sindrom Down, respectiv cresterii calitatii interactiunii sociale dintre un copil cu Sindrom Down si un alt copil cu/fara Sindrom Down. Aceste cursuri sunt urmatoarele: "Conficte intre copii" si "All About Parenting" (AAP), ambele furnizate de catre SC EDU Parenting SRL.</li>
                     <li> Asociatia propune parintilor cu copii speciali, ori de cate ori are ocazia, cursuri de dezvoltare personala, cursuri de buna relationare intre copii si parinti, cursuri de gestionare corecta a emotiilor copiilor samd, cursuri in majoritatea lor gratuite, care se desfasoara online, in deosebi, de catre persoane acreditate in domeniu. </li>
                   </ul>
                 </div>}
-              height="500px"
+              height={`${contentHeight6}px`}
               color="#bc2d68"
             />
             <Accordion
               title="Socializare prin muzica, dans si film."
               content={
-                <div>
+                <div ref={ref7}>
                   <p>Asociatia Prietenii D.A.R.I.E.I. ofera unor copii cu nevoi speciale cadrul propice de socializare, fie prin participarea la evenimente socio-culturale, aflate in zona lor de interes, fie prin implicarea lor in cursuri de dans, fie prin "iesiri’ la film, care se dovedesc a fi extrem de iubite de ei.</p>
                   <ul>
                     <li>04.12. 2019 - GASCA ZURLI, Sala Palatului din Bucuresti, orele 19:00, pentru patru copii cu Sindrom Down si insotitorii acestora, biletele achizitionate online, site www.bilete.ro, de la SC DEPARTAMENTUL LOGISTIC EVENT SRL</li>
@@ -167,13 +231,13 @@ const CunoasteNe = () => {
                     <li>02.12.2022 - "O ZI PETRECUTA IMPREUNA". Militand pentru integrarea in comunitate a copiilor cu  Sindrom Down, Prietenii D.A.R.I.E.I. invita copii sa-si petreaca timp impreuna la locul de joaca "HYPE ARENA" Romexpo, respectiv la Cineplexx Baneasa, la filmul Motanul Incaltat.</li>
                   </ul>
                 </div>}
-              height="800px"
+              height={`${contentHeight7}px`}
               color="#f1592a"
             />
             <Accordion
               title="IT-ul, indragit si de copiii speciali"
               content={
-                <div>
+                <div ref={ref8}>
                   <p>Asociatia Prietenii D.A.R.I.E.I. suporta costurile de achizitie pentru urmatoarele materiale de tehnica vizuala, cu scop de suport educational, dar si socio-integrator, pentru copii cu nevoi speciale, copii cu sindrom down, din clasa a VI a A, Scoala Gimnaziala Speciala nr. 2, Bucuresti:</p>
                   <p>15.12.2020</p>
                   <ul>
@@ -191,7 +255,7 @@ const CunoasteNe = () => {
                     <li>3 TABLETE LENOVO TAB M10 TB-X606X 10.3 32GB 2GB RAM W-FI si husele aferente pentru copii cu nevoi speciale, din  Scoala Gimnaziala Speciala nr 2, Bucuresti. Achizitia este facuta de la magazinul "Altex".</li>
                   </ul>
                 </div>}
-              height="600px"
+              height={`${contentHeight8}px`}
               color="#f1b02a"
             />
           </div>
