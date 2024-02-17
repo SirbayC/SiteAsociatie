@@ -163,7 +163,6 @@
         display: none;
     }
     .acasa {
-        background-color: bisque;
         .centeredAcasa {
             width: 90%;
             .generalPresentation {
@@ -172,6 +171,9 @@
                     display: flex;
                     flex-direction: column;
                     gap: 0px;
+                }
+                .imgFetita {
+                    margin-top: 30px;
                 }
             }
     
@@ -210,65 +212,18 @@
                 }
     
                 .accordion {
-                    margin: 30px;
-
-                    width: fit-content;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-    
+                    margin: 20px;
                     .accordion__item {
-                        width: 90%;
-                        max-height: 25px;
-                        padding: 17px 10px;
-                        border-bottom: 1px solid #c9c9c9;
-                        // color: white;
-                        overflow: hidden;
-                        cursor: pointer;
-    
-                        // .accordion__header {
-                        //     height: 30px;
-                        //     font-size: 20px;
-                        //     display: flex;
-                        //     // background-color: red;
-                        //     margin-bottom: 10px;
-                        //     justify-content: space-between;
-    
-                        //     h4 {
-                        //         transition: 0.2s ease-in-out;
-                        //         font-size: 18px;
-                        //         font-weight: 500;
-                        //         margin-bottom: 0px;
-                        //         margin-top: 0px;
-                        //     }
-    
-                        //     i {
-                        //         transition: 0.2s ease-in-out;
-                        //         transform-origin: center;
-                        //         margin-bottom: 10px;
-                        //     }
-    
-                        //     .dotTitle {
-                        //         display: flex;
-                        //         flex-direction: row;
-                        //         gap: 10px;
-                        //         align-items: center;
-    
-                        //         .circleDot {
-                        //             content: "";
-                        //             width: 10px;
-                        //             height: 10px;
-                        //             background-color: rebeccapurple;
-                        //             border-radius: 50%;
-                        //         }
-                        //     }
-    
-    
-                        // }
-    
-    
+                        width: 100%;
                     }
                 }
+            }
+
+            .signoff {
+                margin-top: 40px;
+                padding-right: 20px;
+                padding-left: 20px;
+                text-align: justify;
             }
         }
     

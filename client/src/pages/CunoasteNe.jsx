@@ -31,7 +31,7 @@ const CunoasteNe = () => {
             <div className="parCol"><p>Cand Daria noastra a implinit 10 ani, in anul 2016, ca un fel de incununare a acestui deceniu de viata, intr-o pornire de solidaritate si incredere, am simtit nevoia de a impartasi in scris povestea noastra.</p>
               <p>{'\t'}Asa a luat nastere brosura "Da,pot!" - asa am numit-o, dupa spusele Dariei (mai mica fiind, urcata sus pe tobogan, ca sa-si faca curaj in a cobori, imita muscatul dintr-un morcov, mesteca in gol, inghitea aer si-si spunea singura "Da, pot!", dupa care isi da drumul pe tobogan… si topoganul era din ce in ce mai inalt si mai ondulat…). Aceste materiale tiparite au ajuns la medici de familie si specialisti aflati in interactiune directa cu parinti de copii cu Sindrom Down si sper din suflet sa fi fost si sa fie in continuare macar o picatura de speranta in marea lor de intrebari si nelinisti. </p>
               <p>{'\t'}Asociatia Prietenii D.A.R.I.E.I. s-a dovedit parte din comunitate inca de la infiintarea sa, a fost si continua sa fie alaturi de copii cu nevoi speciale, copii cu Sindrom Down, dar si de parintii acestora.</p>
-              <div>
+              <div className='imgFetita'>
                 <img src={Fetita} alt="" />
               </div>
             </div>
