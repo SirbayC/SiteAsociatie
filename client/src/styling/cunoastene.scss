@@ -5,9 +5,8 @@
     justify-content: center;
 
     .centeredAcasa {
-        width: 1024px;
-        margin-right: 90px;
-        margin-left: 90px;
+        width: 100%;
+        max-width: 1024px;
 
         .generalPresentation {
             margin-top: 50px;
@@ -54,6 +53,15 @@
             row-gap: 20px;
             margin-top: 20px;
             // background-color: #1c2938;
+
+            h2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                span {
+                    display: block;
+                }
+            }
 
             .accordion {
                 margin: 30px;
@@ -134,14 +142,135 @@
         }
 
         .signoff {
-            font-style: italic;
+            font-style: normal;
             font-size: 18px;
             margin-top: 50px;
             padding-right: 60px;
             padding-left: 60px;
             display: flex;
             flex-direction: column;
+
+            .finMes {
+                font-style:italic;
+            }
         }
     }
 
+}
+
+@media (max-width: 830px) {
+    .desktopOnly{
+        display: none;
+    }
+    .acasa {
+        background-color: bisque;
+        .centeredAcasa {
+            width: 90%;
+            .generalPresentation {
+                .paragraphs {
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+                }
+            }
+    
+            .accordPresentation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                margin-top: 20px;
+                // background-color: #1c2938;
+    
+                h2 {
+                    font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+    
+            .accordPresentation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                margin-top: 20px;
+                // background-color: #1c2938;
+    
+                h2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span {
+                        display: block;
+                    }
+                }
+    
+                .accordion {
+                    margin: 30px;
+
+                    width: fit-content;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+    
+                    .accordion__item {
+                        width: 90%;
+                        max-height: 25px;
+                        padding: 17px 10px;
+                        border-bottom: 1px solid #c9c9c9;
+                        // color: white;
+                        overflow: hidden;
+                        cursor: pointer;
+    
+                        // .accordion__header {
+                        //     height: 30px;
+                        //     font-size: 20px;
+                        //     display: flex;
+                        //     // background-color: red;
+                        //     margin-bottom: 10px;
+                        //     justify-content: space-between;
+    
+                        //     h4 {
+                        //         transition: 0.2s ease-in-out;
+                        //         font-size: 18px;
+                        //         font-weight: 500;
+                        //         margin-bottom: 0px;
+                        //         margin-top: 0px;
+                        //     }
+    
+                        //     i {
+                        //         transition: 0.2s ease-in-out;
+                        //         transform-origin: center;
+                        //         margin-bottom: 10px;
+                        //     }
+    
+                        //     .dotTitle {
+                        //         display: flex;
+                        //         flex-direction: row;
+                        //         gap: 10px;
+                        //         align-items: center;
+    
+                        //         .circleDot {
+                        //             content: "";
+                        //             width: 10px;
+                        //             height: 10px;
+                        //             background-color: rebeccapurple;
+                        //             border-radius: 50%;
+                        //         }
+                        //     }
+    
+    
+                        // }
+    
+    
+                    }
+                }
+            }
+        }
+    
+    }
 }
