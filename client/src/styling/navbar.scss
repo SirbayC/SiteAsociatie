@@ -136,14 +136,14 @@
 @media (max-width: 600px) {
     .navbar {
         .centeredCont {
-    
+
             .container {
                 width: auto;
                 padding: 15px 20px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-    
+
                 .logo {
                     img {
                         width: 70px;
@@ -152,11 +152,54 @@
 
                 .menu-icon {
                     display: block;
-                    cursor: pointer;
+                    label {
+                        display: flex;
+                        flex-direction: column;
+                        width: 40px; /* Adjust the width as per your preference */
+                        height: 40px; /* Adjust the height as per your preference */
+                        cursor: pointer;
+                    }
+                
+                    label span {
+                        background: #000;
+                        border-radius: 20px;
+                        height: 4px; /* Adjust the height as per your preference */
+                        margin: 4px; /* Adjust the margin as per your preference */
+                    }
+                
+                    span:nth-of-type(1) {
+                        width: 50%;
+
+                    }
+                    span:nth-of-type(2) {
+                        width: 100%;
+                    }
+                    span:nth-of-type(3) {
+                        width: 75%;
+
+                    }
+                    input[type="checkbox"] {
+                        display: none;
+                    }
+                    input[type="checkbox"]:checked~span:nth-of-type(1) {
+                        transform-origin: bottom;
+                        width: 80%;
+                        transform: translate(1px,13px )rotate(-45deg) ;
+                    }
+                
+                    input[type="checkbox"]:checked~span:nth-of-type(2) {
+                        opacity: 0; /* Hide the middle bar when checked */
+                    }
+                
+                    input[type="checkbox"]:checked~span:nth-of-type(3) {
+                        transform-origin: bottom;
+                        width: 80%;
+                        transform: translate(-1px,-10px) rotate(45deg) ;
+                    }
                 }
-    
+
                 .links {
-                    margin-top: 20px;
+                    padding-top: 30px;
                     position: absolute;
                     right: 0;
                     top: 116px;
@@ -167,11 +210,23 @@
                     overflow: hidden;
                     display: flex;
                     flex-direction: column;
+
                     .link {
                         position: relative;
                         font-weight: 400;
                         font-size: 18px;
                     }
+
+                    .invisibleLink {
+                        opacity: 0;
+                        transition: opacity 0.2s ease-in-out;
+                    }
+
+                    .visibleLink {
+                        opacity: 1; // Initially set opacity to 0
+                        transition: opacity 0.5s ease-in-out;
+                    }
+
                     .active {
                         font-weight: 700;
                     }
@@ -181,7 +236,7 @@
                     width: 100%;
                 }
             }
-    
+
             .colorband {
                 height: 5px;
                 background: linear-gradient(90deg, rgba(0, 166, 150, 1) 0%, rgba(45, 78, 151, 1) 20%, rgba(95, 66, 150, 1) 40%, rgba(154, 55, 148, 1) 60%, rgba(188, 45, 104, 1) 80%, rgba(241, 89, 42, 1) 100%);
