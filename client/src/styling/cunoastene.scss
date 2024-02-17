@@ -104,14 +104,15 @@
                         .dotTitle {
                             display: flex;
                             flex-direction: row;
-                            gap: 10px;
+                            gap: 20px;
                             align-items: center;
 
                             .circleDot {
                                 content: "";
+                                max-width: 10px;
+                                min-width: 10px;
                                 width: 10px;
                                 height: 10px;
-                                background-color: rebeccapurple;
                                 border-radius: 50%;
                             }
                         }
@@ -215,6 +216,14 @@
                     margin: 20px;
                     .accordion__item {
                         width: 100%;
+                        .accordion__header {
+                            
+                            h4 {
+                                padding-top: 10px;
+                                padding-bottom: 10px;
+                                font-size: 17px;
+                            }
+                        }
                     }
                 }
             }
