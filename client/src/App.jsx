@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 
 
-import Acasa from "./pages/Acasa"
-import Campanii from "./pages/Campanii"
-import Single from "./pages/Single"
-import Galerie from "./pages/Galerie"
-import ImplicaTe from "./pages/Implica_te"
-import Autorizari from "./pages/Autorizari"
+
+import CunoasteNe from "./pages/CunoasteNe"
+import DaPot from "./pages/DaPot"
+import Scrisori from "./pages/Scrisori"
+import LumeaImagini from "./pages/LumeaImagini"
+import ImplicaTe from "./pages/ImplicaTe"
 import Contact from "./pages/Contact"
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -36,27 +36,27 @@ const router = createHashRouter([
         children: [
             {
                 path: "/",
-                element: <Acasa />
+                element: <CunoasteNe />
             },
             {
-                path: "/campanii",
-                element: <Campanii />
+                path: "/da_pot",
+                element: <DaPot />
             },
             {
-                path: "/campanii/:id",
-                element: <Single />
+                path: "/scrisori",
+                element: <Scrisori />
             },
             {
-                path: "/galerie",
-                element: <Galerie />
+                path: "/scrisori/:id",
+                element: <Scrisori />
+            },
+            {
+                path: "/lumea_imagini",
+                element: <LumeaImagini />
             },
             {
                 path: "/implica_te",
                 element: <ImplicaTe />
-            },
-            {
-                path: "/autorizari",
-                element: <Autorizari />
             },
             {
                 path: "/contact",

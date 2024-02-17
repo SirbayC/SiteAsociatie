@@ -16,23 +16,25 @@ const Navbar = () => {
             <div className='centeredCont'>
                 <div className="container">
                     <div className="logo">
-                        <img src={Logo} alt="logo" />
+                        <NavLink to="/">
+                            <img src={Logo} alt="logo" />
+                        </NavLink>
                     </div>
                     <div className="links">
                         <NavLink to="/" className={({ isActive }) => isActive ? "link active" : 'link'}>
                             Cunoaste-ne
                         </NavLink>
-                        <NavLink to="/campanii" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            DA, pot!
+                        <NavLink to="/da_pot" className={({ isActive }) => isActive ? "link active" : 'link'}>
+                            Da, pot!
                         </NavLink>
-                        <NavLink to="/galerie" className={({ isActive }) => isActive ? "link active" : 'link'}>
+                        <NavLink to="/scrisori" className={({ isActive }) => isActive ? "link active" : 'link'}>
                             Scrisori catre Prieteni
                         </NavLink>
-                        <NavLink to="/implica_te" className={({ isActive }) => isActive ? "link active" : 'link'}>
+                        <NavLink to="/lumea_imagini" className={({ isActive }) => isActive ? "link active" : 'link'}>
                             Lumea mea in imagini
                         </NavLink>
-                        <NavLink to="/autorizari" className={({ isActive }) => isActive ? "link active" : 'link'}>
-                            Implica-te
+                        <NavLink to="/implica_te" className={({ isActive }) => isActive ? "link active" : 'link'}>
+                            Implica-te gratuit
                         </NavLink>
                         {/* <div className="userContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
                             <img

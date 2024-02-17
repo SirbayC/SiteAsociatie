@@ -1,7 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { useLocation, useNavigate, Link } from 'react-router-dom'
-
-
 import "../styling/single.scss"
 
 import LoadingSpinner from "../components/Spinner";
@@ -13,14 +11,8 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "./photos";
 
 const Single = () => {
-  const [post, setPost] = useState({})
-
-
   const location = useLocation()
-  const navigate = useNavigate()
-
   const postId = location.pathname.split("/")[2]
-
   return (
     <div>
       <h1>{postId}</h1>
