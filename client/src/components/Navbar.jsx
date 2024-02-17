@@ -45,6 +45,16 @@ const Navbar = () => {
                         <NavLink to="/lumea_imagini" className={`link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
                             Lumea mea in imagini
                         </NavLink>
+                        <div className='mobileOnly TextY'>
+                            <span className='LLine'></span>
+                            <span className='implText'>Implica-te gratuit</span>
+                        </div>
+                        <NavLink to="/redir" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
+                            Redirectioneaza 3.5%
+                        </NavLink>
+                        <NavLink to="/spons" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
+                            Sponsorizeaza 20%
+                        </NavLink>
                         <div className="submenuContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
                             <span className='navText'>Implica-te gratuit</span>
                             {showSubmenu && <Submenu />}

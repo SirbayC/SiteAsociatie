@@ -13,7 +13,8 @@ import CunoasteNe from "./pages/CunoasteNe"
 import DaPot from "./pages/DaPot"
 import Scrisori from "./pages/Scrisori"
 import LumeaImagini from "./pages/LumeaImagini"
-import ImplicaTe from "./pages/ImplicaTe"
+import Redir from "./pages/Redir"
+import Spons from  "./pages/Spons"
 import Contact from "./pages/Contact"
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -55,8 +56,12 @@ const router = createHashRouter([
                 element: <LumeaImagini />
             },
             {
-                path: "/implica_te",
-                element: <ImplicaTe />
+                path: "/redir",
+                element: <Redir />
+            },
+            {
+                path: "/spons",
+                element: <Spons />
             },
             {
                 path: "/contact",
