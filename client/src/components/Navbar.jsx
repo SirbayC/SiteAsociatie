@@ -12,20 +12,19 @@ const Navbar = () => {
     // };
 
     const [showNavbar, setShowNavbar] = React.useState(false);
-    const inputElement = React.useRef();
     
     const handleShowNavbar = () => {
       setShowNavbar(!showNavbar);
     };
     
-    const Hamburger = () => (
-      <label htmlFor="check" >
-            <input type="checkbox" id="check" checked={showNavbar} />
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    );
+    // const Hamburger = () => (
+    //   <label htmlFor="check" >
+    //         <input type="checkbox" id="check" checked={showNavbar} />
+    //     <span></span>
+    //     <span></span>
+    //     <span></span>
+    //   </label>
+    // );
 
 
     return (
@@ -37,8 +36,14 @@ const Navbar = () => {
                             <img src={Logo} alt="logo" />
                         </NavLink>
                     </div>
-                    <div className="menu-icon" onClick={handleShowNavbar}>
+                    {/* <div className="menu-icon" onClick={handleShowNavbar}>
                         <Hamburger />
+                    </div> */}
+                    <div className="menu-toggle" onClick={handleShowNavbar}>
+                        <div className={`hambox ${showNavbar && "hamboxOpen"}`}>
+                            <span className= {`lineTop ${showNavbar && "spin"}`}></span>
+                            <span className={`lineBottom ${showNavbar && "spin"}`}></span>
+                        </div>
                     </div>
                     <div className={`links ${showNavbar && "showMenu"}`}>
                         <NavLink to="/" className={`link ${({ isActive }) => isActive ? "active" : ''} ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>

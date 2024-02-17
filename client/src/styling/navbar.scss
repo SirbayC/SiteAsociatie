@@ -150,6 +150,68 @@
                     }
                 }
 
+                .menu-toggle {
+                    cursor: pointer;
+                }
+
+                .hambox{
+                    position: relative;
+                    width: 10px;
+                    height: 10px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    transition: 0.3s ease;
+                    padding: 20px;
+                    background: rgba(102, 51, 153, 0.098);
+                }
+
+                .hambox:hover {
+                    .lineTop, .lineBottom {
+                        background: white;
+                    }
+                    background: rgba(102, 51, 153, 0.858);
+                }
+
+                .hamboxOpen {
+                    
+                    background: rgba(102, 51, 153, 0.098);
+                }
+
+
+
+                .lineTop,
+                .lineBottom {
+                    margin: 0 auto;
+                    position: absolute;
+                    display: block;
+                    width: 24px;
+                    height: 2px;
+                    border-radius: 10px;
+                    background: rebeccapurple;
+                    left: 0;
+                    right: 0;
+                    transform: rotate(0deg);
+                    transition: all 0.4s;
+                }
+
+                .lineTop {
+                    top: 20px;
+                }
+
+                .lineBottom {
+                    bottom: 20px;
+                }
+
+                .lineTop.spin {
+                    top:24px;
+                    transform: rotate(135deg);
+                }
+
+                .lineBottom.spin {
+                    bottom: 24px;
+                    transform: rotate(225deg);
+                }
+
                 .menu-icon {
                     display: block;
                     label {
