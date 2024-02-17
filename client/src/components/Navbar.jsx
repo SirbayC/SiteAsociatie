@@ -45,7 +45,7 @@ const Navbar = () => {
                         <NavLink to="/lumea_imagini" className={`link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
                             Lumea mea in imagini
                         </NavLink>
-                        <div className='mobileOnly TextY'>
+                        <div className={`mobileOnly TextY ${ showNavbar ? "visibleLink" : 'invisibleLink'}`}>
                             <span className='LLine'></span>
                             <span className='implText'>Implica-te gratuit</span>
                         </div>
