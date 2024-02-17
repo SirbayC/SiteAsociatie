@@ -5,7 +5,7 @@
     justify-content: center;
 
     .centeredAcasa {
-        width: 100%;
+        width: 90%;
         max-width: 1024px;
 
         .generalPresentation {
@@ -154,6 +154,13 @@
             .finMes {
                 font-style:italic;
             }
+        }
+
+        .picEnd{
+            display: flex;
+            justify-content: center;
+            opacity: 0.5;
+            margin-top: 40px;
         }
     }
 

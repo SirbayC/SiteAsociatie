@@ -3,6 +3,7 @@ import Accordion from '../components/Accordion'
 import { useSpring, animated } from "react-spring";
 import Fetita from "../resources/fetita.png"
 import "../styling/cunoastene.scss"
+import Pic from '../resources/decEnd.png';
 
 const CunoasteNe = () => {
 
@@ -270,6 +271,9 @@ const CunoasteNe = () => {
             <br />
             ... si-ti multumim tie pentru timpul oferit!
           </p>
+        </div>
+        <div className='picEnd'>
+          <img src={Pic} alt="" width={300} />
         </div>
       </div>
     </div>
