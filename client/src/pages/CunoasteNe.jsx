@@ -114,7 +114,7 @@ const CunoasteNe = () => {
                   <p>2020 - 2023 - Asociatia mareste numarul copiilor cu Sindrom Down care beneficiaza de sedinte terapeutice de logopedie si terapie ocupationala prestate prin Cabinetul Individual de Psihologie Burlacu Nicoleta, Sector 1, Bucuresti, conform contract existent intre parti. Sedintele se desfasoara saptamanal, cu prezenta fizica sau online. Beneficiari 3 copii speciali.</p>
                 </div>
               }
-              height={`${contentHeight}px`}
+              height={`10000px`}
               color="#00a696"
             />
             <Accordion
@@ -137,7 +137,7 @@ const CunoasteNe = () => {
                   </ul>
                 </div>
               }
-              height={`${contentHeight2}px`}
+              height={`10000px`}
               color="#147e96"
             />
             <Accordion
@@ -155,7 +155,7 @@ const CunoasteNe = () => {
                   </ul>
                 </div>
               }
-              height={`${contentHeight3}px`}
+              height={`10000px`}
               color="#2d4e97"
             />
             <Accordion
@@ -182,7 +182,7 @@ const CunoasteNe = () => {
 
                 </div>
               }
-              height={`${contentHeight4}px`}
+              height={`10000px`}
               color="#5f4296"
             />
             <Accordion
@@ -200,7 +200,7 @@ const CunoasteNe = () => {
 
                 </div>
               }
-              height={`${contentHeight5}px`}
+              height={`10000px`}
               color="#9a3794"
             />
             <Accordion
@@ -213,7 +213,7 @@ const CunoasteNe = () => {
                     <li> Asociatia propune parintilor cu copii speciali, ori de cate ori are ocazia, cursuri de dezvoltare personala, cursuri de buna relationare intre copii si parinti, cursuri de gestionare corecta a emotiilor copiilor samd, cursuri in majoritatea lor gratuite, care se desfasoara online, in deosebi, de catre persoane acreditate in domeniu. </li>
                   </ul>
                 </div>}
-              height={`${contentHeight6}px`}
+              height={`10000px`}
               color="#bc2d68"
             />
             <Accordion
@@ -232,7 +232,7 @@ const CunoasteNe = () => {
                     <li>02.12.2022 - "O ZI PETRECUTA IMPREUNA". Militand pentru integrarea in comunitate a copiilor cu  Sindrom Down, Prietenii D.A.R.I.E.I. invita copii sa-si petreaca timp impreuna la locul de joaca "HYPE ARENA" Romexpo, respectiv la Cineplexx Baneasa, la filmul Motanul Incaltat.</li>
                   </ul>
                 </div>}
-              height={`${contentHeight7}px`}
+              height={`10000px`}
               color="#f1592a"
             />
             <Accordion
@@ -256,7 +256,7 @@ const CunoasteNe = () => {
                     <li>3 TABLETE LENOVO TAB M10 TB-X606X 10.3 32GB 2GB RAM W-FI si husele aferente pentru copii cu nevoi speciale, din  Scoala Gimnaziala Speciala nr 2, Bucuresti. Achizitia este facuta de la magazinul "Altex".</li>
                   </ul>
                 </div>}
-              height={`${contentHeight8}px`}
+              height={`10000px`}
               color="#f1b02a"
             />
           </div>
