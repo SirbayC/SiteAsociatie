@@ -1,0 +1,19 @@
+@import './colors';
+
+.dapot {
+    display: flex;
+    justify-content: center;
+
+    .centeredDapot {
+        width: 90%;
+        max-width: 1024px;
+        min-height: 1000px;
+        
+        background-color: green;
+
+        .generalPres{
+            margin: 50px;
+            background-color: blue;
+        }
+    }
+}

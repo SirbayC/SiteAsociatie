@@ -17,8 +17,15 @@
                 flex-direction: row;
                 gap: 30px;
 
+                .pc1{
+                    flex: 2;
+                }
+
+                .pc2{
+                    flex: 3;
+                }
+
                 .parCol {
-                    flex: 1;
                     padding: 10px;
                     display: flex;
                     flex-direction: column;
@@ -222,6 +229,7 @@
                 .accordion {
                     margin: 20px;
                     .accordion__item {
+                        overflow: auto;
                         width: 100%;
                         .accordion__header {
                             
