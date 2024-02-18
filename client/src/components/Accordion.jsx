@@ -25,7 +25,7 @@ function Accordion(props) {
     const openAnimation = useSpring({
         from: { opacity: "0", maxHeight: "25px" },
         to: { opacity: "1", maxHeight: open ? props.height : "25px" },
-        config: { duration: durCalc / 2.5 }
+        config: { duration: 500 }
     });
 
     const iconAnimation = useSpring({
