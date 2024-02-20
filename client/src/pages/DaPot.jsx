@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "../styling/dapot.scss"
-import pdf from "../resources/brosura.pdf"
 import LoadingSpinner from "../components/Spinner";
 
 const DaPot = () => {
