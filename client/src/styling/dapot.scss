@@ -9,11 +9,16 @@
         max-width: 1024px;
         min-height: 1000px;
         
-        background-color: green;
+        // background-color: green;
 
         .generalPres{
-            margin: 50px;
-            background-color: blue;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            .prestext {
+                padding: 10px;
+            }
+            // background-color: blue;
         }
     }
 }
