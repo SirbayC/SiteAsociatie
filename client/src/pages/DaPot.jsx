@@ -21,7 +21,7 @@ const DaPot = () => {
             isLoading ? <LoadingSpinner /> : null
           } 
           <iframe
-            src={pdf}
+            src='https://drive.google.com/file/d/1AdxNm1A0rL9Ruiot33OIm5BntVJMRuSp/preview'
             title="brosura"
             width="100%"
             height="600"
