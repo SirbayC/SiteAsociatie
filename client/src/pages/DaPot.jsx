@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "../styling/dapot.scss"
+import pdf from "../resources/brosura.pdf"
+import LoadingSpinner from "../components/Spinner";
+
 const DaPot = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div className="dapot">
       <div className="centeredDapot">
@@ -12,7 +17,18 @@ const DaPot = () => {
           </div>
         </div>
         <div className="pdf">
-          <iframe src="https://drive.google.com/file/d/1jWbVAlY8GG2zNhwhJU_wRfrPULLvCgdL/preview" width="100%" height="600" allow="autoplay" allowfullscreen = "true"></iframe>
+        {
+            isLoading ? <LoadingSpinner /> : null
+          } 
+          <iframe
+            src={pdf}
+            title="brosura"
+            width="100%"
+            height="600"
+            allow="autoplay"
+            allowFullScreen={true}
+            onLoad={() => setIsLoading(false)}
+          ></iframe>
         </div>
       </div>
     </div>
