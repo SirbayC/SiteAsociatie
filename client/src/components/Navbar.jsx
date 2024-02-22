@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import Logo from "../resources/logo_transparent.png"
-import User from "../resources/user.png"
 import { NavLink } from 'react-router-dom'
 import Submenu from '../components/UserSubmenu';
 import "../styling/navbar.scss"

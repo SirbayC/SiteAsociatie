@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {useState } from 'react'
 import "../styling/dapot.scss"
 import LoadingSpinner from "../components/Spinner";
 

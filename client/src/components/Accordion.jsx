@@ -3,9 +3,6 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useSpring, animated } from "react-spring";
 
 function Accordion(props) {
-
-    const durCalc = props.height.substring(0, props.height.length - 2);
-
     const [open, setOpen] = useState(false);
     let toggleOpen = e => {
         setOpen(prev => !prev)

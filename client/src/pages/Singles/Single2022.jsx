@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Single2024 = () => {
+const Single2022 = () => {
   return {
     content : <div>
       <h2>Bun gasit, Prietene!</h2>
@@ -65,9 +65,9 @@ const Single2024 = () => {
       <p>Ana si Daria Vasilescu</p>
       <p><strong>Asociatia Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
-    yearId: 2024,
+    yearId: 2022,
     desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
   }
 }
 
-export default Single2024
+export default Single2022
