@@ -22,3 +22,22 @@ body {
         }
     }
 }
+
+button {
+
+    width: max-content;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid $darkPurple;
+    border-radius: 5px;
+    color: $darkPurple;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        background-color: $darkPurple;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+}
