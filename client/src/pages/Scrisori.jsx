@@ -1,13 +1,34 @@
-import React, { useState } from 'react'
-import DefaultNoPostPic from "../resources/defaultNoImgPost.jpg"
-import { Link } from 'react-router-dom'
-import LoadingSpinner from "../components/Spinner";
+import React from 'react'
 import "../styling/scrisori.scss"
+import {useParams} from 'react-router-dom'
+import Single2024 from './Singles/Single2024'
 
 const Scrisori = () => {
+  
+  const { id } = useParams();
+
+  console.log(id)
+
+  let content = <h1>Undefined</h1>;
+
+  if (!id) {
+    content = 
+    <>
+      <h1>All scrisori</h1>  
+    </>
+  } else {
+    switch (id) {
+      case '2024':
+        content = Single2024()
+        break;
+    }
+  }
+
   return (
-    <div>
-      <h1>Scrisori catre Prieteni</h1>
+    <div className="scrisoare">
+      <div className="centered">
+        {content}
+      </div>
     </div>
   )
 }

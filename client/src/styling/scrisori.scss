@@ -1,108 +1,15 @@
 @import './colors';
 
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.campanii {
-    animation: fade-in 0.3s ease-in-out forwards;
+.scrisoare {
     display: flex;
     justify-content: center;
+    min-height: 700px;
+    background-color: green;
 
-    .posts {
-        width: 1024px;
+    .centered {
+        width: 90%;
+        max-width: 1024px;
         margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-
-        .post {
-            background-color: $veryLightPurple;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-
-            // .img {
-            //     flex: 2;
-            //     position: relative;
-
-            //     &::after {
-            //         content: "";
-            //         width: 100%;
-            //         height: 100%;
-            //         background-color: $logoBlack;
-            //         position: absolute;
-            //         top: 20px;
-            //         left: -20px;
-            //         z-index: -1;
-            //     }
-
-            //     img {
-            //         width: 100%;
-            //         max-height: 400px;
-            //         object-fit: cover;
-            //     }
-            // }
-
-            .titlelink {
-                width: fit-content;
-            }
-
-            h1 {
-                font-size: 48px;
-            }
-
-            .description {
-                text-align: justify;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 5;
-                white-space: pre-wrap;
-                max-height: 200px;
-                padding-left: 20px;
-                padding-right: 20px;
-                font-size: 18px;
-                font-weight: 300;
-            }
-
-            button {
-
-                width: max-content;
-                padding: 10px 15px;
-                border: none;
-                cursor: pointer;
-                background-color: white;
-                border: 1px solid $darkPurple;
-                border-radius: 5px;
-                color: $darkPurple;
-                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
-                &:hover {
-                    background-color: $darkPurple;
-                    color: white;
-                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-                }
-            }
-        }
-
-        .separator {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .line {
-                width: 50%;
-                height: 1px;
-                background-color: #c9c9c9;
-            }
-        }
+        background-color: red;
     }
 }
