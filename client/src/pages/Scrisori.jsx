@@ -17,19 +17,24 @@ const Scrisori = () => {
   
   if (!id) {
     content =
-      <div>
+      <div className='posts'>
         <h1>All scrisori</h1>
-        {posts.map(post => (
-          <Fragment key={post().yearId}>
+        {posts.map( (post,index) => (
+          <Fragment key={index}>
             <div className="post">
-              <Link className='link' to={`/scrisori/${post().yearId}`}>
+              <Link className='link minCont' to={`/scrisori/${post().yearId}`}>
                 <h2>{post().yearId}</h2>
               </Link>
+              <div className="description">
+                {post().desc}
+              </div>
+              <button onClick={() => navigate(`/scrisori/${post().yearId}`)}>Citest mai mult</button>
             </div>
-            <div className="description">
-              {post().desc}
-            </div>
-            <button onClick={() => navigate(`/scrisori/${post().yearId}`)}>Citest mai mult</button>
+            {index !== posts.length - 1 && (
+              <div className="separator">
+                <div className="line"></div>
+              </div>
+            )}
           </Fragment>
         ))}
       </div>
@@ -47,12 +52,16 @@ const Scrisori = () => {
       default:
         content = <h1>Undefined</h1>
     }
+    content =
+     <div className="postContent">
+        <button className='back' onClick={() => navigate("/scrisori")}>Back</button>
+        {content}
+     </div> 
   }
 
   return (
     <div className="scrisoare">
       <div className="centered">
-        {id && <button className='back' onClick={() => navigate("/scrisori")}>Back</button>}
         {content}
       </div>
     </div>
