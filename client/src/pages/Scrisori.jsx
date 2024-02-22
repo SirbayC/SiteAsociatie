@@ -14,7 +14,6 @@ const Scrisori = () => {
   const posts = [Single2024, Single2022,Single2023]
   posts.sort((a,b) => b().yearId - a().yearId)
 
-  
   if (!id) {
     content =
       <div className='posts'>
@@ -22,13 +21,19 @@ const Scrisori = () => {
         {posts.map( (post,index) => (
           <Fragment key={index}>
             <div className="post">
-              <Link className='link minCont' to={`/scrisori/${post().yearId}`}>
+              <Link className='link minCont' onClick={() => {
+                navigate(`/scrisori/${post().yearId}`);
+                window.scrollTo(0, 0);
+              }}>
                 <h2>{post().yearId}</h2>
               </Link>
               <div className="description">
                 {post().desc}
               </div>
-              <button onClick={() => navigate(`/scrisori/${post().yearId}`)}>Citest mai mult</button>
+              <button onClick={() => {
+                navigate(`/scrisori/${post().yearId}`);
+                window.scrollTo(0, 0);
+              }}>Citest mai mult</button>
             </div>
             {index !== posts.length - 1 && (
               <div className="separator">
@@ -54,7 +59,10 @@ const Scrisori = () => {
     }
     content =
      <div className="postContent">
-        <button className='back' onClick={() => navigate("/scrisori")}>Back</button>
+        <button className='back' onClick={() => {
+          navigate("/scrisori");
+          window.scrollTo(0, 0);
+        }}>Back</button>
         {content}
      </div> 
   }
