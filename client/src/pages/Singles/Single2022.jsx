@@ -2,68 +2,44 @@ import React from 'react'
 
 const Single2022 = () => {
   return {
-    content : <div>
-      <h2>Bun gasit, Prietene!</h2>
-      <p>Ce mai faci? Esti bine?</p>
-      <p>Sper ca te regasesc intai de toate bine cu tine, pentru a simti si transmite mai departe bine celorlalti.</p>
-      <p>La inceput de an nou, unii dintre noi continua sa-si materializeze planuri si idei anterioare, iar altii, poate, experimenteaza deja noi orizonturi.</p>
-      <p>Asociatia Prietenii D.A.R.I.E.I. (Asociatia, in continuare) s-a straduit sa imbrace si anul 2023 cu haina faptelor bune oferite elevilor cu cerinte educationale speciale, Sindrom Down cu precadere, asa cum o facem de altfel din 2015, an dupa an.</p>
-      <p>Permite-ne sa detailam.</p>
-      <p>Anul 2023 a fost, pentru elevii clasei a VIII a A de la Centrul Scolar de Educatie Incluziva nr. 1 din Bucuresti (fosta Scoala Gimnaziala Speciala nr. 2), anul absolvirii ciclului gimnazial.</p>
-      <p>Pentru ca de-a lungul celor patru ani de gimnaziu Asociatia noastra a implementat multe actiuni care au venit in sprijinul elevilor acestei clase, si de data aceasta a dorit sa fie alaturi de acesti copii minunati.</p>
-      <p>Astfel, Asociatia le-a propus elevilor, in februarie 2023, implicarea directa in <strong>actiunea "ABSOLVIREA". </strong></p>
-      <p>Pentru acest demers a achizitionat 150 bucati figurine ipsos (albe) si 150 figurine lemn natur (decoratiuni pentru ghivece de flori) pe care le-a oferit gratuit elevilor care, la randul lor, le-au decorat/pictat/desenat cum s-au priceput ei mai bine si apoi le-au daruit mai departe, cu ocazia Zilei Martisorului si a Sarbatorii Pascale, celor care s-au implicat in organizarea festivitatii de absolvire a clasei a VIII a, prin intermediul Asociatiei Prietenii D.A.R.I.E.I.</p>
-      <p>Implicarea directa a elevilor a dus la cresterea motivatiei, la cresterea increderii in fortele proprii, prin constientizarea efectului muncii lor si a fost un real prilej de incantare.</p>
-      <p>Asociatia Prietenii D.A.R.I.E.I. a suportat integral costurile de achizitie <strong>pachet de absolvire</strong> pentru cei 12 copii speciali din clasa a VIII a, constand in: toca cu bentita verde asortata, esarfa verde personalizata, cocarda de culoare rosie cu anul promotiei, album foto cu coperta de catifea rosie, inchiriere roba culoare neagra pentru data de 7 iunie 2023.</p>
-      <p>Cu ocazia Sarbatorilor Pascale 2023, Asociatia a marcat si in acest an prezenta <strong>"Iepurasului la clasa", </strong>daruind paturi de picnic si dulciuri cu specific pascal in ziua de 5 aprilie 2023.</p>
-      <p>Din luna septembrie 2023, Asociatia Prietenii D.A.R.I.E.I. decide sa deschida colaborarea cu <strong>Scoala de dansuri populare "Bucuria"din Bucuresti, </strong>pentru copiii cu Sindrom Down in interesul carora actioneaza, suportand integral costurile implicate: sedinta saptamanala de dans popular la sediul scolii de dansuri populare, echipament adecvat: tricouri personalizate "Bucuria", pantofiori de dans lucrati pe comanda pentru fiecare copil, la o firma de profil.</p>
-      <p>Nici <strong>"Petrecerea de Halloween"</strong> nu a trecut neobservata, Asociatia oferind dulciuri si decoratiuni specifice acestei ocazii, catre toti elevii cu nevoi speciale din clasa a IX a A, de la Centrul Scolar de Educatie Incluziva nr 1, Bucuresti.</p>
-      <p>Si tot ca o noutate din anul 2023, Asociatia a inceput colaborarea cu Centrul de Recuperare Medicala <strong>CENTROKINETIC, </strong>cu sediul in Bucuresti, sedintele terapeutice constand in: sedinte saptamanale de terapie logopedica, dar si sedinte de evaluare psihologica, sedinte de recuperare medicala, la nevoie.</p>
-      <p>O reala bucurie s-a dovedit a fi pentru copiii nostri cu Sindrom Down <strong>intalnirea cu calutii, </strong>la Clubul de Educatie Ecvestra <strong>HOBBY LAND RANCH</strong> de langa Bucuresti,</p>
-      <p><strong>Dezvoltarea armonioasa prin miscare si inot </strong>reprezinta de asemenea un crez important la care subscriem.</p>
-      <p>Din anul 2023, cursurile de inot pentru elevii cu Sindrom Down sustinuti de Prietenii D.A.R.I.E.I. se desfasoara la <strong>Complexul Olimpic de Natatie din Otopeni</strong>, cu prezenta bisaptamanala, in deosebi in lunile calde ale anului.</p>
-      <p><strong>Socializarea prin muzica,dans si film </strong>a fost si in 2023 o arie de interes deosebita pentru Asociatia Prietenii D.A.R.I.E.I.:</p>
-      <p>Pentru spectacolul musical MAMMA MIA Asociatia a suportat costurile de achizitie a 10 bilete de intrare pentru copii speciali si pentru insotitorii lor, spectacol ce a avut loc in data de 16.12.2023, ora 19:00, Sala Palatului, Bucuresti</p>
-      <p>Pentru ca "<strong>Si noua ne plac filmele!",</strong> Asociatia a oferit bilete de intrare si gustari mult dorite si de copiii speciali, cu aceste ocazii de vizionari de film la cinema.</p>
-      <p><strong>Filmele vizionate in 2023 de elevi cu Sindrom Dowm, au fost: </strong>"Doua inimi" &ndash; Cineplex Baneasa, 29.01.2023, "Barbie" &ndash; Cineplex Baneasa, 10.08.2023, "Dorinta" &ndash; HolywoodMultiplex, Mall Vitan, 26.11.2023.</p>
-      <p>Nici pe indragitul <strong> MOS NICOLAE </strong>Asociatia nu l-a uitat, oferind in data de 6 decembrie 2023, elevilor speciali de la clasa a IX a A, carti de colinde, povesti amuzante si dulciuri adecvate sarbatorilor iernii.</p>
-      <p>Asociatia Prietenii D.A.R.I.E.I. a incheiat anul 2023 prin sustinerea participarii copiilor speciali ai clasei a IX a A de la Centrul Scolar de Educatie Incluziva nr.1 Bucuresti, in data de 22.12.2023, in cadrul "Saptamanii Altfel", la<strong> Fabrica de Globulete din Curtea de Arges.</strong></p>
-      <p>Costurile implicate au vizat: transportul cu autocar omologat, atelierul de globulete de la Fabrica de Globulete, Curtea de Arges, masa de pranz, vizita la Manastirea Curtea de Arges, Fantana Mesterului Manole, Curtea Domneasca din Curtea de Arges.</p>
-      <p>Acesta a fost in cateva cuvinte anul 2023 pentru Asociatia Prietenii D.A.R.I.E.I.</p>
-      <p>Daca vei dori, gasesti mai jos un lik cu cateva imagini din povestea noastra de anul trecut.</p>
-      <p>Copiii cu nevoi speciale pe care-i sprijinim au inca multe vise de implinit.</p>
-      <p>Noi suntem meniti sa le stam aproape.</p>
-      <p>De vrei, o poti face si tu, in mod gratuit, prin completarea formularului 230 anexat.</p>
-      <p>(CERERE PRIVIND DESTINATIA SUMEI REPREZENTAND PANA LA 3,5% DIN IMPOZITUL ANUAL DATORAT)</p>
-      <p>Aceasta nu este o donatie, este doar alegerea ta despre cum sa folosesti o parte din banii pe care i-ai virat deja statului, ca impozit pe venitul din 2023.</p>
-      <p>Poti alege una din cele doua modalitati de <strong>completare a formularului 230:</strong></p>
-      <ol>
-        <li><strong>On line</strong></li>
-      </ol>
-      <ul>
-        <li>este necesara aplicatia Adobe Reader</li>
-        <li>alege pictograma "Completare si semnare" pentru a completa datele personale in I. "Date de identificare a contribuabilului"</li>
-        <li>semneaza de mana folosind pictograma "Penita stilou"</li>
-        <li>salveaza</li>
-        <li>trimite fisierul pdf pe adresa <a href="mailto:prieteniidariei@gmail.com"><em>prieteniidariei@gmail.com</em></a></li>
-      </ul>
-      <ol start="2">
-        <li><strong>Formular printat</strong></li>
-      </ol>
-      <ul>
-        <li>printeaza formularul atasat</li>
-        <li>completeaza datele personale in I. "Date de identificare a contribuabilului"</li>
-        <li>semneaza</li>
-        <li>apoi, fie il trimiti scanat pe adresa <em>prieteniidariei@gmail.com</em>, fie te asiguri ca ajunge in format fizic, la "Prietenii D.A.R.I.E.I." si ne vom ocupa noi de transmiterea lui.</li>
-      </ul>
-      <p>Datele Asociatiei noastre sunt precompletate.</p>
-      <p>Incepand din anul 2022, organizatiile non-profit pot depune formularele 230, in numele contribuabilului, exclusiv online.</p>
-      <p>Prin completarea formularului 230 iti exprimi acordul ca Asociatia Prietenii D.A.R.I.E.I. sa prelucreze datele tale cu caracter personal, din acest formular, cu scopul inregistrarii acestuia on line, pe platforma e-guvernare, cu semnatura electronica autorizata.</p>
-      <p><strong>Te rugam sa ne trimiti formularul 230 pana pe 25 aprilie 2024</strong>, indiferent de modalitatea de transmitere catre noi, online sau fizic.</p>
-      <p>Fii bine cu tine, fii bine cu ceilalti!</p>
-      <p>Cu prietenie,</p>
+    content: <div>
+      <h2>Dragii nostri sustinatori,</h2>
+      <p>Ne aflam la capatul unui nou inceput: de an, de proiecte, de vise, de speranta in mai bine.</p>
+      <p>Si&rsquo;om vedea, in sfarsit, si luminita de la capatul pandemiei! Asa sa fie! Aleg sa fiu optimista aici. Pentru mine, pentru cei de langa mine si, mai ales, pentru copiii din universul meu, care, poate, dintre noi toti, au cel mai mult nevoie de interactiune, de eliberare, de comunicare, de incurajare, de zambete care sa fie vazute, si nu doar ghicite si&hellip;cu siguranta imi scapa multe &ldquo;de&rdquo;-uri.</p>
+      <p>Prin &ldquo;Prietenii D.A.R.I.E.I.&rdquo;, de-a lungul intregului an complicat 2021, am continuat sa tinem drumul drept, inceput in 2015, si sa aducem bucurii in suflete de copii cu nevoi speciale, cu Sindrom Down, cu precadere. Vedem ca Daria noastra, si ea un copil de 15 ani, cu acest fel de-a fi numit Sindrom Down, tanjeste dupa acceptare, dupa incurajare, dupa implicare si integrare si de aceea obiectivul oricarui demers intreprins in anul ce-a trecut a subscris acestor valori mentionate, convinsi fiind ca reprezinta nevoile si aspiratiile acestor copii speciali.</p>
+      <p>Am inceput prin a dota clasa a VII a A a Scolii Gimnaziale Speciale nr. 2 din Bucuresti cu&nbsp;TABLA MAGNETICA ALBA VISUAL 120*220 cm<strong>,&nbsp;</strong>care a venit in completarea echipamentului de tehnica vizuala DISPLAY INTERACTIV SMART BOARD MX265-V2 EDUCATIONAL 65&rdquo;,pe care Asociatia &ldquo;Prietenii D.A.R.I.E.I.&rsquo;&rsquo; l-a oferit acestei clase la sfarsitul anului 2020. Nu stiu sa spun aici cine s-au bucurat mai mult, copiii sau profesorii, cert este ca a fost un mare plus pentru ambele parti.</p>
+      <p>Pentru prima data, anul trecut am reusit sa trimitem copii cu Sindrom Down in tabara! Da, o bucurie! Ca parinte de copil care cu greu se desprinde de cuibul lui, a fost o mare realizare si aici trebuie sa spun ca este meritul Asociatiei Conil, partenerul nostru de incredere in acest proiect.&nbsp;TABARA DE INTEGRARE PENTRU COPII CU NEVOI SPECIALE&nbsp;a avut loc in in perioada 02-07 august 2021 (6 zile, 5 nopti), in localitatea&nbsp;Vadul Anei, Branesti, jud Ilfov.</p>
+      <p>De asemenea, &ldquo;Prietenii D.A.R.I.E.I.&rdquo; a incurajat participarea copiilor cu nevoi speciale pe care ii sustine la&nbsp;ATELIERE DE PICTURA SI GRUPURI DE SOCIALIZARE/DANS &ndash;&nbsp;ATELIERE DEDICATE PREADOLESCENTILOR SI ADOLESCENTILOR CU NEVOI SPECIALE&nbsp;si puse in practica de Asociatia Conil, la care am spus &ldquo;prezent&rdquo; incepand de anul trecut, si o vom face cu mare dechidere si in acest an.</p>
+      <p>Beneficiile aduse de inot acestor copii nu le-am neglijat, asa incat, am sustinut financiar&nbsp;CURSURI de HIDROKINETOTERAPIE la CLUBUL SPORTIV DINAMO, in perioada verii 2021, cu o frecventa bisaptamanala. Incurajam si in acest an exercitiul fizic prin inot, miscarea, sub orice forma, fiind benefica pentru copii.</p>
+      <p>TERAPIA LOGOPEDICAsaptamanala a continuat si in 2021, reusind sa marim numarul copiilor care beneficiaza de aceasta forma de terapie a limbajului, de care copiii nostri cu Sindrom Down au reala nevoie.</p>
+      <p>Ramanem pe mai departe membrii&nbsp;ai&nbsp;ASOCIATIEI RENINCO Romania&nbsp;&ndash; Retea Nationala de Informare si Cooperare pentru Integrarea in Comunitate a copiilor si tinerilor cu cerinte educative speciale.</p>
+      <p>Totodata, in luna decembrie am implementat actiunea&nbsp;&ldquo;MOS NICOLAE VINE LA CLASA!&rsquo;&rsquo;, daruind, spre incantarea si bucuria celor 11 copii cu nevoi speciale care invata in clasa a VII a A, la Scoala Gimnaziala Speciala nr 2, Bucuresti, cadouri, constand in obiecte si decoratiuni specifice sarbatorilor de iarna, pe care copiii le-au descoperit la clasa, in dimineata zilei de 6 decembrie 2021.</p>
+      <p>De asemenea, venind in ajutorul altor 3 copii cu nevoi speciale, din aceeasi scoala, Asociatia &ldquo;Prietenii D.A.R.I.E.I.&rdquo; a suportat&nbsp;costurile de achizitie pentru 3 TABLETE LENOVO TAB M10 TB-X606X 10.3 32GB 2GB RAM W-FI.</p>
+      <p>&hellip;Daca au fost incantati copiii??...Putin spus incantati!!</p>
+      <p>Draga sustinator al Asociatiei &ldquo;Prietenii D.A.R.I.E.I.&rdquo;, reiteram crezul nostru, acela ca, toate actiunile noastre, trecute si viitoare, sunt menite sa permita accesul in societate a acestor copii cu nevoi speciale, cu Sindrom Down, intr-o lume care sa-i accepte si sa-i protejeze, unde cat mai multi dintre noi sa putem vedea abilitati in locul dizabilitatii.</p>
+      <p><strong>De crezi in noi, este simplu si este gratuit sa ni te alaturi!</strong></p>
+      <p>Nu te costa nimic. Aceasta nu este o donatie, este doar alegerea ta despre cum sa folosesti o parte din banii pe care i-ai virat deja statului, ca impozit pe veniturile realizate de tine anul trecut, in 2021. Altfel, daca nu alegi sa sustii o cauza anume, intreaga suma ramane la bugetul de stat.</p>
+      <p><strong>Descarca formularul 230 atasat</strong>,</p>
+      <p> Printeaza-l</p>
+      <p> Completeaza datele personale&nbsp;cu majuscule (sectiunea I) - si email, si telefon, te rugam.</p>
+      <p> Poti opta pentru&nbsp;redirecționarea celor 3,5% pentru o perioadă de 2 ani&nbsp;consecutivi (sectiunea II/2, prima pozitie)</p>
+      <p> Semneaza-l.</p>
+      <p>Apoi, fie il trimiti scanat, printr-un replay la acest e-mail, fie te asiguri ca ajunge in format fizic, in timp util, la &ldquo;Prietenii D.A.R.I.E.I.&rdquo;</p>
+      <p><strong>Sau, il poti completa online!</strong></p>
+      <p> Pentru a-l completa online trebuie sa ai aplicatia Adobe Reader descarcata.</p>
+      <p> Pentru editare date personale in campurile disponibile, inclusiv email si telefon (culoare albastru deschis, sectiunea I si/sau sectiunea II/2, prima pozitie), alege butonul &ldquo;completare si semnare&rdquo;.</p>
+      <p> Semneaza de mana folosind pictograma &ldquo;penita stilou&rdquo;,</p>
+      <p> Salveaza-l</p>
+      <p> Trimite-ni-l printr-un replay la prezentul e-mail.</p>
+      <p>Datele asociatiei noastre sunt precompletate.</p>
+      <p><strong>Formularul 230 este necesar sa ajunga pana la 25 mai 2022 la Anaf-ul de care apartii.</strong></p>
+      <p>De aceea, daca doresti, pentru ca&nbsp;Asociatia &ldquo;Prietenii D.A.R.I.E.I.&rdquo; sa-l poata depuna in numele tau si in timp util la sediile Anaf, te rugam ca&nbsp;<strong>cel mai tarziu pana la</strong>&nbsp;<strong>25&nbsp;aprilie 2022</strong>, sa te asiguri ca formularul ajunge&nbsp;<strong>in posesia Asociatiei &ldquo;Prietenii D.A.R.I.E.I.&rdquo;, fie in format fizic, fie prin posta electronica.</strong></p>
+      <p>Asociatia &ldquo;Prietenii D.A.R.I.E.I.&rdquo; va prelucra&nbsp;datele cu caracter personal din formularele 230 doar cu scopul depunerii acestora catre Administratiile Finantelor Publice.</p>
+      <p>Totodata, pentru firme, mentionam ca Asociatia&nbsp;PRIETENII D.A.R.I.E.I. este inscrisa in Registrul Entitatilor pentru care se acorda deduceri fiscale, conform Deciziei Anaf nr. 311133/19.12.2019.</p>
+      <p>Iti doresc sa simti multumire si recunostinta pentru ce ai si ce esti, iti doresc sa ai drag de tine, in fiecare zi!</p>
+      <p>Cu prietenie si ganduri bune,</p>
       <p>Ana si Daria Vasilescu</p>
-      <p><strong>Asociatia Prietenii D.A.R.I.E.I.</strong></p>
+      <p><strong>Asociatia&nbsp;Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2022,
     desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
