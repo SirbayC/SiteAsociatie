@@ -24,7 +24,7 @@ const Scrisori = () => {
   if (!id) {
     content =
       <div className='posts'>
-        <h1>All scrisori</h1>
+        <h2>All scrisori</h2>
         {posts.map( (post,index) => (
           <Fragment key={index}>
             <div className="post">
@@ -87,11 +87,18 @@ const Scrisori = () => {
     }
     content =
      <div className="postContent">
-        <button className='back' onClick={() => {
+        
+        <div className="textWrap">
+          <button className='back' onClick={() => {
           navigate("/scrisori");
           window.scrollTo(0, 0);
-        }}>Back</button>
-        {content}
+        }}>Inapoi</button>
+          <div className="text">
+            {content}
+          </div>
+          
+        </div>
+        
      </div> 
   }
 
