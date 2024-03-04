@@ -4,6 +4,7 @@ const Single2017 = () => {
   return {
     content: <div>
       <h2>Dragii nostri Prieteni,</h2>
+      <br />
       <p>Bine va regasim in 2017, an pe care vi-l dorim plin de inspiratie si incredere!</p>
       <p><strong>ASOCIATIA PRIETENII D.A.R.I.E.I.</strong> va multumeste din nou pentru optiunea de a ne fi alaturi!</p>
       <p>La aproape doi ani de la infiintare, cu bucurie va spunem ca, prin aportul vostru, alaturi de Daria, fetita noastra de 10 ani, inca o fetita de 8 ani cu Sindrom Down va putea beneficia in acest an de sedinte terapeutice de logopedie si terapie comportamentala, adica de sprijin real pentru ea si familia ei. Speram din suflet sa putem continua si pentru ea cu sedinte de inot, mai mult decat necesare.</p>
@@ -24,7 +25,7 @@ const Single2017 = () => {
       <p><strong>ASOCIATIA PRIETENII D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2017,
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+    desc: 'Dragii nostri Prieteni,\n\nBine va regasim in 2017, an pe care vi-l dorim plin de inspiratie si incredere! ASOCIATIA PRIETENII D.A.R.I.E.I. va multumeste din nou pentru optiunea de a ne fi alaturi! La aproape doi ani de la infiintare, cu bucurie va spunem ca, prin aportul vostru, alaturi de Daria, fetita noastra de 10 ani, inca o fetita de 8 ani cu Sindrom Down va putea beneficia in acest an de sedinte terapeutice de logopedie si terapie comportamentala, adica de sprijin real pentru ea si familia ei. Speram din suflet sa putem continua si pentru ea cu sedinte de inot, mai mult decat necesare.'
   }
 }
 

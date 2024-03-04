@@ -4,8 +4,9 @@ const Single2022 = () => {
   return {
     content: <div>
       <h2>Dragii nostri sustinatori,</h2>
+      <br />
       <p>Ne aflam la capatul unui nou inceput: de an, de proiecte, de vise, de speranta in mai bine.</p>
-      <p>Si&rsquo;om vedea, in sfarsit, si luminita de la capatul pandemiei! Asa sa fie! Aleg sa fiu optimista aici. Pentru mine, pentru cei de langa mine si, mai ales, pentru copiii din universul meu, care, poate, dintre noi toti, au cel mai mult nevoie de interactiune, de eliberare, de comunicare, de incurajare, de zambete care sa fie vazute, si nu doar ghicite si&hellip;cu siguranta imi scapa multe &ldquo;de&rdquo;-uri.</p>
+      <p>Si om vedea, in sfarsit, si luminita de la capatul pandemiei! Asa sa fie! Aleg sa fiu optimista aici. Pentru mine, pentru cei de langa mine si, mai ales, pentru copiii din universul meu, care, poate, dintre noi toti, au cel mai mult nevoie de interactiune, de eliberare, de comunicare, de incurajare, de zambete care sa fie vazute, si nu doar ghicite, si cu siguranta imi scapa multe "de"-uri.</p>
       <p>Prin &ldquo;Prietenii D.A.R.I.E.I.&rdquo;, de-a lungul intregului an complicat 2021, am continuat sa tinem drumul drept, inceput in 2015, si sa aducem bucurii in suflete de copii cu nevoi speciale, cu Sindrom Down, cu precadere. Vedem ca Daria noastra, si ea un copil de 15 ani, cu acest fel de-a fi numit Sindrom Down, tanjeste dupa acceptare, dupa incurajare, dupa implicare si integrare si de aceea obiectivul oricarui demers intreprins in anul ce-a trecut a subscris acestor valori mentionate, convinsi fiind ca reprezinta nevoile si aspiratiile acestor copii speciali.</p>
       <p>Am inceput prin a dota clasa a VII a A a Scolii Gimnaziale Speciale nr. 2 din Bucuresti cu&nbsp;TABLA MAGNETICA ALBA VISUAL 120*220 cm<strong>,&nbsp;</strong>care a venit in completarea echipamentului de tehnica vizuala DISPLAY INTERACTIV SMART BOARD MX265-V2 EDUCATIONAL 65&rdquo;,pe care Asociatia &ldquo;Prietenii D.A.R.I.E.I.&rsquo;&rsquo; l-a oferit acestei clase la sfarsitul anului 2020. Nu stiu sa spun aici cine s-au bucurat mai mult, copiii sau profesorii, cert este ca a fost un mare plus pentru ambele parti.</p>
       <p>Pentru prima data, anul trecut am reusit sa trimitem copii cu Sindrom Down in tabara! Da, o bucurie! Ca parinte de copil care cu greu se desprinde de cuibul lui, a fost o mare realizare si aici trebuie sa spun ca este meritul Asociatiei Conil, partenerul nostru de incredere in acest proiect.&nbsp;TABARA DE INTEGRARE PENTRU COPII CU NEVOI SPECIALE&nbsp;a avut loc in in perioada 02-07 august 2021 (6 zile, 5 nopti), in localitatea&nbsp;Vadul Anei, Branesti, jud Ilfov.</p>
@@ -42,7 +43,7 @@ const Single2022 = () => {
       <p><strong>Asociatia&nbsp;Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2022,
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+    desc: 'Dragii nostri sustinatori, \n\nNe aflam la capatul unui nou inceput: de an, de proiecte, de vise, de speranta in mai bine. Si om vedea, in sfarsit, si luminita de la capatul pandemiei! Asa sa fie! Aleg sa fiu optimista aici. Pentru mine, pentru cei de langa mine si, mai ales, pentru copiii din universul meu, care, poate, dintre noi toti, au cel mai mult nevoie de interactiune, de eliberare, de comunicare, de incurajare, de zambete care sa fie vazute, si nu doar ghicite, si cu siguranta imi scapa multe "de"-uri.'
   }
 }
 

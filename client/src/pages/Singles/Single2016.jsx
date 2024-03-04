@@ -4,6 +4,7 @@ const Single2016 = () => {
   return {
     content: <div>
       <h2>Dragii nostri prieteni,</h2>
+      <br />
       <p><strong>ASOCIATIA PRIETENII D.A.R.I.E.I.</strong> va ureaza un an nou mai bun, cu sanatate si multe reusite!</p>
       <p>In luna martie 2016 vom implini 1 an de la infiintare si, ca si noi, credem ca veti alege in continuare prietenia, ca optiune de bucurie a sufletului, sub orice forma s-ar manifesta aceasta.</p>
       <p>Cei mai multi dintre voi ne cunoasteti de ani buni, pe altii poate nu am avut inca placerea de a-i intalni, dar va asiguram pe toti de bunele noastre intentii in a facilita accesul copiilor diagnosticati cu Sindromul Down la servicii medicale, sociale, educationale, prin care sa maximizam sansele integrarii lor de societate.</p>
@@ -24,7 +25,7 @@ const Single2016 = () => {
       <p><strong>ASOCIATIA PRIETENII D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2016,
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+    desc: 'Dragii nostri prieteni,\n\nASOCIATIA PRIETENII D.A.R.I.E.I. va ureaza un an nou mai bun, cu sanatate si multe reusite! In luna martie 2016 vom implini 1 an de la infiintare si, ca si noi, credem ca veti alege in continuare prietenia, ca optiune de bucurie a sufletului, sub orice forma s-ar manifesta aceasta. Cei mai multi dintre voi ne cunoasteti de ani buni, pe altii poate nu am avut inca placerea de a-i intalni, dar va asiguram pe toti de bunele noastre intentii in a facilita accesul copiilor diagnosticati cu Sindromul Down la servicii medicale, sociale, educationale, prin care sa maximizam sansele integrarii lor de societate.'
   }
 }
 

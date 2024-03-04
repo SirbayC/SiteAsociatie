@@ -4,9 +4,10 @@ const Single2023 = () => {
   return {
     content: <div>
       <h2>Dragi prieteni de ieri si de azi ai Asociatiei Prietenii D.A.R.I.E.I.,</h2>
+      <br />
       <p>Bun gasit!</p>
-      <p>&ldquo;A mai trecut un an din noi&rdquo; &hellip; asa zice un frumos cantec, nu?!</p>
-      <p>A fost &hellip; un an 2022 &hellip; complex si complicat, in care ne-am straduit, poate, sa-i imprimam fiecare nota personala de normalitate.</p>
+      <p>"A mai trecut un an din noi" asa zice un frumos cantec, nu?!</p>
+      <p>A fost un an 2022 complex si complicat, in care ne-am straduit, poate, sa-i imprimam fiecare nota personala de normalitate.</p>
       <p>Noi, Asociatia Prietenii D.A.R.I.E.I., asa am facut, am continuat sa ajutam copii cu cerinte educationale speciale, Sindrom Down cu precadere, asa cum o facem an de an, din 2015.</p>
       <p>Acesti copii, prin iubirea pe care ne-o intorc, chiar sunt speciali, asa cum este trifoiul cu patru foi in lanul de trifoi&hellip;aparte. Nu este intotdeauna usor, mai pierdem uneori busola rabdarii si cand uitam sa zambim, copiii nostri speciali ne predau din nou si din nou lectia iubirii, prin imbratisarile lor. De aici ne luam energia de a continua.</p>
       <p>Va rog sa-mi permiteti cateva cuvinte despre actiunile Asociatiei Prietenii D.A.R.I.E.I. in anul 2022.</p>
@@ -56,7 +57,7 @@ const Single2023 = () => {
       <p><strong>Asociatia Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2023,
-    desc: "At vero eos et You can also refer to a React component using dot-notation from within JSX. This is convenient if you have a single module that exports many React components. For example, if MyComponents.DatePicker is a component, you can use it directly from JSX with:accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+    desc: 'Dragi prieteni de ieri si de azi ai Asociatiei Prietenii D.A.R.I.E.I., Bun gasit! \n\n"A mai trecut un an din noi" asa zice un frumos cantec, nu?! A fost un an 2022 complex si complicat, in care ne-am straduit, poate, sa-i imprimam fiecare nota personala de normalitate.Noi, Asociatia Prietenii D.A.R.I.E.I., asa am facut, am continuat sa ajutam copii cu cerinte educationale speciale, Sindrom Down cu precadere, asa cum o facem an de an, din 2015.',
   }
 }
 

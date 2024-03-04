@@ -9,13 +9,21 @@
     .centered {
         width: 90%;
         max-width: 1024px;
-        margin-top: 40px;
+        margin-top: 50px;
         // background-color: red;
 
         .posts {
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            h2{
+                margin: 0;
+            }
+
+            .prestext {
+                padding: 10px;
+            }
 
             .post {
                 h2 {
@@ -100,10 +108,10 @@
             .textWrap {
                 // background-color: red;
                 position: relative;
-                padding-left: 60px;
-                padding-right: 40px;
-                padding-top: 20px;
-                padding-bottom: 20px;
+                padding-left: 7%;
+                padding-right: 5%;
+                padding-top: 3%;
+                padding-bottom: 3%;
                 
                 p {
                     text-align: justify;

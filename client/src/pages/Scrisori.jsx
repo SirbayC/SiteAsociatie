@@ -24,7 +24,14 @@ const Scrisori = () => {
   if (!id) {
     content =
       <div className='posts'>
-        <h2>All scrisori</h2>
+        <div className="pre">
+          <h2> {"<"}Titlu{">"} </h2>
+          <div className="prestext">
+            <p>{"<"}Teext{">"}</p>
+            <p>{"<"}Teext{">"}</p>
+          </div>
+        </div>
+        
         {posts.map( (post,index) => (
           <Fragment key={index}>
             <div className="post">

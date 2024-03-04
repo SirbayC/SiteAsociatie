@@ -4,6 +4,7 @@ const Single2024 = () => {
   return {
     content : <div>
       <h2>Bun gasit, Prietene!</h2>
+      <br />
       <p>Ce mai faci? Esti bine?</p>
       <p>Sper ca te regasesc intai de toate bine cu tine, pentru a simti si transmite mai departe bine celorlalti.</p>
       <p>La inceput de an nou, unii dintre noi continua sa-si materializeze planuri si idei anterioare, iar altii, poate, experimenteaza deja noi orizonturi.</p>
@@ -66,7 +67,7 @@ const Single2024 = () => {
       <p><strong>Asociatia Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2024,
-    desc: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+    desc: "Bun gasit, Prietene! \n\nCe mai faci? Esti bine? Sper ca te regasesc intai de toate bine cu tine, pentru a simti si transmite mai departe bine celorlalti. La inceput de an nou, unii dintre noi continua sa-si materializeze planuri si idei anterioare, iar altii, poate, experimenteaza deja noi orizonturi.Asociatia Prietenii D.A.R.I.E.I. (Asociatia, in continuare) s-a straduit sa imbrace si anul 2023 cu haina faptelor bune oferite elevilor cu cerinte educationale speciale, Sindrom Down cu precadere, asa cum o facem de altfel din 2015, an dupa an.",
   }
 }
 
