@@ -1,0 +1,18 @@
+.spons {
+    display: flex;
+    justify-content: center;
+
+    .centered {
+        width: 90%;
+        max-width: 1024px;
+        min-height: 700px;
+
+        .desc {
+            margin-top: 40px;
+        }
+
+        .pdf {
+            margin-top: 30px;
+        }
+    }
+}

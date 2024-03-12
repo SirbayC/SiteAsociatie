@@ -1,9 +1,8 @@
-import React, {useState } from 'react'
+import React from 'react'
 import "../styling/redir.scss"
-import LoadingSpinner from "../components/Spinner";
 
 const Redir = () => {
-  const pdfUrl = "http://localhost:3000/230.pdf"
+  const pdfUrl = "https://asociatiaprieteniidariei.ro/230.pdf"
 
   const download = (url) => {
     fetch(url)
@@ -19,8 +18,6 @@ const Redir = () => {
         a.remove()
       })
   }
-
-  const [isLoading, setIsLoading] = useState(true);
   return (
     <div className="redir">
       <div className="centered">
@@ -32,16 +29,13 @@ const Redir = () => {
           <p>Trimite formularul pe adresa prieteniidariei@gmail.com pana la data 25 aprilie 2024.</p>
           <p>Incepand din anul 2022, organizatiile non-profit pot depune formularele 230, in numele contribuabilului, exclusiv online.</p>
           <p>Prin completarea formularului 230 iti exprimi acordul ca Asociatia Prietenii D.A.R.I.E.I. sa prelucreze datele tale cu caracter personal, din acest formular, cu scopul inregistrarii acestuia on line, pe platforma e-guvernare, cu semnatura electronica autorizata, conform reglementarilor legale in vigoare</p>
-          <p>Iti multumim!</p>
-          <p>Fii bun cu tine, fii bun cu ceilalti!</p>
+          <p><i>Iti multumim!</i></p>
+          <p><i>Fii bun cu tine, fii bun cu ceilalti!Fii bun cu tine, fii bun cu ceilalti!</i></p>
         </div>
         <div className="textWrap">
           <h4>Cerere privind destinatia sumei reprezentand pana la 3,5% din impozitul anual datorat</h4>
         </div>
         <div className="pdf">
-          {
-              isLoading ? <LoadingSpinner /> : null
-            } 
           <iframe
               src='https://drive.google.com/file/d/1C_f4fyPWBMROZpwSIRWN1f4XepvsF72l/preview'
               title="brosura"
@@ -49,7 +43,6 @@ const Redir = () => {
               height="600"
               allow="autoplay"
               allowFullScreen={true}
-              onLoad={() => setIsLoading(false)}
             ></iframe>
         </div>
         <button onClick={() => {
