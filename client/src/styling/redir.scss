@@ -6,6 +6,19 @@
         width: 90%;
         max-width: 1024px;
         min-height: 700px;
-        background-color: rebeccapurple;
+
+        .desc {
+            margin-top: 40px;
+        }
+
+        .textWrap {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pdf {
+            margin-bottom: 5px;
+        }
     }
 }
