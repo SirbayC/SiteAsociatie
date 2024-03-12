@@ -56,11 +56,11 @@ const router = createHashRouter([
                 element: <LumeaImagini />
             },
             {
-                path: "/redir",
+                path: "/redirectioneaza",
                 element: <Redir />
             },
             {
-                path: "/spons",
+                path: "/sponsorizeaza",
                 element: <Spons />
             },
             {

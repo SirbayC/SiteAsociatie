@@ -48,10 +48,10 @@ const Navbar = () => {
                             <span className='LLine'></span>
                             <span className='implText'>Implica-te gratuit</span>
                         </div>
-                        <NavLink to="/redir" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
+                        <NavLink to="/redirectioneaza" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
                             Redirectioneaza 3.5%
                         </NavLink>
-                        <NavLink to="/spons" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
+                        <NavLink to="/sponsorizeaza" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
                             Sponsorizeaza 20%
                         </NavLink>
                         <div className="submenuContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
