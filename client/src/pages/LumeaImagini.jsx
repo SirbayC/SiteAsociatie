@@ -11,12 +11,12 @@ const LumeaImagini = () => {
     <div className="lumeamea">
       <div className="centered">
         <div className='album'>
-          <h2>Anul 2023</h2>
+          <h2>| 2023</h2>
           {Album2023()}
         </div>
 
         <div className="album">
-          <h2>Anii 2016 - 2022</h2>
+          <h2>| 2015 - 2022</h2>
           {AlbumPre2023()}
         </div>
       </div>

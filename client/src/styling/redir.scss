@@ -1,0 +1,11 @@
+.redir {
+    display: flex;
+    justify-content: center;
+
+    .centered {
+        width: 90%;
+        max-width: 1024px;
+        min-height: 700px;
+        background-color: rebeccapurple;
+    }
+}
