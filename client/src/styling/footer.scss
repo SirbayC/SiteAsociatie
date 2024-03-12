@@ -1,12 +1,15 @@
 @import './colors';
 
 footer {
+    height: 60px;
     margin-top: 50px;
     padding: 10px 20px;
     background-color: $logoBlack;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
     font-size: 16px;
     font-weight: 300;
     color: white;
@@ -14,5 +17,14 @@ footer {
 
     img {
         height: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    span {
+        position: absolute;
+        right: 16px; /* Adjust the right distance as needed */
+        bottom: 30px;
     }
 }

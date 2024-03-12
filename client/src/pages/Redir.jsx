@@ -30,7 +30,7 @@ const Redir = () => {
           <p>Incepand din anul 2022, organizatiile non-profit pot depune formularele 230, in numele contribuabilului, exclusiv online.</p>
           <p>Prin completarea formularului 230 iti exprimi acordul ca Asociatia Prietenii D.A.R.I.E.I. sa prelucreze datele tale cu caracter personal, din acest formular, cu scopul inregistrarii acestuia on line, pe platforma e-guvernare, cu semnatura electronica autorizata, conform reglementarilor legale in vigoare</p>
           <p><i>Iti multumim!</i></p>
-          <p><i>Fii bun cu tine, fii bun cu ceilalti!Fii bun cu tine, fii bun cu ceilalti!</i></p>
+          <p><i>Fii bun cu tine, fii bun cu ceilalti!</i></p>
         </div>
         <div className="textWrap">
           <h4>Cerere privind destinatia sumei reprezentand pana la 3,5% din impozitul anual datorat</h4>

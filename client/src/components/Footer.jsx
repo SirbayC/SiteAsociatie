@@ -6,7 +6,7 @@ import "../styling/footer.scss"
 const Footer = () => {
   return (
     <footer>
-      <Link className='link' to="/contact">Contact</Link>
+      {/* <Link className='link' to="/contact">Contact</Link> */}
       <img src={Logo} alt="logo" />
       <span>© 2023</span>
     </footer>
