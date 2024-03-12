@@ -58,6 +58,9 @@ const Single2023 = () => {
     </div>,
     yearId: 2023,
     desc: 'Dragi prieteni de ieri si de azi ai Asociatiei Prietenii D.A.R.I.E.I., Bun gasit! \n\n"A mai trecut un an din noi" asa zice un frumos cantec, nu?! A fost un an 2022 complex si complicat, in care ne-am straduit, poate, sa-i imprimam fiecare nota personala de normalitate.Noi, Asociatia Prietenii D.A.R.I.E.I., asa am facut, am continuat sa ajutam copii cu cerinte educationale speciale, Sindrom Down cu precadere, asa cum o facem an de an, din 2015.',
+    stylingFilter: {
+      filter: "hue-rotate(40deg)",
+    }
   }
 }
 

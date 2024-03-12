@@ -25,7 +25,10 @@ const Single2016 = () => {
       <p><strong>ASOCIATIA PRIETENII D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2016,
-    desc: 'Dragii nostri prieteni,\n\nASOCIATIA PRIETENII D.A.R.I.E.I. va ureaza un an nou mai bun, cu sanatate si multe reusite! In luna martie 2016 vom implini 1 an de la infiintare si, ca si noi, credem ca veti alege in continuare prietenia, ca optiune de bucurie a sufletului, sub orice forma s-ar manifesta aceasta. Cei mai multi dintre voi ne cunoasteti de ani buni, pe altii poate nu am avut inca placerea de a-i intalni, dar va asiguram pe toti de bunele noastre intentii in a facilita accesul copiilor diagnosticati cu Sindromul Down la servicii medicale, sociale, educationale, prin care sa maximizam sansele integrarii lor de societate.'
+    desc: 'Dragii nostri prieteni,\n\nASOCIATIA PRIETENII D.A.R.I.E.I. va ureaza un an nou mai bun, cu sanatate si multe reusite! In luna martie 2016 vom implini 1 an de la infiintare si, ca si noi, credem ca veti alege in continuare prietenia, ca optiune de bucurie a sufletului, sub orice forma s-ar manifesta aceasta. Cei mai multi dintre voi ne cunoasteti de ani buni, pe altii poate nu am avut inca placerea de a-i intalni, dar va asiguram pe toti de bunele noastre intentii in a facilita accesul copiilor diagnosticati cu Sindromul Down la servicii medicale, sociale, educationale, prin care sa maximizam sansele integrarii lor de societate.',
+    stylingFilter: {
+      filter: "hue-rotate(320deg)",
+    }
   }
 }
 

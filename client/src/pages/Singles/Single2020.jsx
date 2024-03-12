@@ -30,7 +30,10 @@ const Single2020 = () => {
       <p><strong>Asociatia PRIETENII D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2020,
-    desc: 'Bine v-am gasit, dragi Prieteni, de ieri si de azi!\n\nCu permisiunea voastra, va astern vesti despre noi, PRIETENII D.A.R.I.E.I., si va multumesc tare mult pentru timpul pe care ni-l acordati. Luna aceasta, ianuarie 2020, implinim 5 ani de cand suntem alaturi, oficial, de copii cu nevoi speciale, cu precadere copii cu Sindrom Down. Asa cum, cineva drag, cu 13 ani in urma, la finalul zilei in care tocmai nascusem, mi-a zis imbratisandu-ma "Nu sunteti singuri, suntem si noi cu voi!", tot asa, ideea Asociatiei PRIETENII D.A.R.I.E.I. a aparut din nevoia de a darui, la randul nostru, speranta si bucurie fetitei noastre, Daria, si copiilor asemenea ei, nascuti cu acest fel de a fi, caruia i s-a spus Sindrom Down.'
+    desc: 'Bine v-am gasit, dragi Prieteni, de ieri si de azi!\n\nCu permisiunea voastra, va astern vesti despre noi, PRIETENII D.A.R.I.E.I., si va multumesc tare mult pentru timpul pe care ni-l acordati. Luna aceasta, ianuarie 2020, implinim 5 ani de cand suntem alaturi, oficial, de copii cu nevoi speciale, cu precadere copii cu Sindrom Down. Asa cum, cineva drag, cu 13 ani in urma, la finalul zilei in care tocmai nascusem, mi-a zis imbratisandu-ma "Nu sunteti singuri, suntem si noi cu voi!", tot asa, ideea Asociatiei PRIETENII D.A.R.I.E.I. a aparut din nevoia de a darui, la randul nostru, speranta si bucurie fetitei noastre, Daria, si copiilor asemenea ei, nascuti cu acest fel de a fi, caruia i s-a spus Sindrom Down.',
+    stylingFilter: {
+      filter: "hue-rotate(160deg)",
+    }
   }
 }
 

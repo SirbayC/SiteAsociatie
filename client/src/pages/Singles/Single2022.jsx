@@ -43,7 +43,10 @@ const Single2022 = () => {
       <p><strong>Asociatia&nbsp;Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2022,
-    desc: 'Dragii nostri sustinatori, \n\nNe aflam la capatul unui nou inceput: de an, de proiecte, de vise, de speranta in mai bine. Si om vedea, in sfarsit, si luminita de la capatul pandemiei! Asa sa fie! Aleg sa fiu optimista aici. Pentru mine, pentru cei de langa mine si, mai ales, pentru copiii din universul meu, care, poate, dintre noi toti, au cel mai mult nevoie de interactiune, de eliberare, de comunicare, de incurajare, de zambete care sa fie vazute, si nu doar ghicite, si cu siguranta imi scapa multe "de"-uri.'
+    desc: 'Dragii nostri sustinatori, \n\nNe aflam la capatul unui nou inceput: de an, de proiecte, de vise, de speranta in mai bine. Si om vedea, in sfarsit, si luminita de la capatul pandemiei! Asa sa fie! Aleg sa fiu optimista aici. Pentru mine, pentru cei de langa mine si, mai ales, pentru copiii din universul meu, care, poate, dintre noi toti, au cel mai mult nevoie de interactiune, de eliberare, de comunicare, de incurajare, de zambete care sa fie vazute, si nu doar ghicite, si cu siguranta imi scapa multe "de"-uri.',
+    stylingFilter: {
+      filter: "hue-rotate(80deg)",
+    }
   }
 }
 

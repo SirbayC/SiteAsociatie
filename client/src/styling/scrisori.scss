@@ -113,9 +113,13 @@
                 padding-top: 3%;
                 padding-bottom: 3%;
                 
-                p {
-                    text-align: justify;
+                .text {
+                    p {
+                        text-align: justify;
+                    }
                 }
+
+                // filter: brightness(0.92) saturate(0.6) hue-rotate(250deg);
             }
 
             .textWrap::before {
@@ -132,6 +136,7 @@
                 background-repeat: repeat-y;
                 background-position: 50% 0;
                 background-size: contain;
+                // filter: brightness(0.92) saturate(0.6) hue-rotate(250deg);
             }
         }
     }

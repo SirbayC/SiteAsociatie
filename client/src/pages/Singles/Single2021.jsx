@@ -31,7 +31,10 @@ const Single2021 = () => {
       <p><strong>Asociatia PRIETENII D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2021,
-    desc: 'Bine v-am gasit! \n\n...chiar asa, "Prieteni ai DARIEI", de ieri si de azi! Vreau sa cred ca sunteti bine, ca cei mai multi dintre voi ati trecut, fara urmari nedorite, de greutatile anului trecut, an ca nici un altul de pana acum. De-i cum zic, considerati-va norocosi si ... ramaneti sanatosi in continuare! Altfel, daca va aflati, ca si mine, in situatia pierderii unui Om drag, va doresc ce-mi doresc si mie, putere de acceptare si memorie vie pentru clipa trecuta, de neinlocuit!'
+    desc: 'Bine v-am gasit! \n\n...chiar asa, "Prieteni ai DARIEI", de ieri si de azi! Vreau sa cred ca sunteti bine, ca cei mai multi dintre voi ati trecut, fara urmari nedorite, de greutatile anului trecut, an ca nici un altul de pana acum. De-i cum zic, considerati-va norocosi si ... ramaneti sanatosi in continuare! Altfel, daca va aflati, ca si mine, in situatia pierderii unui Om drag, va doresc ce-mi doresc si mie, putere de acceptare si memorie vie pentru clipa trecuta, de neinlocuit!',
+    stylingFilter: {
+      filter: "hue-rotate(120deg)",
+    }
   }
 }
 

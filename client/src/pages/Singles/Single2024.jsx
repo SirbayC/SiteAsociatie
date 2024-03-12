@@ -68,6 +68,9 @@ const Single2024 = () => {
     </div>,
     yearId: 2024,
     desc: "Bun gasit, Prietene! \n\nCe mai faci? Esti bine? Sper ca te regasesc intai de toate bine cu tine, pentru a simti si transmite mai departe bine celorlalti. La inceput de an nou, unii dintre noi continua sa-si materializeze planuri si idei anterioare, iar altii, poate, experimenteaza deja noi orizonturi.Asociatia Prietenii D.A.R.I.E.I. (Asociatia, in continuare) s-a straduit sa imbrace si anul 2023 cu haina faptelor bune oferite elevilor cu cerinte educationale speciale, Sindrom Down cu precadere, asa cum o facem de altfel din 2015, an dupa an.",
+    stylingFilter: {
+      filter: "hue-rotate(0deg)",
+    }
   }
 }
 

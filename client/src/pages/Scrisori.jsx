@@ -25,16 +25,16 @@ const Scrisori = () => {
     content =
       <div className='posts'>
         <div className="pre">
-          <h2> {"<"}Titlu{">"} </h2>
+          <h2>Scrisori catre Prieteni</h2>
           <div className="prestext">
-            <p>{"<"}Teext{">"}</p>
-            <p>{"<"}Teext{">"}</p>
+            <p>Asociatia Prietenii D.A.R.I.E.I. organizeaza campanii de strangere de fonduri prin intermediul "Scrisorilor catre Prieteni". </p>
+            <p>Aceste “scrisori” se adreseaza sustinatorilor Asociatiei Prietenii D.A.R.I.E.I. si descriu principalele actiuni implementate, in decursul anului anterior scrierii acestora, pentru sufletele cu nevoi speciale, in numele carora actioneaza.</p>
           </div>
         </div>
         
         {posts.map( (post,index) => (
           <Fragment key={index}>
-            <div className="post">
+            <div className="post" style={post().stylingFilter}>
               <Link className='link minCont' onClick={() => {
                 navigate(`/scrisori/${post().yearId}`);
                 window.scrollTo(0, 0);
@@ -58,54 +58,30 @@ const Scrisori = () => {
         ))}
       </div>
   } else {
-    switch (id) {
-      case '2024':
-        content = Single2024().content
-        break;
-      case '2023':
-        content = Single2023().content
-        break;
-      case '2022':
-        content = Single2022().content
-        break;
-      case '2021':
-        content = Single2021().content
-      break;
-      case '2020':
-        content = Single2020().content
-      break;
-      case '2019':
-        content = Single2019().content
-      break;
-      case '2018':
-        content = Single2018().content
-      break;
-      case '2017':
-        content = Single2017().content
-      break;
-      case '2016':
-        content = Single2016().content
-      break;
-      case '2015':
-        content = Single2015().content
-        break;
-      default:
-        content = <h1>Undefined</h1>
+
+    let obj;
+    if (id <= 2024 && id >= 2015) {
+      obj = posts.find( post => post().yearId === parseInt(id))
+    } else {
+      obj = {
+        content: <h1>Undefined</h1>,
+        stylingFilter: ""
+      }
     }
+    content = obj().content
+    const stl = obj().stylingFilter
+
     content =
      <div className="postContent">
-        
-        <div className="textWrap">
-          <button className='back' onClick={() => {
-          navigate("/scrisori");
-          window.scrollTo(0, 0);
-        }}>Inapoi</button>
+        <div className="textWrap" style={stl}>
+          <button className='back'  onClick={() => {
+            navigate("/scrisori");
+            window.scrollTo(0, 0);
+          }}>Inapoi</button>
           <div className="text">
             {content}
           </div>
-          
         </div>
-        
      </div> 
   }
 

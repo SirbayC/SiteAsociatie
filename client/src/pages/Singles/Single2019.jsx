@@ -32,7 +32,10 @@ const Single2019 = () => {
       <p><strong>Asociatia Prietenii D.A.R.I.E.I.</strong></p>
     </div>,
     yearId: 2019,
-    desc: 'Bun gasit!\n\nDraga Prietene, iata-ne din nou impreuna, iar daca poti sa acorzi cateva clipe si randurilor de mai jos, iti spun ca-mi daruiesti bucurie si-ti multumesc din suflet pentru asta! Suntem la inceput de an, asadar, prilej de noi orizonturi si pentru Prietenii D.A.R.I.E.I. Asociatia Prietenii D.A.R.I.E.I. continua sa sprijine, asa cum o face de cativa ani incoace, copii al caror fel de a fi se numeste "sindrom down" si incepe o noua campanie de strangere de fonduri, ce consta in redirectionarea a 2% din impozitul pe veniturile realizate in anul 2018.'
+    desc: 'Bun gasit!\n\nDraga Prietene, iata-ne din nou impreuna, iar daca poti sa acorzi cateva clipe si randurilor de mai jos, iti spun ca-mi daruiesti bucurie si-ti multumesc din suflet pentru asta! Suntem la inceput de an, asadar, prilej de noi orizonturi si pentru Prietenii D.A.R.I.E.I. Asociatia Prietenii D.A.R.I.E.I. continua sa sprijine, asa cum o face de cativa ani incoace, copii al caror fel de a fi se numeste "sindrom down" si incepe o noua campanie de strangere de fonduri, ce consta in redirectionarea a 2% din impozitul pe veniturile realizate in anul 2018.',
+    stylingFilter: {
+      filter: "hue-rotate(200deg)",
+    }
   }
 }
 
