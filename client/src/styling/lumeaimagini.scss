@@ -9,11 +9,23 @@
         max-width: 1024px;
         min-height: 700px;
 
-        .pa-gallery-player-widget {
+        h2 {
+            margin: 0;
+        }
+
+        .album {
             margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pa-gallery-player-widget {
             width: 100%;
             height: 500px;
             display: none;
+            overflow: hidden;
         }
     }
 }

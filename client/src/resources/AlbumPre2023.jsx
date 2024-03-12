@@ -4,7 +4,8 @@ const AlbumPre2023 = () => {
         <div className="pa-gallery-player-widget"
             data-link="https://photos.app.goo.gl/rVnfCqDga7QbEYDS9"
             data-title=""
-            data-description="poze 2016 - 2023">
+            data-description="poze 2016 - 2023"
+            data-background-color="#e7e1ed">                
             <object data="https://lh3.googleusercontent.com/pw/AP1GczPE7-xP4wzWHtkxlH7qO85Z4ETbq6vV9kf2qNmbMN6hobhU3Ge31MPZW26mQjVdrBQBkJVfJWsbjyXEW81NytdOWml7BtZocAw0XCykaM0j8NFhGLCF=w1920-h1080"></object>
             <object data="https://lh3.googleusercontent.com/pw/AP1GczOQRK4lnQoFQbuTH33zIySA7BXGK9saUBYe8QLMmfFname2RpXZ76ie0vs5ZwcTccTz1-gq-R7yZudiU057KONmbwJhfCVhxluP9cDQBwbmelpj0NY6=w1920-h1080"></object>
             <object data="https://lh3.googleusercontent.com/pw/AP1GczPK931zlz5FALDytANcsWnYUSxtzpDDT9VjBTzeI72u98mN4OwrgFDwysH5mdupNSpdCvlPLPUrEFA8T9VwMlbNq6x5piQuX9vxxmP0f66QZRdsqj03=w1920-h1080"></object>
