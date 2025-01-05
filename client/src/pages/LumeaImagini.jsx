@@ -1,24 +1,14 @@
 import React from 'react'
 import "../styling/lumeaimagini.scss"
-import AlbumPre2023 from '../resources/AlbumPre2023';
-import Album2023 from '../resources/Album2023';
-import useScript from '../components/useScript';
+import Gallery from "react-photo-gallery";
+import { p20152022 } from "../resources/pics/2015-2022/photos";
 
 const LumeaImagini = () => {
-  useScript("https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js");
-
+  const BasicRows = () => <Gallery photos={p20152022} />;
   return (
     <div className="lumeamea">
       <div className="centered">
-        <div className='album'>
-          <h2>| 2023</h2>
-          {Album2023()}
-        </div>
-
-        <div className="album">
-          <h2>| 2015 - 2022</h2>
-          {AlbumPre2023()}
-        </div>
+        <BasicRows />
       </div>
     </div>
   )

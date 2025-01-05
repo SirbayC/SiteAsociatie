@@ -3,33 +3,9 @@
 .lumeamea {
     display: flex;
     justify-content: center;
-
     .centered {
         width: 90%;
         max-width: 1024px;
         min-height: 700px;
-
-        h2 {
-            margin-left: 100px;
-            margin: 0;
-            font-weight: 500;
-            color: rebeccapurple;
-        }
-
-        .album {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .pa-gallery-player-widget {
-            border: 10px solid #66339919;
-            border-radius: 20px;
-            width: 100%;
-            height: 500px;
-            display: none;
-            overflow: hidden;
-        }
     }
 }
