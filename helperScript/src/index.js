@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const evName = "2015-2022"
+const evName = "2023"
 const sanitizedEvName = evName.replace(/[^a-zA-Z0-9]/g, ''); // Remove non-alphanumeric characters
 const imagesDir = path.join(__dirname,`../../client/src/resources/pics/${evName}`)
 const outputFilePath = path.join(imagesDir, 'photos.js')

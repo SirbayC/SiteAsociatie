@@ -7,5 +7,36 @@
         width: 90%;
         max-width: 1024px;
         min-height: 700px;
+
+        .second-navbar {
+            display: flex;
+            justify-content: left;
+            gap: 20px;
+            padding: 10px;
+            padding-bottom: 0;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            border-bottom: 1px solid $darkPurple;
+        }
+
+        .second-navbar button {
+            border: 1px solid transparent;
+
+            &:hover {
+                background-color: white;
+                color: $darkPurple;
+                box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+                border-right: 1px solid $darkPurple;
+                border-left: 1px solid $darkPurple;
+                border-top: 1px solid $darkPurple;
+                border-radius: 5px 5px 0 0;
+            }
+        }
+
+        .clicked {
+            background-color: $darkPurple;
+            color: white;
+            border-radius: 5px 5px 0 0;
+        }
     }
 }
