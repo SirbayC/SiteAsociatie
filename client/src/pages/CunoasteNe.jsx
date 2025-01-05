@@ -19,7 +19,7 @@ const CunoasteNe = () => {
     <div className="acasa">
       <div className="centeredAcasa">
         <div className='generalPresentation'>
-          <h2>TESTAcestia suntem noi:</h2>
+          <h2>Acestia suntem noi:</h2>
           <div className="paragraphs">
             <div className="parCol pc1">
               <p>Asociatia Prietenii D.A.R.I.E.I. suntem noi, o asociatie mica cu suflet urias, asa cum este cel al Dariei, fetita noastra care s-a nascut cu acest fel de-a fi numit Sindrom Down.</p>
