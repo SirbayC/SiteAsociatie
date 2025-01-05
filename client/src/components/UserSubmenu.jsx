@@ -18,7 +18,7 @@ const Submenu = () => {
     return (
         <animated.div className="submenu" style={{...customStyles, ...titleAnimation }}>
             <Link to="/redirectioneaza"><button>Redirectioneaza 3.5%</button></Link>
-            <Link to="/sponsorizeaza"><button>Sponsorizeaza 20%</button></Link>
+            <Link to="/sponsorizeaza"><button>Sponsorizeaza</button></Link>
         </animated.div>
     );
 };

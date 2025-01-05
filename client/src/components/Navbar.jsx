@@ -52,7 +52,7 @@ const Navbar = () => {
                             Redirectioneaza 3.5%
                         </NavLink>
                         <NavLink to="/sponsorizeaza" className={`mobileOnly link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
-                            Sponsorizeaza 20%
+                            Sponsorizeaza
                         </NavLink>
                         <div className="submenuContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
                             <span className='navText'>Implica-te gratuit</span>
