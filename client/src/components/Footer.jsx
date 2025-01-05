@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       {/* <Link className='link' to="/contact">Contact</Link> */}
       <img src={Logo} alt="logo" />
-      <span>© 2023</span>
+      <span>© 2023 - 2025</span>
     </footer>
   );
 }

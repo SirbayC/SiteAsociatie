@@ -4,12 +4,13 @@ import "../styling/lumeaimagini.scss";
 import Gallery from "react-photo-gallery";
 import { p20152022 } from "../resources/pics/2015-2022/photos";
 import { p2023 } from "../resources/pics/2023/photos";
+import Evenimente from "../components/Evenimente.jsx";
 
 const LumeaImagini = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [loading, setLoading] = useState(true);
-  const [content, setContent] = useState([]);
+  const [content, setContent] = useState({});
 
   const handleButtonClick = (year) => {
     navigate(`?year=${year}`);
@@ -22,25 +23,25 @@ const LumeaImagini = () => {
 
   useEffect(() => {
     setLoading(true);
-    let photos;
+    let c;
     switch (year) {
       case '2024':
-        photos = p2023;
+        c = Evenimente;
         break;
       case '2023':
-        photos = p2023;
+        c =  <Gallery photos={p2023} />;
         break;
       case '2015-2022':
       default:
-        photos = p20152022;
+        c =  <Gallery photos={p20152022} />;
         break;
     }
+    
     setTimeout(() => {
-      setContent(photos);
+      setContent(c);
       setLoading(false);
     }, 1000); // Simulate loading delay
   }, [year]);
-  const BasicRows = () => <Gallery photos={content} />;
   return (
     <div className="lumeamea">
       <div className="centered">
@@ -52,7 +53,7 @@ const LumeaImagini = () => {
         {loading ? (
           <div className="loading"></div>
         ) : (
-          <BasicRows/>
+          content
         )}
       </div>
     </div>

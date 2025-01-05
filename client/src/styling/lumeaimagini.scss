@@ -40,3 +40,34 @@
         }
     }
 }
+
+.evenimente {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .event {
+        border-left: 5px solid $lighterPurple;
+        padding-left: 10px;
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: left;
+            padding: 10px;
+            background-color: #fcf6fd;
+            border-radius: 4px;
+          }
+        
+          .desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            text-align: left;
+            padding: 5px;
+            border-radius: 4px;
+          }
+    }
+}
