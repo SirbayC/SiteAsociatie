@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import "../styling/lumeaimagini.scss";
 import Gallery from "react-photo-gallery";
-import { p20152022 } from "../resources/pics/2015-2022/photos";
-import { p2023 } from "../resources/pics/2023/photos";
+import { p20152022 } from "../resources/pics/2015-2022/photos.js";
+import { p2023 } from "../resources/pics/2023/photos.js";
 import Evenimente from "../components/Evenimente.jsx";
 
 const LumeaImagini = () => {
