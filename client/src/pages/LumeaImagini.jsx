@@ -25,15 +25,17 @@ const LumeaImagini = () => {
     setLoading(true);
     let c;
     switch (year) {
-      case '2024':
-        c = Evenimente;
+      case '2015-2022':
+        console.log('2015-2022');
+        c =  <Gallery photos={p20152022} />;
         break;
       case '2023':
+        console.log('2023');
         c =  <Gallery photos={p2023} />;
         break;
-      case '2015-2022':
       default:
-        c =  <Gallery photos={p20152022} />;
+        console.log('default');
+        c = Evenimente;
         break;
     }
     
