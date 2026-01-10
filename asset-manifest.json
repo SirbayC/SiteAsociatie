@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ab12330.css",
-    "main.js": "/static/js/main.f475650b.js",
+    "main.css": "/static/css/main.cebe8081.css",
+    "main.js": "/static/js/main.14edd8f6.js",
     "static/media/20170623_115251.jpg": "/static/media/20170623_115251.8f40b116c19f90b5cd45.jpg",
     "static/media/IMG_20211031_145505.jpg": "/static/media/IMG_20211031_145505.1017687366b755c56b6f.jpg",
     "static/media/IMG_20211031_151248.jpg": "/static/media/IMG_20211031_151248.c79f5d8295f13d133495.jpg",
@@ -97,7 +97,7 @@
     "static/media/WhatsApp Image 2025-01-04 at 21.19.01 (2).jpeg": "/static/media/WhatsApp Image 2025-01-04 at 21.19.01 (2).0a193c1423f88b38f491.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 21.19.01 (1).jpeg": "/static/media/WhatsApp Image 2025-01-04 at 21.19.01 (1).539701b95d9f524f14ec.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.28.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.28.a5071d5d6c3303c2ad3a.jpeg",
-    "static/media/notebook.svg": "/static/media/notebook.34e4f4c2ba569c28b569.svg",
+    "static/media/notebook.svg": "/static/media/notebook.66d39421e1d889c246b4.svg",
     "static/media/eveniment MOSUL PE LA NOI,  scoala CSEI nr. 1, Bucuresti, 6.12.24-1.jpeg": "/static/media/eveniment MOSUL PE LA NOI,  scoala CSEI nr. 1, Bucuresti, 6.12.24-1.4588e46b7a96e249452d.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 17.39.43.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 17.39.43.1b386d37351512c6b8a5.jpeg",
     "static/media/tabara de integrare si socializare, BUSTENI, 11-13.10.24-12.jpeg": "/static/media/tabara de integrare si socializare, BUSTENI, 11-13.10.24-12.59d8b2b4a62dc488545b.jpeg",
@@ -319,11 +319,11 @@
     "static/media/IMG-20230320-WA0010.jpg": "/static/media/IMG-20230320-WA0010.cfadcb890cc03a965b36.jpg",
     "static/media/decEnd.png": "/static/media/decEnd.31e470f261dd4cdfdd86.png",
     "index.html": "/index.html",
-    "main.7ab12330.css.map": "/static/css/main.7ab12330.css.map",
-    "main.f475650b.js.map": "/static/js/main.f475650b.js.map"
+    "main.cebe8081.css.map": "/static/css/main.cebe8081.css.map",
+    "main.14edd8f6.js.map": "/static/js/main.14edd8f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ab12330.css",
-    "static/js/main.f475650b.js"
+    "static/css/main.cebe8081.css",
+    "static/js/main.14edd8f6.js"
   ]
 }
