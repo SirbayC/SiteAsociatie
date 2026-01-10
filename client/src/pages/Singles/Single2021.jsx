@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Single2021 = () => {
   return {

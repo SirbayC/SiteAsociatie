@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useSpring, animated } from "react-spring";
 

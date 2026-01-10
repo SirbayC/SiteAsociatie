@@ -1,4 +1,3 @@
-import React from "react";
 import "../styling/spinner.scss";
 
 export default function LoadingSpinner() {

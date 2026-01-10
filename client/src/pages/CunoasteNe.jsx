@@ -1,4 +1,3 @@
-import React from 'react'
 import Accordion from '../components/Accordion'
 import { useSpring, animated } from "react-spring";
 import Fetita from "../resources/fetita.png"

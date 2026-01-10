@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import "../styling/lumeaimagini.scss";
 import Gallery from "react-photo-gallery";

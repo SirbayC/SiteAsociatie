@@ -1,4 +1,3 @@
-import React from 'react';
 import "../styling/lumeaimagini.scss";
 
 // Dynamically import all components from the 2024 directory
