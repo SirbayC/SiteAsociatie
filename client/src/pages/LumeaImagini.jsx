@@ -1,4 +1,4 @@
-import { useState, Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import "../styling/lumeaimagini.scss";
 import LoadingSpinner from '../components/Spinner.jsx';
@@ -11,24 +11,12 @@ const Evenimente2025 = lazy(() => import("../components/yearInPics/Evenimente202
 const LumeaImagini = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  
-  const [manualLoading, setManualLoading] = useState(false);
 
   const query = new URLSearchParams(location.search);
   const year = query.get('year') || '2025'; 
 
   const handleButtonClick = (newYear) => {
-    if (newYear === year) return;
-
-    setManualLoading(true);
-
-    setTimeout(() => {
-      navigate(`?year=${newYear}`);
-      
-      // Note: If the component is still downloading, Suspense will keep the spinner on.
-      // If it's already downloaded, the content will show immediately.
-      setManualLoading(false);
-    }, 300);
+    navigate(`?year=${newYear}`);
   };
 
   const getComponent = () => {
@@ -48,7 +36,6 @@ const LumeaImagini = () => {
           <button 
             className={year === '2025' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2025')}
-            disabled={manualLoading} // Prevent double clicks
           >
             2025
           </button>
@@ -56,7 +43,6 @@ const LumeaImagini = () => {
           <button 
             className={year === '2024' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2024')}
-            disabled={manualLoading}
           >
             2024
           </button>
@@ -64,7 +50,6 @@ const LumeaImagini = () => {
           <button 
             className={year === '2023' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2023')}
-            disabled={manualLoading}
           >
             2023
           </button>
@@ -72,20 +57,15 @@ const LumeaImagini = () => {
           <button 
             className={year === '2015-2022' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2015-2022')}
-            disabled={manualLoading}
           >
             2015-2022
           </button>
         </nav>
 
         <div className="content-area" style={{ minHeight: '400px' }}>
-          {manualLoading ? (
-            <LoadingSpinner></LoadingSpinner>
-          ) : (
-            <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
-               {getComponent()}
-            </Suspense>
-          )}
+           <Suspense fallback={<LoadingSpinner />}>
+              {getComponent()}
+           </Suspense>
         </div>
 
       </div>

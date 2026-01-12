@@ -18,7 +18,6 @@ const Navbar = () => {
 
     const location = useLocation();
     const isImplicaTeActive = location.pathname === '/redirectioneaza' || location.pathname === '/sponsorizeaza';
-    console.log(isImplicaTeActive)
 
     return (
         <div className="navbar">
