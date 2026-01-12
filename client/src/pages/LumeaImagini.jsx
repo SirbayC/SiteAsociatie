@@ -1,71 +1,54 @@
-import { useState, useEffect } from 'react';
+import { useState, Suspense, lazy } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import "../styling/lumeaimagini.scss";
-import Gallery from "react-photo-gallery";
+import LoadingSpinner from '../components/Spinner.jsx';
 
-// Import Photos
-import { p20152022 } from "../resources/pics/2015-2022/photos.js";
-import { p2023 } from "../resources/pics/2023/photos.js";
-
-// Import Event Components
-import Evenimente from "../components/Evenimente.jsx"; // This contains your 2024 logic
-import Evenimente2025 from "../components/Evenimente2025.jsx"; // The new file we created above
+const Gallery20152022 = lazy(() => import("../components/yearInPics/Gallery20152022.jsx"));
+const Gallery2023 = lazy(() => import("../components/yearInPics/Gallery2023"));
+const Evenimente = lazy(() => import("../components/yearInPics/Evenimente.jsx"));
+const Evenimente2025 = lazy(() => import("../components/yearInPics/Evenimente2025.jsx"));
 
 const LumeaImagini = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [loading, setLoading] = useState(true);
-  const [content, setContent] = useState({});
-
-  const handleButtonClick = (year) => {
-    navigate(`?year=${year}`);
-  };
+  
+  const [manualLoading, setManualLoading] = useState(false);
 
   const query = new URLSearchParams(location.search);
-  // Default to 2025 if you want the newest first, or keep your preference
   const year = query.get('year') || '2025'; 
 
-  useEffect(() => {
-    setLoading(true);
-    let c;
+  const handleButtonClick = (newYear) => {
+    if (newYear === year) return;
 
-    switch (year) {
-      case '2025':
-        // No < /> brackets needed if it's a component reference, 
-        // BUT since you are storing it in state to render later, 
-        // it is safer to store the Element.
-        c = <Evenimente2025 />;
-        break;
-      case '2024':
-        c = <Evenimente />;
-        break;
-      case '2023':
-        c = <Gallery photos={p2023} />;
-        break;
-      case '2015-2022':
-        c = <Gallery photos={p20152022} />;
-        break;
-      default:
-        // Fallback
-        c = <Evenimente2025 />;
-        break;
-    }
-    
-    // Smooth loading effect
+    setManualLoading(true);
+
     setTimeout(() => {
-      setContent(c);
-      setLoading(false);
-    }, 500); 
-  }, [year]);
+      navigate(`?year=${newYear}`);
+      
+      // Note: If the component is still downloading, Suspense will keep the spinner on.
+      // If it's already downloaded, the content will show immediately.
+      setManualLoading(false);
+    }, 300);
+  };
+
+  const getComponent = () => {
+    switch (year) {
+      case '2025': return <Evenimente2025 />;
+      case '2024': return <Evenimente />;
+      case '2023': return <Gallery2023 />;
+      case '2015-2022': return <Gallery20152022 />;
+      default: return <Evenimente2025 />;
+    }
+  };
 
   return (
     <div className="lumeamea">
       <div className="centered">
         <nav className="second-navbar">
-          {/* Add the new 2025 button */}
           <button 
             className={year === '2025' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2025')}
+            disabled={manualLoading} // Prevent double clicks
           >
             2025
           </button>
@@ -73,6 +56,7 @@ const LumeaImagini = () => {
           <button 
             className={year === '2024' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2024')}
+            disabled={manualLoading}
           >
             2024
           </button>
@@ -80,6 +64,7 @@ const LumeaImagini = () => {
           <button 
             className={year === '2023' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2023')}
+            disabled={manualLoading}
           >
             2023
           </button>
@@ -87,16 +72,22 @@ const LumeaImagini = () => {
           <button 
             className={year === '2015-2022' ? 'clicked' : ''} 
             onClick={() => handleButtonClick('2015-2022')}
+            disabled={manualLoading}
           >
             2015-2022
           </button>
         </nav>
 
-        {loading ? (
-          <div className="loading"></div>
-        ) : (
-          content
-        )}
+        <div className="content-area" style={{ minHeight: '400px' }}>
+          {manualLoading ? (
+            <LoadingSpinner></LoadingSpinner>
+          ) : (
+            <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
+               {getComponent()}
+            </Suspense>
+          )}
+        </div>
+
       </div>
     </div>
   );

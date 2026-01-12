@@ -32,8 +32,6 @@ import p31 from './7.jpeg';
 import p32 from './7.jpg';
 import p33 from './8.jpg';
 import p34 from './9.jpg';
-import p35 from './Erin, majorat.jpg';
-import p36 from './Erin, medaliata cu aur la 100 m liber, concurs natatie, Special Olympics, 30-31 mai 2025.jpg';
 
 export const content = [
   { src: p1, width: 715, height: 953 },
@@ -69,7 +67,5 @@ export const content = [
   { src: p31, width: 391, height: 220 },
   { src: p32, width: 715, height: 953 },
   { src: p33, width: 715, height: 953 },
-  { src: p34, width: 1271, height: 953 },
-  { src: p35, width: 715, height: 953 },
-  { src: p36, width: 736, height: 1600 }
+  { src: p34, width: 1271, height: 953 }
 ];
