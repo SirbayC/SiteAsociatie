@@ -1,7 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a33fa6f.css",
-    "main.js": "/static/js/main.5c07bd90.js",
+    "main.css": "/static/css/main.681d7739.css",
+    "main.js": "/static/js/main.4d4726fc.js",
+    "static/js/352.fe99d626.chunk.js": "/static/js/352.fe99d626.chunk.js",
+    "static/js/483.698c9e92.chunk.js": "/static/js/483.698c9e92.chunk.js",
+    "static/js/305.0cf6b199.chunk.js": "/static/js/305.0cf6b199.chunk.js",
+    "static/js/797.3ee9f705.chunk.js": "/static/js/797.3ee9f705.chunk.js",
+    "static/js/672.b59311d3.chunk.js": "/static/js/672.b59311d3.chunk.js",
     "static/media/20170623_115251.jpg": "/static/media/20170623_115251.8f40b116c19f90b5cd45.jpg",
     "static/media/IMG_20211031_145505.jpg": "/static/media/IMG_20211031_145505.1017687366b755c56b6f.jpg",
     "static/media/IMG_20211031_151248.jpg": "/static/media/IMG_20211031_151248.c79f5d8295f13d133495.jpg",
@@ -213,7 +218,7 @@
     "static/media/11.jpg": "/static/media/11.c3df217f0b3de16cec99.jpg",
     "static/media/1.jpeg": "/static/media/1.77e4e1ae17f96a69d845.jpeg",
     "static/media/16.jpg": "/static/media/16.08c33ddb58750c901ad4.jpg",
-    "static/media/13.jpg": "/static/media/13.aebc3e132b0a461ff386.jpg",
+    "static/media/12.jpg": "/static/media/12.f80bbc18cf2301fb44b5.jpg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.53.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.53.75b9e78e2727d983f397.jpeg",
     "static/media/IMG-20240312-WA0039.jpg": "/static/media/IMG-20240312-WA0039.a29ed1ffa81a43f99b36.jpg",
     "static/media/WhatsApp Image 2025-01-04 at 20.03.52.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 20.03.52.5c30d90bfcca1e0d2cd5.jpeg",
@@ -246,6 +251,7 @@
     "static/media/2.jpeg": "/static/media/2.5bc2b1b8d07bcb22b8be.jpeg",
     "static/media/IMG-20240312-WA0048.jpg": "/static/media/IMG-20240312-WA0048.6cfba7ee49ac564d7ede.jpg",
     "static/media/WhatsApp Image 2025-01-04 at 21.00.15.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 21.00.15.bc00b5202e04230ac832.jpeg",
+    "static/media/13.jpg": "/static/media/13.aebc3e132b0a461ff386.jpg",
     "static/media/IMG-20211203-WA0004.jpg": "/static/media/IMG-20211203-WA0004.7b30c0415b79a5240c61.jpg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.53 (1).jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.53 (1).428217ff1d496a99236d.jpeg",
     "static/media/IMG-20230305-WA0000.jpg": "/static/media/IMG-20230305-WA0000.afa3f9bd6daa18961f91.jpg",
@@ -304,7 +310,7 @@
     "static/media/4.jpeg": "/static/media/4.7ae119220bddf482da3d.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.36.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.36.6e64145e6fa7d64acb94.jpeg",
     "static/media/26.jpg": "/static/media/26.3e5f9b3653f5b1c8579e.jpg",
-    "static/media/Erin, medaliata cu aur la 100 m liber, concurs natatie, Special Olympics, 30-31 mai 2025.jpg": "/static/media/Erin, medaliata cu aur la 100 m liber, concurs natatie, Special Olympics, 30-31 mai 2025.f3d67ac0ac0105719d60.jpg",
+    "static/media/erin2.jpg": "/static/media/erin2.f3d67ac0ac0105719d60.jpg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.54 (1).jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.54 (1).d704c8bcfe0c315e238e.jpeg",
     "static/media/Palatul National al Copiilor, Bucuresti, RAOUL SI MIRABELA, 22.12.24 - 3.jpeg": "/static/media/Palatul National al Copiilor, Bucuresti, RAOUL SI MIRABELA, 22.12.24 - 3.08678a01b956af9141f6.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 22.16.25.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.16.25.45207622914af2aac06e.jpeg",
@@ -338,7 +344,6 @@
     "static/media/WhatsApp Image 2025-01-04 at 21.00.11 (1).jpeg": "/static/media/WhatsApp Image 2025-01-04 at 21.00.11 (1).4e22bdc9dc0e7d6c8046.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.38.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.38.bef4105b783dcdc35198.jpeg",
     "static/media/IMG-20211126-WA0003.jpg": "/static/media/IMG-20211126-WA0003.1e3488989ddd9877c6ee.jpg",
-    "static/media/12.jpg": "/static/media/12.f80bbc18cf2301fb44b5.jpg",
     "static/media/colorat 1.jpeg": "/static/media/colorat 1.add2636a6abd264bd435.jpeg",
     "static/media/WhatsApp Image 2025-01-04 at 22.00.37.jpeg": "/static/media/WhatsApp Image 2025-01-04 at 22.00.37.dc0e9dda2072c9b4e4ee.jpeg",
     "static/media/excursie 3.jpeg": "/static/media/excursie 3.e15ee38dd004656d07be.jpeg",
@@ -361,11 +366,16 @@
     "static/media/IMG-20230320-WA0010.jpg": "/static/media/IMG-20230320-WA0010.cfadcb890cc03a965b36.jpg",
     "static/media/decEnd.png": "/static/media/decEnd.31e470f261dd4cdfdd86.png",
     "index.html": "/index.html",
-    "main.9a33fa6f.css.map": "/static/css/main.9a33fa6f.css.map",
-    "main.5c07bd90.js.map": "/static/js/main.5c07bd90.js.map"
+    "main.681d7739.css.map": "/static/css/main.681d7739.css.map",
+    "main.4d4726fc.js.map": "/static/js/main.4d4726fc.js.map",
+    "352.fe99d626.chunk.js.map": "/static/js/352.fe99d626.chunk.js.map",
+    "483.698c9e92.chunk.js.map": "/static/js/483.698c9e92.chunk.js.map",
+    "305.0cf6b199.chunk.js.map": "/static/js/305.0cf6b199.chunk.js.map",
+    "797.3ee9f705.chunk.js.map": "/static/js/797.3ee9f705.chunk.js.map",
+    "672.b59311d3.chunk.js.map": "/static/js/672.b59311d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a33fa6f.css",
-    "static/js/main.5c07bd90.js"
+    "static/css/main.681d7739.css",
+    "static/js/main.4d4726fc.js"
   ]
 }
