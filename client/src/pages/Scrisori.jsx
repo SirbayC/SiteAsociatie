@@ -1,25 +1,24 @@
 import { Fragment } from 'react'
 import "../styling/scrisori.scss"
 import { useNavigate, useParams, Link } from 'react-router-dom'
-import Single2024 from './Singles/Single2024'
-import Single2023 from './Singles/Single2023'
-import Single2022 from './Singles/Single2022'
-import Single2021 from './Singles/Single2021'
-import Single2020 from './Singles/Single2020'
-import Single2019 from './Singles/Single2019'
-import Single2018 from './Singles/Single2018'
-import Single2017 from './Singles/Single2017'
-import Single2016 from './Singles/Single2016'
-import Single2015 from './Singles/Single2015'
+
+const context = require.context('./Singles', false, /Single20\d\d\.jsx$/);
+const posts = context.keys().map((key) => context(key).default);
 
 const Scrisori = () => {
   const navigate = useNavigate();
   const { id } = useParams();
 
-  let content;
+  posts.sort((a,b) => b().yearId - a().yearId);
 
-  const posts = [Single2024,Single2022,Single2023,Single2021,Single2020,Single2019,Single2018,Single2017,Single2016,Single2015]
-  posts.sort((a,b) => b().yearId - a().yearId)
+  const calculateStyle = (index) => {
+    if (index === -1) return {};
+    const step = 360 / posts.length; 
+    const rotation = Math.floor(step * index);
+    return { filter: `hue-rotate(${rotation}deg)` };
+  }
+
+  let content;
 
   if (!id) {
     content =
@@ -32,54 +31,58 @@ const Scrisori = () => {
           </div>
         </div>
         
-        {posts.map( (post,index) => (
-          <Fragment key={index}>
-            <div className="post" style={post().stylingFilter}>
-              <Link className='link minCont' onClick={() => {
-                navigate(`/scrisori/${post().yearId}`);
-                window.scrollTo(0, 0);
-              }}>
-                <h2>{post().yearId}</h2>
-              </Link>
-              <div className="description">
-                {post().desc}
+        {posts.map( (post, index) => {
+          const dynamicStyle = calculateStyle(index);
+          
+          return (
+            <Fragment key={index}>
+              <div className="post" style={dynamicStyle}>
+                <Link className='link minCont' onClick={() => {
+                  navigate(`/scrisori/${post().yearId}`);
+                  window.scrollTo(0, 0);
+                }}>
+                  <h2>{post().yearId}</h2>
+                </Link>
+                <div className="description">
+                  {post().desc}
+                </div>
+                <button onClick={() => {
+                  navigate(`/scrisori/${post().yearId}`);
+                  window.scrollTo(0, 0);
+                }}>Citeste mai mult</button>
               </div>
-              <button onClick={() => {
-                navigate(`/scrisori/${post().yearId}`);
-                window.scrollTo(0, 0);
-              }}>Citest mai mult</button>
-            </div>
-            {index !== posts.length - 1 && (
-              <div className="separator">
-                <div className="line"></div>
-              </div>
-            )}
-          </Fragment>
-        ))}
+              {index !== posts.length - 1 && (
+                <div className="separator">
+                  <div className="line"></div>
+                </div>
+              )}
+            </Fragment>
+          )
+        })}
       </div>
   } else {
+    const foundIndex = posts.findIndex(post => post().yearId === parseInt(id));
+    
+    let renderContent;
+    let dynamicStyle = {};
 
-    let obj;
-    if (id <= 2024 && id >= 2015) {
-      obj = posts.find( post => post().yearId === parseInt(id))
+    if (foundIndex !== -1) {
+       const obj = posts[foundIndex]();
+       renderContent = obj.content;
+       dynamicStyle = calculateStyle(foundIndex);
     } else {
-      obj = {
-        content: <h1>Undefined</h1>,
-        stylingFilter: ""
-      }
+       renderContent = <h1>Undefined</h1>;
     }
-    content = obj().content
-    const stl = obj().stylingFilter
 
     content =
      <div className="postContent">
-        <div className="textWrap" style={stl}>
-          <button className='back'  onClick={() => {
+        <div className="textWrap" style={dynamicStyle}>
+          <button className='back' onClick={() => {
             navigate("/scrisori");
             window.scrollTo(0, 0);
           }}>Inapoi</button>
           <div className="text">
-            {content}
+            {renderContent}
           </div>
         </div>
      </div> 

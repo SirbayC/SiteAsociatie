@@ -25,9 +25,6 @@ const Single2015 = () => {
     </div>,
     yearId: 2015,
     desc: 'Dragii nostri prieteni,\n\nDorim sa va impartasim bucuria noastra: am devenit ASOCIATIA PRIETENII D.A.R.I.E.I.! De ce "PRIETENII D.A.R.I.E.I"? Pentru ca, daca ne ingaduiti, asa v-am considerat de la inceput, in urma cu mai bine de patru ani, prieteni ai nostri si ai copilului nostru, Daria, pentru ca vedem prietenia ca pe o optiune de bucurie a sufletului, care leaga oameni si povestile lor, pentru ca va consideram Prieteni ai unor valori precum: Diversitate, Acceptare, Rabdare, Integrare, Empatie si Iubire. Pe Daria, cei mai multi dintre voi, o cunoasteti deja si, daca nu, permiteti-ne cateva cuvinte: este o fetita de 8 ani si cinci luni, nascuta cu Sindrom Down, careia ii place sa mearga acum in clasa pregatitoare de la o soala generala din Bucuresti. Este iubitoare si plina de viata. Ii plac dansul si inotul. Ne umple viata, alaturi de fratiorul ei mai mare, elev in clasa a V-a, la aceeasi scoala (asa a vrut Dumnezeu, el este olimpic la matematica, dar si "olimpicul" moralului nostru, inca de la nasterea Dariei).',
-    stylingFilter: {
-      filter: "hue-rotate(360deg)",
-    }
   }
 }
 

@@ -28,9 +28,6 @@ const Single2018 = () => {
       </div>,
     yearId: 2018,
     desc: 'Dragii nostri,\n\nBine v-am regasit! Cu bucuria revederii unor Prieteni vechi, va imbratisez in gand si va transmit din suflet cat mai mult Bine, asa cum il intelege fiecare, in anul 2018!<br /> Prin sprijinul acordat anul trecut, completand formularul 230 pentru asociatia Prietenii D.A.R.I.E.I., ati facut posibila continuarea efortului nostru, inceput in urma cu 3 ani, de a ajuta sa evolueze copii cu dizabilitati, cu precadere copii cu Sindrom Down. Sa evolueze cognitiv, relational, social, emotional sau fizic.<br /> Privind-o pe Dariuca noastra, copil de 11 ani cu Sindrom Down, m-am intrebat nu de putine ori, de ce are ea nevoie cel mai mult? Ea si alti copii care ii "seamana". De suport financiar- a raspuns primul gand. Da, cu siguranta, datorita voua reusim "aici" si va multumim in numele acestor copii! De rabdare ... Sigur, cu carul!! Ce car! Cu camionul! Rabdarea asta insa pare a fi un fel de pasarea phoenix - rasare din propria noastra "ardere".<br /> De empatie si acceptare...o, Da, Da, Da!!! Cum sa zic &hellip; pasim pe taram arid, de multe ori...dar, continuam cautarile! ',
-    stylingFilter: {
-      filter: "hue-rotate(240deg)",
-    }
   }
 }
 
