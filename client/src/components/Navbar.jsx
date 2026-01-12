@@ -45,7 +45,7 @@ const Navbar = () => {
                         <NavLink to="/scrisori" className={`link ${showNavbar && "visibleLink"} ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
                             Scrisori catre Prieteni
                         </NavLink>
-                        <NavLink to="/lumea_imagini?year=2024" className={`link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
+                        <NavLink to="/lumea_imagini?year=2025" className={`link ${ showNavbar ? "visibleLink" : 'invisibleLink'}`} onClick={handleShowNavbar}>
                             Lumea mea in imagini
                         </NavLink>
                         <div className={`mobileOnly TextY ${ showNavbar ? "visibleLink" : 'invisibleLink'}`}>

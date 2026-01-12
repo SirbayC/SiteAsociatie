@@ -14,7 +14,7 @@
             gap: 20px;
             padding: 10px;
             padding-bottom: 0;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             margin-top: 20px;
             border-bottom: 1px solid $darkPurple;
         }
@@ -44,30 +44,49 @@
 .evenimente {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
 
     .event {
         border-left: 5px solid $lighterPurple;
-        padding-left: 10px;
+        padding-left: 20px;
+        padding-bottom: 10px;
 
         .name {
+            font-size: 20px;
+            font-weight: 800;
+            color: $darkPurple;
+            margin-bottom: 10px;
+            text-align: left;
+            background-color: rgba($lighterPurple, 0.1);
+        }
+
+        .desc {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 10px;
+            text-align: left;
+            font-style: italic;
+        }
+
+        .subName {
             font-size: 18px;
-            font-weight: bold;
-            color: #333;
+            font-weight: 700;
+            color: #444; 
+            margin-top: 30px;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .subDesc {
+            font-size: 15px;
+            color: #555;
             margin-bottom: 10px;
             text-align: left;
-            padding: 10px;
-            background-color: #fcf6fd;
-            border-radius: 4px;
-          }
-        
-          .desc {
-            font-size: 14px;
-            color: #666;
+            font-style: italic;
+        }
+
+        .react-photo-gallery--gallery {
             margin-bottom: 10px;
-            text-align: left;
-            padding: 5px;
-            border-radius: 4px;
-          }
+        }
     }
 }
