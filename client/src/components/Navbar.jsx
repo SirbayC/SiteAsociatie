@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Logo from "../resources/logo_transparent.png"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import Submenu from '../components/UserSubmenu';
 import "../styling/navbar.scss"
 
@@ -15,6 +15,10 @@ const Navbar = () => {
     const handleShowNavbar = () => {
       setShowNavbar(!showNavbar);
     };
+
+    const location = useLocation();
+    const isImplicaTeActive = location.pathname === '/redirectioneaza' || location.pathname === '/sponsorizeaza';
+    console.log(isImplicaTeActive)
 
     return (
         <div className="navbar">
@@ -55,7 +59,7 @@ const Navbar = () => {
                             Sponsorizeaza
                         </NavLink>
                         <div className="submenuContainer" onMouseEnter={toggleSubmenu} onMouseLeave={toggleSubmenu}>
-                            <span className='navText'>Implica-te gratuit</span>
+                            <span className={`navText ${isImplicaTeActive ? 'active' : ''}`}>Implica-te gratuit</span>
                             {showSubmenu && <Submenu />}
                         </div>
                     </div>

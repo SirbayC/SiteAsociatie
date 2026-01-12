@@ -75,6 +75,10 @@
                     .navText {
                         font-weight: 400;
                         font-size: 18px;
+
+                        &.active {
+                            font-weight: 700;
+                        }
                     }
 
                     .submenu {
