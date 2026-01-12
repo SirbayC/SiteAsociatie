@@ -49,7 +49,7 @@ const Scrisori = () => {
                 <button onClick={() => {
                   navigate(`/scrisori/${post().yearId}`);
                   window.scrollTo(0, 0);
-                }}>Citeste mai mult...</button>
+                }}>Citeste mai mult</button>
               </div>
               {index !== posts.length - 1 && (
                 <div className="separator">
