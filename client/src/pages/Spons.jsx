@@ -14,7 +14,7 @@ const Spons = () => {
         </div>
         <div className="pdf">
           <iframe
-              src='https://drive.google.com/file/d/1fekJcg40XhmN8jRZ5Zid-sinh61mwY-e/preview'
+              src='/decizieAnaf.pdf'
               title="brosura"
               width="100%"
               height="600"
