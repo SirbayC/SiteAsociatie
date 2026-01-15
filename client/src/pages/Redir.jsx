@@ -1,14 +1,21 @@
-import "../styling/redir.scss"
+import { useState } from 'react';
+import "../styling/redir.scss";
+import LoadingSpinner from "../components/Spinner"; 
 
 const Redir = () => {
-  const pdfUrl = "/D230_precompletat_asociatia_prietenii_dariei_2025.pdf"
-  const previewUrl = "/230_preview.png"
+  const [isLoading, setIsLoading] = useState(true);
+  const pdfUrl = "/formulare/230_Asociatia_Prietenii_D.A.R.I.E.I._valabil_in_2026_pentru_an_raportare_2025.pdf";
 
-  const linkDescarcare = <>
-    <a href={pdfUrl} download="D230_precompletat_asociatia_prietenii_dariei_2025.pdf" target="_blank" rel="noopener noreferrer">
+  const linkDescarcare = (
+    <a 
+      href={pdfUrl} 
+      download="230_Asociatia_Prietenii_D.A.R.I.E.I._valabil_in_2026_pentru_an_raportare_2025.pdf" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
       aici
     </a>
-  </>
+  );
 
   return (
     <div className="redir">
@@ -24,36 +31,35 @@ const Redir = () => {
           <p><i>Iti multumim!</i></p>
           <p><i>Fii bun cu tine, fii bun cu ceilalti!</i></p>
         </div>
+        <hr />
         <div className="textWrap">
-          <h4>
-            Cerere privind destinatia sumei reprezentand pana la 3,5% din impozitul anual datorat </h4>
+          <h3>
+            Cerere privind destinatia sumei reprezentand pana la 3,5% din impozitul anual datorat </h3>
         </div>
-
-        <div className="info-banner">
-          <div className="content">
-            <strong>Important:</strong> Formularul descarcat este inteligent si
-            trebuie deschis cu <strong><a href="https://get.adobe.com/reader/">Adobe Acrobat Reader</a></strong> pentru a putea fi completat.
-          </div>
-        </div>
-
         <div className="preview-group">
-          <p className="preview-label">Previzualizare formular (click {linkDescarcare} sau pe imagine pentru descărcare):</p>
-          {/* Am șters textul roșu redundant de aici */}
-
-          <div className="pdf-preview-container" >
-            <a
-              href={pdfUrl}
-              download="D230_precompletat_asociatia_prietenii_dariei_2025.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ cursor: 'pointer' }}
+          <p className="preview-label">Previzualizare formular (click {linkDescarcare} pentru descărcare):</p>
+          
+          <div className="pdf-preview-container">
+            {isLoading && (
+               <div className="spinner-container">
+                 <LoadingSpinner />
+               </div>
+            )}
+            
+            <iframe
+              src={pdfUrl}
+              title="Formular 230 Preview"
+              width="90%"
+              height="800px"
+              onLoad={() => setIsLoading(false)}
+              style={{ 
+                  display: isLoading ? 'none' : 'block',
+                  border: '1px solid #ccc',
+                  borderRadius: '5px'
+              }} 
             >
-              <img
-                src={previewUrl}
-                alt="Previzualizare Formular 230 - Click pentru descarcare"
-              // Am mutat stilurile inline în SCSS pentru curățenie
-              />
-            </a>
+                <p>Browser-ul tau nu poate afisa PDF-ul. Te rugam sa il <a href={pdfUrl}>descarci de aici.</a></p>
+            </iframe>
           </div>
         </div>
 
@@ -62,4 +68,4 @@ const Redir = () => {
   );
 }
 
-export default Redir
+export default Redir;
