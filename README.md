@@ -1,11 +1,53 @@
 # SiteAsociatie
-- The website is accessible at the custom domain: `https://asociatiaprieteniidariei.ro/`
-- The connection should be set up to be fully encrypted via TLS (both to the static page and with the API), thus accessing it should be done using HTTPS, displaying a valid certificate
-- The domain name was purchased through RoTLD, and is administered through CloudFlare as the DNS
-- Post editing is allowed can only be performed by authorized users (authetication is managed through JWT), using an intuitive Rich Text Editor
-- The static website is deployed through GitHub Pages, and the API is managed through Oracle Cloud Infrastructure (with connection made via ssh / node-oracledb add-on)
 
-## Technical aspects
-- The website is created with React.js for the front-end and Express / Node.js (with CORS enabled) for backend
-- For the REST requests themselves, axios is being used
-- Yarn is used for package management as both the client and API have `package.json`, with scripts configured for Yarn (Both for development and production)
+Website for **Asociația Prietenii D.A.R.I.E.I.** — live at [https://asociatiaprieteniidariei.ro/](https://asociatiaprieteniidariei.ro/).
+
+- Deployed as a static React app on **GitHub Pages** (custom domain via Cloudflare DNS, RoTLD registrar).
+- The frontend lives in `client/`. Use **Yarn 1** for install and scripts (not npm).
+
+## Development
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- **Yarn 1.22** via Corepack (included with Node):
+
+```bash
+corepack enable
+corepack prepare yarn@1.22.22 --activate
+yarn --version   # should print 1.22.22
+```
+
+### First-time setup
+
+From the repo root, in **Git Bash**:
+
+```bash
+cd client
+rm -f package-lock.json    # use yarn.lock only, not npm
+yarn install
+```
+
+### Run locally
+
+```bash
+cd client
+yarn start
+```
+
+Open **http://localhost:3000** in your browser.
+
+| Command | Purpose |
+|---------|---------|
+| `yarn start` | Dev server (hot reload) |
+| `yarn build` | Production build → `client/build` |
+| `yarn deploy` | Build and publish to GitHub Pages |
+
+## Project layout
+
+| Path | Role |
+|------|------|
+| `client/` | React SPA (Create React App) |
+| `client/src/` | Pages, components, styles |
+| `client/public/` | Static assets (PDFs, `index.html`) |
+| `helper_scripts/` | Node scripts to generate photo galleries |
