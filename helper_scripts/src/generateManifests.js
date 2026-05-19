@@ -157,9 +157,7 @@ async function processSimpleEvent(year, eventFolder, eventPath, meta) {
   if (manifestsByYear[year]) {
     manifestsByYear[year].push({
       id: manifestFilename,
-      title: manifest.title,
       type: 'simple',
-      eventFolder,
     });
   }
   
@@ -202,7 +200,6 @@ async function processComplexEvent(year, eventFolder, eventPath, meta, subfolder
     // Track subevent for complex event grouping
     subevents.push({
       id: manifestFilename,
-      title: manifest.title,
     });
     
     console.log(`      ✓ Subevent: ${subfolder} (${manifest.images.length} images)`);
@@ -214,7 +211,6 @@ async function processComplexEvent(year, eventFolder, eventPath, meta, subfolder
       id: `${year}-${eventFolder.replace(/[^a-zA-Z0-9]/g, '')}-complex`,
       title: meta.title || eventFolder,
       type: 'complex',
-      eventFolder,
       subevents,
     });
   }

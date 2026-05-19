@@ -3,141 +3,95 @@
   "events": [
     {
       "id": "2024-Eveniment18Ani2024-manifest.json",
-      "title": "Eveniment MAJORAT",
-      "type": "simple",
-      "eventFolder": "Eveniment18Ani2024"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentBusinessDisabilitySummitPalatulParlamentului17052024-manifest.json",
-      "title": "Eveniment Bussiness DisAbility Summit",
-      "type": "simple",
-      "eventFolder": "EvenimentBusinessDisabilitySummit,PalatulParlamentului,17.05.2024"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentDestinyParcBaneasa100324-manifest.json",
-      "title": "Eveniment Destiny Parc",
-      "type": "simple",
-      "eventFolder": "EvenimentDestinyParc,Baneasa,10.03.24"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentHalloweenPetrecereCSEInr1Bucuresti241024-manifest.json",
-      "title": "Eveniment petrecere Halloeween",
-      "type": "simple",
-      "eventFolder": "EvenimentHalloweenPetrecere,CSEInr.1,Bucuresti,24.10.24"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentMosulLaSupereroiCotroceni141224-manifest.json",
-      "title": "Eveniment Mosul la Supereroi",
-      "type": "simple",
-      "eventFolder": "EvenimentMosulLaSupereroi,Cotroceni,14.12.24"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentMosulPeLaNoiCSEInr1Bucuresti61224-manifest.json",
-      "title": "Eveniment Mosul pe la noi",
-      "type": "simple",
-      "eventFolder": "EvenimentMosulPeLaNoi,CSEInr.1,Bucuresti,6.12.24"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentZiDeDezvoltarePersonalaMuzeulCopiilorSweetAdventureParcHerastrau100824-manifest.json",
-      "title": "Eveniment Zi de dezvoltare personala",
-      "type": "simple",
-      "eventFolder": "EvenimentZiDeDezvoltarePersonala,MuzeulCopiilorSweetAdventure,ParcHerastrau,10.08.24"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentZiuaInternationalaADizabilitatiiPalatulNationalAlCopiilorBucuresti31224-manifest.json",
-      "title": "Eveniment Ziua Internationala a Dizabilitatii",
-      "type": "simple",
-      "eventFolder": "EvenimentZiuaInternationalaADizabilitatii,PalatulNationalAlCopiilor,Bucuresti,3.12.24"
+      "type": "simple"
     },
     {
       "id": "2024-EvenimentZiuaInternationalaASindromuluiDownPalatulParlamentuluiBucuresti210324-manifest.json",
-      "title": "Eveniment Ziua Internationala a Sindromului Down",
-      "type": "simple",
-      "eventFolder": "EvenimentZiuaInternationalaASindromuluiDown,PalatulParlamentului,Bucuresti,21.03.24"
+      "type": "simple"
     },
     {
       "id": "2024-FilmIntorsPeDos2CinemaCityCityMallBucuresti20724-manifest.json",
-      "title": "Film Intors pe dos II",
-      "type": "simple",
-      "eventFolder": "FilmIntorsPeDos2,CinemaCity,CityMall,Bucuresti,2.07.24"
+      "type": "simple"
     },
     {
       "id": "2024-FilmPrieteniImaginariCinemaCityCityMallBucuresti10624-manifest.json",
-      "title": "Film Prieteni Imaginari",
-      "type": "simple",
-      "eventFolder": "FilmPrieteniImaginari,CinemaCity,CityMall,Bucuresti,1.06.24"
+      "type": "simple"
     },
     {
       "id": "2024-FilmVaiana2HollywoodMultiplexBaneasa81224-manifest.json",
-      "title": "Film Vaiana II",
-      "type": "simple",
-      "eventFolder": "FilmVaiana2,HollywoodMultiplex,Baneasa,8.12.24"
+      "type": "simple"
     },
     {
       "id": "2024-SedinteBowlingIdmClubBucurestiMos2024-manifest.json",
-      "title": "Eveniment Mos Bowling",
-      "type": "simple",
-      "eventFolder": "SedinteBowling,IdmClub,Bucuresti,Mos2024"
+      "type": "simple"
     },
     {
       "id": "2024-SedinteCursuriITAsociatiaSupereroiloranul2024-manifest.json",
-      "title": "Sedinte Cursuri IT pentru tineri speciali",
-      "type": "simple",
-      "eventFolder": "SedinteCursuriIT,AsociatiaSupereroilor,anul2024"
+      "type": "simple"
     },
     {
       "id": "2024-SedinteDansuriPopulareScoalaDeDansuriBUCURIABucurestianul2024-manifest.json",
-      "title": "Sedinte dansuri populare",
-      "type": "simple",
-      "eventFolder": "SedinteDansuriPopulare,ScoalaDeDansuriBUCURIA,Bucuresti,anul2024"
+      "type": "simple"
     },
     {
       "id": "2024-SedinteDezvoltarePersonalaAnul2024-manifest.json",
-      "title": "Sedinte dezvoltare personala",
-      "type": "simple",
-      "eventFolder": "SedinteDezvoltarePersonala,Anul2024"
+      "type": "simple"
     },
     {
       "id": "2024-SedinteInotComplexOlimpicDeNatatieOtopenianul2024-manifest.json",
-      "title": "Sedinte inot",
-      "type": "simple",
-      "eventFolder": "SedinteInot,ComplexOlimpicDeNatatie,Otopeni,anul2024"
+      "type": "simple"
     },
     {
       "id": "2024-SpectacolDELIABerariaHBucuresti61124-manifest.json",
-      "title": "Spectacol DELIA",
-      "type": "simple",
-      "eventFolder": "SpectacolDELIA,BerariaH,Bucuresti,6.11.24"
+      "type": "simple"
     },
     {
       "id": "2024-SpectacolInchideOchiiSiAiSaVeziMaiBineTeatrulDeComedieBucuresti160624-manifest.json",
-      "title": "Spectacol Inchide ochii si ai sa vezi mai bine",
-      "type": "simple",
-      "eventFolder": "SpectacolInchideOchiiSiAiSaVeziMaiBine,TeatrulDeComedie,Bucuresti,16.06.24"
+      "type": "simple"
     },
     {
       "id": "2024-SpectacolRaoulSiMirabelaPalatulNationalAlCopiilorBucuresti221224-manifest.json",
-      "title": "Spectacol Raoul Si Mirabela",
-      "type": "simple",
-      "eventFolder": "SpectacolRaoulSiMirabela,PalatulNationalAlCopiilor,Bucuresti,22.12.24"
+      "type": "simple"
     },
     {
       "id": "2024-SpectacolTRIBALCorulDeCopiiRadioSalaRadioBucuresti220624-manifest.json",
-      "title": "Spectacol TRIBAL",
-      "type": "simple",
-      "eventFolder": "SpectacolTRIBAL,CorulDeCopiiRadio,SalaRadio,Bucuresti,22.06.24"
+      "type": "simple"
     },
     {
       "id": "2024-TabaraDeIntegrareSiSocializareBusteni11131024-manifest.json",
-      "title": "Tabara de integrare si socializare la munte",
-      "type": "simple",
-      "eventFolder": "TabaraDeIntegrareSiSocializare,Busteni,11-13.10.24"
+      "type": "simple"
     },
     {
       "id": "2024-TabaraDeIntegrareSiSocializareSaturn270924-manifest.json",
-      "title": "Tabara de integrare si socializare la mare",
-      "type": "simple",
-      "eventFolder": "TabaraDeIntegrareSiSocializare,Saturn,2-7.09.24"
+      "type": "simple"
     }
   ]
 }
