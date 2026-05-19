@@ -1,0 +1,79 @@
+{
+  "year": "2025",
+  "events": [
+    {
+      "id": "2025-01EvenimentZiuaInternationalaaSindromuluiDown-complex",
+      "title": "Eveniment - Ziua Internationala a Sindromului Down",
+      "type": "complex",
+      "subevents": [
+        {
+          "id": "2025-01EvenimentZiuaInternationalaaSindromuluiDown-EvenimentFederatiaSindromDowndinRomania-manifest.json"
+        },
+        {
+          "id": "2025-01EvenimentZiuaInternationalaaSindromuluiDown-EvenimentSpecialOlympicsRomania-manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "2025-02Cursuridedezvoltarepersonala-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-03Cursuridedansuripopulare-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-04Clasedezumba-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-05CursurideIT-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-06Cursurideinot-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-07Vizionarifilme-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-08Vizionarispectacole-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-09EvenimentConferintaNationalaInaintepentrucopiiiRomaniei-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-10EvenimentBibliotecavieDemocratiainactiunepentruoeducatieincluziva-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-11EvenimenteMosCraciun-complex",
+      "title": "Evenimente Mos Craciun",
+      "type": "complex",
+      "subevents": [
+        {
+          "id": "2025-11EvenimenteMosCraciun-1Mosulnuneuita-manifest.json"
+        },
+        {
+          "id": "2025-11EvenimenteMosCraciun-2MosuliubesteSupereroii-manifest.json"
+        }
+      ]
+    },
+    {
+      "id": "2025-12Tabaradeintegraresisocializare-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-13Erin-manifest.json",
+      "type": "simple"
+    },
+    {
+      "id": "2025-14Instantanee2025-manifest.json",
+      "type": "simple"
+    }
+  ]
+}
