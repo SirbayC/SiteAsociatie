@@ -25,7 +25,14 @@ async function generateUniqueId(fullPath) {
 async function getImageDimensions(imagePath) {
   try {
     const metadata = await sharp(imagePath).metadata();
-    return { width: metadata.width, height: metadata.height };
+    // Some cameras store orientation in EXIF. If orientation indicates a
+    // rotation by 90/270 degrees, swap width/height so manifests reflect
+    // the displayed aspect ratio (not the raw pixel storage).
+    const orient = metadata.orientation || metadata.Orientation || null;
+    const rotated = orient && [5, 6, 7, 8].includes(Number(orient));
+    return rotated
+      ? { width: metadata.height, height: metadata.width }
+      : { width: metadata.width, height: metadata.height };
   } catch (error) {
     console.warn(`  ⚠️ Could not read dimensions for ${imagePath}: ${error.message}`);
     return { width: 800, height: 600 }; // Fallback
