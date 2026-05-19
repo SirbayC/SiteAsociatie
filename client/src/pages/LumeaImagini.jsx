@@ -3,10 +3,10 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import "../styling/lumeaimagini.scss";
 import LoadingSpinner from '../components/Spinner.jsx';
 
-const Gallery20152022 = lazy(() => import("../components/yearInPics/Gallery20152022.jsx"));
-const Gallery2023 = lazy(() => import("../components/yearInPics/Gallery2023"));
-const Evenimente = lazy(() => import("../components/yearInPics/Evenimente.jsx"));
-const Evenimente2025 = lazy(() => import("../components/yearInPics/Evenimente2025.jsx"));
+const Gallery20152022 = lazy(() => import("../components/yearInPics/2022.jsx"));
+const Gallery2023 = lazy(() => import("../components/yearInPics/2023.jsx"));
+const Evenimente = lazy(() => import("../components/yearInPics/2024.jsx"));
+const Evenimente2025 = lazy(() => import("../components/yearInPics/2025.jsx"));
 
 const LumeaImagini = () => {
   const navigate = useNavigate();
