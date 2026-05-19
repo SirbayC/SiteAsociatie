@@ -1,0 +1,109 @@
+{
+  "year": "2025",
+  "events": [
+    {
+      "id": "2025-01EvenimentZiuaInternationalaaSindromuluiDown-complex",
+      "title": "Eveniment - Ziua Internationala a Sindromului Down",
+      "type": "complex",
+      "eventFolder": "01. Eveniment - Ziua Internationala a Sindromului Down",
+      "subevents": [
+        {
+          "id": "2025-01EvenimentZiuaInternationalaaSindromuluiDown-EvenimentFederatiaSindromDowndinRomania-manifest.json",
+          "title": "Eveniment Federatia Sindrom Down din Romania"
+        },
+        {
+          "id": "2025-01EvenimentZiuaInternationalaaSindromuluiDown-EvenimentSpecialOlympicsRomania-manifest.json",
+          "title": "Eveniment Special Olympics Romania"
+        }
+      ]
+    },
+    {
+      "id": "2025-02Cursuridedezvoltarepersonala-manifest.json",
+      "title": "Cursuri de dezvoltare personala",
+      "type": "simple",
+      "eventFolder": "02. Cursuri de dezvoltare personala"
+    },
+    {
+      "id": "2025-03Cursuridedansuripopulare-manifest.json",
+      "title": "Cursuri de dansuri populare",
+      "type": "simple",
+      "eventFolder": "03. Cursuri de dansuri populare"
+    },
+    {
+      "id": "2025-04Clasedezumba-manifest.json",
+      "title": "Clase de zumba",
+      "type": "simple",
+      "eventFolder": "04. Clase de zumba"
+    },
+    {
+      "id": "2025-05CursurideIT-manifest.json",
+      "title": "Cursuri de IT",
+      "type": "simple",
+      "eventFolder": "05. Cursuri de IT"
+    },
+    {
+      "id": "2025-06Cursurideinot-manifest.json",
+      "title": "Cursuri de inot",
+      "type": "simple",
+      "eventFolder": "06. Cursuri de inot"
+    },
+    {
+      "id": "2025-07Vizionarifilme-manifest.json",
+      "title": "Vizionari filme",
+      "type": "simple",
+      "eventFolder": "07. Vizionari filme"
+    },
+    {
+      "id": "2025-08Vizionarispectacole-manifest.json",
+      "title": "Vizionari spectacole",
+      "type": "simple",
+      "eventFolder": "08. Vizionari spectacole"
+    },
+    {
+      "id": "2025-09EvenimentConferintaNationalaInaintepentrucopiiiRomaniei-manifest.json",
+      "title": "Eveniment - Conferinta Nationala Inainte pentru copiii Romaniei",
+      "type": "simple",
+      "eventFolder": "09. Eveniment - Conferinta Nationala Inainte pentru copiii Romaniei"
+    },
+    {
+      "id": "2025-10EvenimentBibliotecavieDemocratiainactiunepentruoeducatieincluziva-manifest.json",
+      "title": "Eveniment  - Biblioteca vie - Democratia in actiune pentru o educatie incluziva",
+      "type": "simple",
+      "eventFolder": "10. Eveniment  - Biblioteca vie - Democratia in actiune pentru o educatie incluziva"
+    },
+    {
+      "id": "2025-11EvenimenteMosCraciun-complex",
+      "title": "Evenimente Mos Craciun",
+      "type": "complex",
+      "eventFolder": "11. Evenimente Mos Craciun",
+      "subevents": [
+        {
+          "id": "2025-11EvenimenteMosCraciun-1Mosulnuneuita-manifest.json",
+          "title": "Mosul nu ne uita!"
+        },
+        {
+          "id": "2025-11EvenimenteMosCraciun-2MosuliubesteSupereroii-manifest.json",
+          "title": "Mosul iubeste Supereroii!"
+        }
+      ]
+    },
+    {
+      "id": "2025-12Tabaradeintegraresisocializare-manifest.json",
+      "title": "Tabara de integrare si socializare",
+      "type": "simple",
+      "eventFolder": "12. Tabara de integrare si socializare"
+    },
+    {
+      "id": "2025-13Erin-manifest.json",
+      "title": "Erin",
+      "type": "simple",
+      "eventFolder": "13. Erin"
+    },
+    {
+      "id": "2025-14Instantanee2025-manifest.json",
+      "title": "Instantanee 2025",
+      "type": "simple",
+      "eventFolder": "14. Instantanee 2025"
+    }
+  ]
+}

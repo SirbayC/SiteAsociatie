@@ -1,10 +1,10 @@
 {
-  "name": "my-js-project",
+  "name": "site-asociatie-build-tools",
   "version": "1.0.0",
-  "description": "A project to scan a folder for JPG and JPEG files and export their details.",
-  "main": "src/index.js",
+  "description": "Build tools for Site Asociatie: generates photo manifests from data/pics and copies images to client/public/pics",
+  "main": "src/generateManifests.js",
   "scripts": {
-    "start": "node src/index.js"
+    "generate-manifests": "node src/generateManifests.js"
   },
   "dependencies": {
     "fs": "^0.0.1-security",

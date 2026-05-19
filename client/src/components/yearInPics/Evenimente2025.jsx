@@ -1,20 +1,44 @@
+import React, { useState, useEffect } from 'react';
 import "../../styling/lumeaimagini.scss";
-
-// Dynamically import all .jsx components from the 2025 directory
-const componentsContext = require.context('../../resources/pics/2025', true, /\.jsx$/);
-
-// Map over the found files and render them
-const components = componentsContext.keys().map(key => {
-  const Component = componentsContext(key).default;
-  return <Component key={key} />;
-});
+import EventGallery from './EventGallery';
+import ComplexEventGallery from './ComplexEventGallery';
 
 const Evenimente2025 = () => {
+  const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('/pics/2025-index.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load 2025 index');
+        return res.json();
+      })
+      .then(index => {
+        setEvents(index.events || []);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error loading events:', err);
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div className="evenimente"><div>Loading events...</div></div>;
+  if (error) return <div className="evenimente"><div>Error: {error}</div></div>;
+
   return (
     <div className="evenimente">
-      {components}
+      {events.map(event =>
+        event.type === 'complex' ? (
+          <ComplexEventGallery key={event.id} title={event.title} subevents={event.subevents} />
+        ) : (
+          <EventGallery key={event.id} manifestPath={`/pics/${event.id}`} />
+        )
+      )}
     </div>
   );
-}
+};
 
 export default Evenimente2025;
